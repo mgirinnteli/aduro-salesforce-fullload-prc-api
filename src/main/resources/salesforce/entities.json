@@ -1,0 +1,207 @@
+[
+  {
+    "entityName": "ADVISOR_EXPENSE",
+  	"sfEntity": "aduro__Advisor_Expense__c",
+  	"sdEntity": "AdvisorExpense"
+  },
+  {
+    "entityName": "CAPITAL_ACCOUNT_PARENT",
+  	"sfEntity": "aduro__Capital_Account_Parent__c",
+  	"sdEntity": "CapitalAccountParent"
+  },
+  {
+    "entityName": "CAPITAL_ACCOUNT",
+  	"sfEntity": "aduro__Capital_Account__c",
+  	"sdEntity": "CapitalAccount"
+  },
+  {
+    "entityName": "CAPITAL_CALL_PARENT",
+  	"sfEntity": "aduro__Capital_Call_Parent__c",
+  	"sdEntity": "CapitalCallParent"
+  },
+  {
+    "entityName": "CAPITAL_CALL",
+  	"sfEntity": "aduro__Capital_Call__c",
+  	"sdEntity": "CapitalCall"
+  },
+  {
+    "entityName": "CAPITAL_COMMITMENT",
+  	"sfEntity": "aduro__Capital_Commitment__c",
+  	"sdEntity": "CapitalCommitment"
+  },
+  {
+    "entityName": "CAPITALIZATION",
+  	"sfEntity": "aduro__Capitalization__c",
+  	"sdEntity": "Capitalization"
+  },
+  {
+    "entityName": "CLIENT_WIDE_COMMUNICATION",
+  	"sfEntity": "aduro__ClientWideCommunication__c",
+  	"sdEntity": "ClientWideCommunication"
+  },
+  {
+    "entityName": "CLIENT_WIDE_RECIPIENT",
+  	"sfEntity": "aduro__ClientWideRecipient__c",
+  	"sdEntity": "ClientWideRecipient"
+  },
+  {
+    "entityName": "CO_INVESTOR",
+  	"sfEntity": "aduro__Co_Investor__c",
+  	"sdEntity": "CoInvestor"
+  },
+  {
+    "entityName": "CO_INVESTOR_ROUND_DETAIL_JUNCTION",
+  	"sfEntity": "aduro__CoInvestorRoundDetailJunction__c",
+  	"sdEntity": "CoInvestorRoundDetailJunction"
+  },
+  {
+    "entityName": "COMPANY_SUMMARY_CONTACT_ROLE",
+  	"sfEntity": "aduro__Company_Summary_Contact_Role__c",
+  	"sdEntity": "CompanySummaryContactRole"
+  },
+  {
+    "entityName": "CONTACT_ROLE",
+  	"sfEntity": "aduro__LP_Contact_Role__c",
+  	"sdEntity": "ContactRole"
+  },
+  {
+    "entityName": "DEBUG_LOGS",
+  	"sfEntity": "aduro__Debug__c",
+  	"sdEntity": "AduroDebugLog"
+  },
+  {
+    "entityName": "DISTRIBUTION_PARENT",
+  	"sfEntity": "aduro__Distribution_Parent__c",
+  	"sdEntity": "DistributionParent"
+  },
+  {
+    "entityName": "DISTRIBUTION",
+  	"sfEntity": "aduro__Distribution__c",
+  	"sdEntity": "Distribution"
+  },
+  {
+    "entityName": "DOCUMENT",
+  	"sfEntity": "Document",
+  	"sdEntity": "Document"
+  },
+  {
+    "entityName": "FINANCIAL",
+  	"sfEntity": "aduro__Financial__c",
+  	"sdEntity": "Financial"
+  },
+  {
+    "entityName": "FUND",
+  	"sfEntity": "aduro__Fund__c",
+  	"sdEntity": "Fund"
+  },
+  {
+    "entityName": "FUND_ALLOCATION_PARENT",
+  	"sfEntity": "aduro__Fund_Allocation_Parent__c",
+  	"sdEntity": "FundAllocationParent"
+  },
+  {
+    "entityName": "FUND_ALLOCATION_MEMBER",
+  	"sfEntity": "aduro__Fund_Allocation_Member__c",
+  	"sdEntity": "FundAllocationMember"
+  },
+  {
+    "entityName": "FUND_ALLOCATION",
+  	"sfEntity": "aduro__Fund_Allocation__c",
+  	"sdEntity": "FundAllocation"
+  },
+  {
+    "entityName": "FUND_COMMUNICATION",
+  	"sfEntity": "aduro__Fund_Communication__c",
+  	"sdEntity": "FundCommunication"
+  },
+  {
+    "entityName": "FUND_METRIC",
+  	"sfEntity": "aduro__Fund_Metric__c",
+  	"sdEntity": "FundMetric"
+  },
+  {
+    "entityName": "FUND_SNAPSHOT",
+  	"sfEntity": "aduro__Fund_Snapshot__c",
+  	"sdEntity": "FundSnapshot"
+  },
+  {
+    "entityName": "GROUP_CLIENT_EMAIL",
+  	"sfEntity": "aduro__GroupClientEmail__c",
+  	"sdEntity": "GroupClientEmail"
+  },
+  {
+    "entityName": "GROUP_FUND_EMAIL",
+  	"sfEntity": "aduro__GroupFundEmail__c",
+  	"sdEntity": "GroupFundEmail"
+  },
+  {
+    "entityName": "INVESTMENT_OPPORTUNITY",
+  	"sfEntity": "aduro__Investment_Opportunity__c",
+  	"sdEntity": "InvestmentOpportunity"
+  },
+  {
+    "entityName": "IRR_SNAPSHOT",
+  	"sfEntity": "aduro__IRR_Snapshot__c",
+  	"sdEntity": "IRRSnapshot"
+  },
+  {
+    "entityName": "PAYMENT",
+  	"sfEntity": "aduro__Payment__c",
+  	"sdEntity": "Payment"
+  },
+  {
+    "entityName": "RECIPIENT",
+  	"sfEntity": "aduro__Recipient__c",
+  	"sdEntity": "Recipient"
+  },
+  {
+    "entityName": "ROUND_DETAIL",
+  	"sfEntity": "aduro__Round_Detail__c",
+  	"sdEntity": "RoundDetail"
+  },
+  {
+    "entityName": "TRANSACTION",
+  	"sfEntity": "aduro__Transaction__c",
+  	"sdEntity": "Transaction"
+  },
+  {
+    "entityName": "UPDATE_REQUEST",
+  	"sfEntity": "aduro__Update_Request__c",
+  	"sdEntity": "UpdateRequest"
+  },
+  {
+    "entityName": "VALUATION",
+  	"sfEntity": "aduro__Valuation__c",
+  	"sdEntity": "Valuation"
+  },
+  {
+    "entityName": "VALUATION_SNAPSHOT",
+  	"sfEntity": "aduro__Valuation_Snapshot__c",
+  	"sdEntity": "ValuationSnapshot"
+  },
+  {
+    "entityName": "XERO_ORGS_AUTHORIZED",
+  	"sfEntity": "aduro__Xero_Orgs_Authorized__c",
+  	"sdEntity": "XeroOrgsAuthorized"
+  },
+  {
+    "entityName": "EVENT",
+  	"sfEntity": "Event",
+  	"sdEntity": "Event"
+  },
+  {
+    "entityName": "TASK",
+  	"sfEntity": "Task",
+  	"sdEntity": "Task"
+  },
+  {
+    "entityName": "USER",
+  	"sfEntity": "User",
+  	"sdEntity": "User"
+  },
+  {
+    "entityName": "USER_PROVISIONING_REQUEST",
+  	"sfEntity": "UserProvisioningRequest",
+  	"sdEntity": "UserProvisioningRequest"
+  }
+]

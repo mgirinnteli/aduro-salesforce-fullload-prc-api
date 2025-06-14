@@ -1,0 +1,891 @@
+{
+	"info": {
+		"_postman_id": "d393f7f7-b259-4d7d-b6c6-e6ce8a9f0091",
+		"name": "Aduro MDM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1004126"
+	},
+	"item": [
+		{
+			"name": "xero-raw",
+			"item": [
+				{
+					"name": "Get started",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"xero-tenant-id\", data[0].TenantId);",
+									"",
+									"tests[\"xero-tenant-id: \" + pm.environment.get(\"xero-tenant-id\")] = true;"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "KAJFKqXS6XqIDML6su0LSR-rxSYz2SzF76y8gVbqxICIfPFA",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "http://localhost:8081/api/v1/xero/callback",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CFD732325CCD4F5885F8967E2678158D",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "offline_access email openid profile accounting.transactions",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://identity.xero.com/connect/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "https://login.xero.com/identity/connect/authorize",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "NTeli Token",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.xero.com/connections",
+							"protocol": "https",
+							"host": [
+								"api",
+								"xero",
+								"com"
+							],
+							"path": [
+								"connections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "response_type",
+								"value": "code",
+								"type": "text"
+							},
+							{
+								"key": "client_id",
+								"value": "CFD732325CCD4F5885F8967E2678158D",
+								"type": "text"
+							},
+							{
+								"key": "redirect_uri",
+								"value": "https://aduroadvisors.com/",
+								"type": "text"
+							},
+							{
+								"key": "scope",
+								"value": "email openid profile accounting.transactions accounting.transactions.read",
+								"type": "text"
+							},
+							{
+								"key": "state",
+								"value": "123",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://login.xero.com/identity/connect/authorize?response_type=code&client_id=CFD732325CCD4F5885F8967E2678158D&redirect_uri=https://aduro.com&scope=openid profile email accounting.transactions&state=123",
+							"protocol": "https",
+							"host": [
+								"login",
+								"xero",
+								"com"
+							],
+							"path": [
+								"identity",
+								"connect",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "response_type",
+									"value": "code"
+								},
+								{
+									"key": "client_id",
+									"value": "CFD732325CCD4F5885F8967E2678158D"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://aduro.com"
+								},
+								{
+									"key": "scope",
+									"value": "openid profile email accounting.transactions"
+								},
+								{
+									"key": "state",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Connections",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"xero-tenant-id\", data[0].TenantId);",
+									"",
+									"tests[\"xero-tenant-id: \" + pm.environment.get(\"xero-tenant-id\")] = true;"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE3NDM1NTkwMzUsImV4cCI6MTc0MzU2MDgzNSwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiQ0ZENzMyMzI1Q0NENEY1ODg1Rjg5NjdFMjY3ODE1OEQiLCJzdWIiOiJkZDQ3NTk5MTMzNDE1NTRmYWJhYjE5ZjYyMmZiNTk1MyIsImF1dGhfdGltZSI6MTc0MzU1OTAyNCwieGVyb191c2VyaWQiOiI2Zjc3ZjBhMy0zOTQ2LTQyOWEtODg2Ni02YTg1MTFmZmMwY2EiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjI2MDQ2NDFiOWU3MjQwODI5NDM4YWY2YjVjMmI3Mjc3Iiwic2lkIjoiMjYwNDY0MWI5ZTcyNDA4Mjk0MzhhZjZiNWMyYjcyNzciLCJqdGkiOiJDMDBEOEI2QTcyN0NCNjE4OUNFOENCQzhFMEM2QUU5OCIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiZGRlNDczODEtYTJiMi00Y2JiLWExMjgtNWQ2Y2VmY2RhMTQ4Iiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsicHdkIl19.laA_pHFs-lWjGbpj62cyJVtqhLJCkzXPCfZfxNNGjY8DmUuLUWdGZ5HE5Fy-T84RX1BDw6CnjCFuCP39HGPV2p6h8eg_UgOuNwzWS2R_EfgTm12oT7lqvFcYwLjUBlpdEzHom4-tgUKu9D16N8ovRy8xJfR2u6NoAThUi-8r0KZt4AWI7BkK9cFhN_bIMUPEkurZ-X07yEx3NG8Ri2fJfvBMoODoeBzzQSX3Ohwvdrgz246LsjoQi7dtqIM1-euxuW5J7C_7D73OoTHPXYsL1dXcnbcu-fF9k7hlaOm7Rkof2JGo4ztKS298PgD2Pk7xNRo8xzoF7HtTrMBYvEY6GQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.xero.com/connections",
+							"protocol": "https",
+							"host": [
+								"api",
+								"xero",
+								"com"
+							],
+							"path": [
+								"connections"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invoices",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"    tokenUrl = 'https://identity.xero.com/connect/token'",
+									"    clientId = pm.variables.get('client_id'),",
+									"    clientSecret = pm.variables.get('client_secret'),",
+									"    refreshToken = pm.variables.get('refresh_token'),",
+									"    requestOptions = {",
+									"      method: 'POST',",
+									"      url: tokenUrl,",
+									"      body: {",
+									"        mode: 'formdata',",
+									"        formdata: [",
+									"            {",
+									"                key: 'grant_type',",
+									"                value: 'refresh_token'",
+									"            },",
+									"            {",
+									"                key: 'client_id',",
+									"                value: clientId",
+									"            },",
+									"            {",
+									"                key: 'client_secret',",
+									"                value: clientSecret",
+									"            },",
+									"            {",
+									"                key: 'refresh_token',",
+									"                value: refreshToken",
+									"            }",
+									"        ]",
+									"      }",
+									"    };",
+									"",
+									"console.log({ requestOptions });",
+									"",
+									"pm.sendRequest(requestOptions, (err, response) => {",
+									"  let jsonResponse = response.json(),",
+									"      newAccessToken = jsonResponse.access_token;",
+									"      newRefreshToken = jsonResponse.refresh_token;",
+									"      ",
+									"  console.log({ err, jsonResponse, newAccessToken, newRefreshToken })",
+									"  ",
+									"  pm.environment.set('access_token', newAccessToken);",
+									"  pm.environment.set('refresh_token', newRefreshToken);",
+									"  ",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "xero-tenant-id",
+								"value": "607f95cf-c048-4bfb-8ea3-5233c0882135",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFDQUY4RTY2NzcyRDZEQzAyOEQ2NzI2RkQwMjYxNTgxNTcwRUZDMTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJISy1PWm5jdGJjQW8xbkp2MENZVmdWY09fQmsifQ.eyJuYmYiOjE3NDM1NTkwMzUsImV4cCI6MTc0MzU2MDgzNSwiaXNzIjoiaHR0cHM6Ly9pZGVudGl0eS54ZXJvLmNvbSIsImF1ZCI6Imh0dHBzOi8vaWRlbnRpdHkueGVyby5jb20vcmVzb3VyY2VzIiwiY2xpZW50X2lkIjoiQ0ZENzMyMzI1Q0NENEY1ODg1Rjg5NjdFMjY3ODE1OEQiLCJzdWIiOiJkZDQ3NTk5MTMzNDE1NTRmYWJhYjE5ZjYyMmZiNTk1MyIsImF1dGhfdGltZSI6MTc0MzU1OTAyNCwieGVyb191c2VyaWQiOiI2Zjc3ZjBhMy0zOTQ2LTQyOWEtODg2Ni02YTg1MTFmZmMwY2EiLCJnbG9iYWxfc2Vzc2lvbl9pZCI6IjI2MDQ2NDFiOWU3MjQwODI5NDM4YWY2YjVjMmI3Mjc3Iiwic2lkIjoiMjYwNDY0MWI5ZTcyNDA4Mjk0MzhhZjZiNWMyYjcyNzciLCJqdGkiOiJDMDBEOEI2QTcyN0NCNjE4OUNFOENCQzhFMEM2QUU5OCIsImF1dGhlbnRpY2F0aW9uX2V2ZW50X2lkIjoiZGRlNDczODEtYTJiMi00Y2JiLWExMjgtNWQ2Y2VmY2RhMTQ4Iiwic2NvcGUiOlsiZW1haWwiLCJwcm9maWxlIiwib3BlbmlkIiwiYWNjb3VudGluZy50cmFuc2FjdGlvbnMiLCJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsicHdkIl19.laA_pHFs-lWjGbpj62cyJVtqhLJCkzXPCfZfxNNGjY8DmUuLUWdGZ5HE5Fy-T84RX1BDw6CnjCFuCP39HGPV2p6h8eg_UgOuNwzWS2R_EfgTm12oT7lqvFcYwLjUBlpdEzHom4-tgUKu9D16N8ovRy8xJfR2u6NoAThUi-8r0KZt4AWI7BkK9cFhN_bIMUPEkurZ-X07yEx3NG8Ri2fJfvBMoODoeBzzQSX3Ohwvdrgz246LsjoQi7dtqIM1-euxuW5J7C_7D73OoTHPXYsL1dXcnbcu-fF9k7hlaOm7Rkof2JGo4ztKS298PgD2Pk7xNRo8xzoF7HtTrMBYvEY6GQ",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "If-Modified-Since",
+								"value": "2024-03-31T12:00:00",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.xero.com/api.xro/2.0/Invoices?page=1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"xero",
+								"com"
+							],
+							"path": [
+								"api.xro",
+								"2.0",
+								"Invoices"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						},
+						"description": "\t"
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var data = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"access_token\", data.access_token);",
+									"postman.setEnvironmentVariable(\"refresh_token\", data.refresh_token);",
+									"",
+									"tests[\"Access Token: \" + pm.environment.get(\"access_token\") + \" Refresh Token: \" + pm.environment.get(\"refresh_token\")] = true;"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "grant_type",
+								"value": "refresh_token",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"name": "Content-Type",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "{{refresh_token}}",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{client_id}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{client_secret}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://identity.xero.com/connect/token?=",
+							"protocol": "https",
+							"host": [
+								"identity",
+								"xero",
+								"com"
+							],
+							"path": [
+								"connect",
+								"token"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "xero-system-api",
+			"item": [
+				{
+					"name": "local",
+					"item": [
+						{
+							"name": "/heartbeat",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-transaction-id",
+										"value": "fa2720d6-b922-49c1-9b05-3440cc4a8e7c"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/xero/heartbeat",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"xero",
+										"heartbeat"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/invoices",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-transaction-id",
+										"value": "fa2720d6-b922-49c1-9b05-3440cc4a8e7c"
+									},
+									{
+										"key": "x-tenant-id",
+										"value": "607f95cf-c048-4bfb-8ea3-5233c0882135",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/xero/invoices?lastModifiedTimestamp=2000-12-31T12:00:00&page=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"xero",
+										"invoices"
+									],
+									"query": [
+										{
+											"key": "lastModifiedTimestamp",
+											"value": "2000-12-31T12:00:00"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/invoices/payments",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-transaction-id",
+										"value": "fa2720d6-b922-49c1-9b05-3440cc4a8e7c"
+									},
+									{
+										"key": "x-tenant-id",
+										"value": "607f95cf-c048-4bfb-8ea3-5233c0882135",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/xero/invoices/payments?lastModifiedTimestamp=2000-12-31T12:00:00&page=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"xero",
+										"invoices",
+										"payments"
+									],
+									"query": [
+										{
+											"key": "lastModifiedTimestamp",
+											"value": "2000-12-31T12:00:00"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/contacts",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-transaction-id",
+										"value": "fa2720d6-b922-49c1-9b05-3440cc4a8e7c"
+									},
+									{
+										"key": "x-tenant-id",
+										"value": "607f95cf-c048-4bfb-8ea3-5233c0882135",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/api/v1/xero/contacts?lastModifiedTimestamp=2000-12-31T12:00:00&page=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"xero",
+										"contacts"
+									],
+									"query": [
+										{
+											"key": "lastModifiedTimestamp",
+											"value": "2000-12-31T12:00:00"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "dev",
+					"item": [
+						{
+							"name": "/heartbeat",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-transaction-id",
+										"value": "fa2720d6-b922-49c1-9b05-3440cc4a8e7c"
+									},
+									{
+										"key": "client_id",
+										"value": "7d1618252db646a2869e623f3c15b999",
+										"type": "text"
+									},
+									{
+										"key": "client_secret",
+										"value": "44b4152bbA5a45e8b88AA6EeC4Ee74e9",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://aduro-xero-system-api-dev-a9gmyw.5sc6y6-3.usa-e2.cloudhub.io/api/v1/xero/heartbeat",
+									"protocol": "https",
+									"host": [
+										"aduro-xero-system-api-dev-a9gmyw",
+										"5sc6y6-3",
+										"usa-e2",
+										"cloudhub",
+										"io"
+									],
+									"path": [
+										"api",
+										"v1",
+										"xero",
+										"heartbeat"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/invoices",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-transaction-id",
+										"value": "fa2720d6-b922-49c1-9b05-3440cc4a8e7c"
+									},
+									{
+										"key": "x-tenant-id",
+										"value": "607f95cf-c048-4bfb-8ea3-5233c0882135",
+										"type": "text"
+									},
+									{
+										"key": "client_id",
+										"value": "7d1618252db646a2869e623f3c15b999",
+										"type": "text"
+									},
+									{
+										"key": "client_secret",
+										"value": "44b4152bbA5a45e8b88AA6EeC4Ee74e9",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://aduro-xero-system-api-dev-a9gmyw.5sc6y6-3.usa-e2.cloudhub.io/api/v1/xero/invoices?lastModifiedTimestamp=2000-12-31T12:00:00&page=2",
+									"protocol": "https",
+									"host": [
+										"aduro-xero-system-api-dev-a9gmyw",
+										"5sc6y6-3",
+										"usa-e2",
+										"cloudhub",
+										"io"
+									],
+									"path": [
+										"api",
+										"v1",
+										"xero",
+										"invoices"
+									],
+									"query": [
+										{
+											"key": "lastModifiedTimestamp",
+											"value": "2000-12-31T12:00:00"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/invoices/payments",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-transaction-id",
+										"value": "fa2720d6-b922-49c1-9b05-3440cc4a8e7c"
+									},
+									{
+										"key": "x-tenant-id",
+										"value": "607f95cf-c048-4bfb-8ea3-5233c0882135",
+										"type": "text"
+									},
+									{
+										"key": "client_id",
+										"value": "7d1618252db646a2869e623f3c15b999",
+										"type": "text"
+									},
+									{
+										"key": "client_secret",
+										"value": "44b4152bbA5a45e8b88AA6EeC4Ee74e9",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://aduro-xero-system-api-dev-a9gmyw.5sc6y6-3.usa-e2.cloudhub.io/api/v1/xero/invoices/payments?lastModifiedTimestamp=2000-12-31T12:00:00&page=1",
+									"protocol": "https",
+									"host": [
+										"aduro-xero-system-api-dev-a9gmyw",
+										"5sc6y6-3",
+										"usa-e2",
+										"cloudhub",
+										"io"
+									],
+									"path": [
+										"api",
+										"v1",
+										"xero",
+										"invoices",
+										"payments"
+									],
+									"query": [
+										{
+											"key": "lastModifiedTimestamp",
+											"value": "2000-12-31T12:00:00"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/contacts",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-transaction-id",
+										"value": "fa2720d6-b922-49c1-9b05-3440cc4a8e7c"
+									},
+									{
+										"key": "x-tenant-id",
+										"value": "607f95cf-c048-4bfb-8ea3-5233c0882135",
+										"type": "text"
+									},
+									{
+										"key": "client_id",
+										"value": "7d1618252db646a2869e623f3c15b999",
+										"type": "text"
+									},
+									{
+										"key": "client_secret",
+										"value": "44b4152bbA5a45e8b88AA6EeC4Ee74e9",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://aduro-xero-system-api-dev-a9gmyw.5sc6y6-3.usa-e2.cloudhub.io/api/v1/xero/contacts?lastModifiedTimestamp=2000-12-31T12:00:00&page=1",
+									"protocol": "https",
+									"host": [
+										"aduro-xero-system-api-dev-a9gmyw",
+										"5sc6y6-3",
+										"usa-e2",
+										"cloudhub",
+										"io"
+									],
+									"path": [
+										"api",
+										"v1",
+										"xero",
+										"contacts"
+									],
+									"query": [
+										{
+											"key": "lastModifiedTimestamp",
+											"value": "2000-12-31T12:00:00"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

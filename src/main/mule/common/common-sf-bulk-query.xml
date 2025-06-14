@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce"
+	xmlns:module-error-handler-plugin="http://www.mulesoft.org/schema/mule/module-error-handler-plugin"
+	xmlns:json-logger="http://www.mulesoft.org/schema/mule/json-logger" xmlns:anypoint-mq="http://www.mulesoft.org/schema/mule/anypoint-mq"
+	xmlns:validation="http://www.mulesoft.org/schema/mule/validation"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd 
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/mule/anypoint-mq/current/mule-anypoint-mq.xsd
+http://www.mulesoft.org/schema/mule/json-logger http://www.mulesoft.org/schema/mule/json-logger/current/mule-json-logger.xsd
+http://www.mulesoft.org/schema/mule/module-error-handler-plugin http://www.mulesoft.org/schema/mule/module-error-handler-plugin/current/mule-module-error-handler-plugin.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd">
+    
+    <flow name="pf-common-sf-bulk-query" doc:id="bd167219-85e5-46b1-be3e-f2d489a983a6">
+        <set-variable value="${api.base}" doc:name="Set moduleName" variableName="moduleName"/>
+        <set-variable value="#[now()]" doc:name="Set startTimestamp" variableName="startTimestamp"/>
+        <flow-ref doc:name="Call sf-get-aduro_transaction_id" doc:id="a5fd82ad-0eb2-4c2f-bcb6-a2a2e0291f14" name="sf-get-aduro_transaction_id" />
+        <set-variable value='#[readUrl("classpath://salesforce/entities.json","application/json")]' doc:name="Set listOfSfEntities" doc:id="c512b3a1-cfd2-4e1d-918b-4bd23822d90f" variableName="listOfSfEntities"/>
+        <foreach doc:name="For Each SF Entity" doc:id="e9e10921-2e3e-47cd-991e-026e6858a31c" collection="#[vars.listOfSfEntities]">
+            <set-variable value="#[payload]" doc:name="Set entity" doc:id="5b5c6d5c-1e3a-4970-b72f-e5b4409ff7f9" variableName="entity"/>
+                <ee:transform doc:name="DW: Set SF Query Variables" doc:id="8b71deb6-c7bc-4b86-802a-6ec188901cee">
+                    <ee:message />
+                    <ee:variables>
+                        <ee:set-variable variableName="entityName"><![CDATA[%dw 2.0
+output application/java
+---
+vars.entity.entityName default '']]></ee:set-variable>
+                        <ee:set-variable variableName="sfEntityName"><![CDATA[%dw 2.0
+output application/java
+---
+vars.entity.sfEntity default '']]></ee:set-variable>
+                        <ee:set-variable variableName="sdEntityName"><![CDATA[%dw 2.0
+output application/java
+---
+vars.entity.sdEntity default '']]></ee:set-variable>
+                        <ee:set-variable variableName="selectFieldNames"><![CDATA[%dw 2.0
+output application/java
+---
+"fields(all)"]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+                <try>
+                    <ee:transform doc:name="Set Initial Query" doc:id="66b5cce5-0eda-4855-ab01-286770e35119" >
+                    	<ee:message />
+                        <ee:variables >
+                        	<ee:set-variable variableName="sfQuery" ><![CDATA[%dw 2.0
+output application/java
+var qf = vars.queryFields
+---
+"select " ++ (vars.selectFieldNames as String default "Id") ++ " from " ++ (vars.sfEntityName default "") 
+++ " order by Id limit " ++ p('maxRecords')]]></ee:set-variable>
+            </ee:variables>
+                    </ee:transform>
+                    <foreach doc:name="For Each Page of Results" doc:id="fa5b1181-a096-4408-94c2-ce0094aadc8c" collection="#[[1 to (p('maxPages') as Number)][0]]" counterVariableName="pageNumber">
+                        <logger level="INFO" doc:name="LOG: Execute SF Query" doc:id="2a6aae03-e5ca-4e6d-860e-85a99139e5b2" message="Org Id: '#[vars.orgId]' - SF Query: '#[vars.sfQuery]'" category="com.aduro.api"/>
+                        <choice doc:name="Check connector config" doc:id="4110b941-e3e0-409d-824c-58db14aa85bc" >
+                    	    <when expression="#[vars.orgCode == 'signalfire']">
+                        	    <salesforce:query-all doc:name="Query all" doc:id="d9059b8c-d887-450f-ae1c-252cd1ed42b8" config-ref="Salesforce_Config-signalfire" target="sfResults">
+                                    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                                </salesforce:query-all>
+                      	    </when>
+                     	    <when expression="#[vars.orgCode == 'caffeinatedcapital']">
+                        	    <salesforce:query-all doc:name="Query all" doc:id="1f646b5e-24fb-4426-b385-439673ed4331" config-ref="Salesforce_Config-caffeinatedcapital" target="sfResults">
+                            	    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                        	    </salesforce:query-all>
+                     	    </when>
+                         	<otherwise >
+                            	<salesforce:query-all doc:name="Query all" doc:id="b2286d16-a183-42cd-845b-216e607e914b" config-ref="Salesforce_Config-demo" target="sfResults">
+                    				<salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                    			</salesforce:query-all>
+                           	</otherwise>
+                       	</choice>
+                       	<logger level="INFO" doc:name="LOG: Record Count" doc:id="958c5f70-91fb-4377-8c96-869c95a7efc2" message="*** Org Id: '#[vars.orgId]' - Page #[vars.pageNumber] - #[vars.entityName] FETCH RESULTS - SF Org Id: '#[vars.orgId]' - Record Count: '#[sizeOf(vars.sfResults default [])]' ***" />
+                       	<validation:is-true doc:name="Check if page is not empty" doc:id="0eb28ee7-8350-42a8-9938-98640c24ab43" config-ref="Validation_Config" expression="#[sizeOf(vars.sfResults default [])&gt; 0]" message="Empty Results from Salesforce"/>
+                       	<ee:transform doc:name="DW: Build Canonical Message" doc:id="2d41cfc5-a949-4aac-a90a-f08cafced90c">
+                       	    <ee:message>
+                            	<ee:set-payload resource="dwl/sfdc/buildCanonicalMessage.dwl" />
+                          	</ee:message>
+                          	<ee:variables>
+                            <ee:set-variable variableName="vLastId" ><![CDATA[%dw 2.0
+output application/java
+---
+vars.sfResults[-1].Id
+]]></ee:set-variable>
+
+                    	</ee:variables>
+                 	</ee:transform>
+                    <json-logger:logger doc:name="LOG: Canonical Payload" doc:id="475417d1-522e-493d-a247-08730911268f" config-ref="JSON_Logger_Config" message="#['SF Org Id: ' ++ vars.orgId default '' ++ ' - Canonical Payload']" tracePoint="AFTER_TRANSFORM" priority="DEBUG" />
+                    <try doc:name="Try" doc:id="053dc9fd-4086-4c7e-a825-f9fe36dac69c">
+                  	    <anypoint-mq:publish doc:name="Publish to Anypoint MQ" doc:id="88db79c8-0b43-48c1-a575-be90c612752f" config-ref="Anypoint_MQ_Config" destination="${anypointmq.salesforceExchange}" outputMimeType="application/json">
+                        	<anypoint-mq:properties><![CDATA[#[output application/java 
+---
+{
+    SOURCE: 'SALESFORCE',
+    ENTITY: vars.entityName,
+    ENTITY_ID: vars.Id default '',
+    BUSINESS_ID: vars.Id default '',
+    ORG_ID: vars.orgId default '',
+    OPERATION: 'SCHEDULED_FETCH'
+}]]]>       
+                         	</anypoint-mq:properties>
+                      	</anypoint-mq:publish>
+                 	</try>
+                    <ee:transform doc:name="Set Next Query" doc:id="84ed3c48-583e-4575-bed3-dc9fc93c3e7b" >
+                        <ee:message />
+                        <ee:variables >
+                            <ee:set-variable variableName="sfQuery" ><![CDATA[%dw 2.0
+output application/java
+var qf = vars.queryFields
+---
+"select " ++ (vars.selectFieldNames as String default "Id") ++ " from " ++ (vars.sfEntityName default "") 
+++ " where Id > '" ++ vars.vLastId default '0' ++ "' order by Id limit " ++ p('maxRecords')]]></ee:set-variable>
+            </ee:variables>
+                    </ee:transform>
+                 </foreach>
+                 <error-handler >
+                    <on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="baf02f71-c656-4388-aa17-a551061f81d7" >
+                        <logger level="INFO" doc:name="LOG: Stop fetching results" doc:id="99411683-0b56-4e6b-bb3d-4be487d3ce15" message="*** Org Id: '#[vars.orgId]' - #[vars.entityName] - Finished getting data from SF, stopping the loop ***"/>
+                    </on-error-continue>
+                </error-handler>
+            </try>
+        </foreach>   
+        <error-handler >
+            <on-error-continue enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="29cd08bd-3e71-478e-bd65-ed4809d7b7ad" type="ANY">
+                <ee:transform doc:name="DW: Set Error" doc:id="70627fac-30a4-43f9-a844-9535641e5d3a" >
+                    <ee:message />
+                    <ee:variables >
+                        <ee:set-variable variableName="errorInfo" ><![CDATA[error.description]]></ee:set-variable>
+                        <ee:set-variable variableName="errorCodes" ><![CDATA[500]]></ee:set-variable>
+                        <ee:set-variable variableName="errorStatus" ><![CDATA["FAILED"]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+                <module-error-handler-plugin:process-error doc:name="Process Error" doc:id="83504b23-8a29-4847-8fb2-eb5e7edb8776" />
+                <set-variable value="#[500]" doc:name="httpStatus" doc:id="e44406d2-f5a5-481f-8de2-afa602ff4b0e" variableName="httpStatus" />
+                <json-logger:logger doc:id="233f3228-1c4f-4563-831b-249ed63d8f02" doc:name="LOG: Salesforce Processing Error" priority="ERROR" tracePoint="EXCEPTION" config-ref="JSON_Logger_Config" message="#['Error connecting to Salesforce platform']" correlationId="#[vars.aduro_transaction_id]" category="com.aduro.api"/>
+            </on-error-continue>
+        </error-handler>  
+   </flow>
+</mule>

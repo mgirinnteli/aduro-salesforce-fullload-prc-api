@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:json-logger="http://www.mulesoft.org/schema/mule/json-logger"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/json-logger http://www.mulesoft.org/schema/mule/json-logger/current/mule-json-logger.xsd">
+	
+	<flow name="pf-get-heartbeat">
+		<json-logger:logger-scope doc:name="Logger scope" doc:id="028eb12a-2869-4342-8137-102bb8131a6c" configurationRef="JSON_Logger_Config" scopeTracePoint="FLOW_LOGIC_SCOPE" correlationId="#[vars.aduro_transaction_id]">
+			<ee:transform doc:name="DW: Return Response" doc:id="660359a5-5de6-4a8e-a7b0-ef4557d167f6" >
+				<ee:message >
+					<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  module: vars.moduleName default p('artifactId'),
+  code: 200,
+  status: "ACTIVE",
+  message: "Successfully completed the request",
+  details: "Invoked operation GET:/heartbeat",
+  requestTimestamp: vars.startTimestamp default now(),
+  responseTimestamp: now()
+}]]></ee:set-payload>
+				</ee:message>
+			</ee:transform>
+		</json-logger:logger-scope>
+		<error-handler ref="common-error-handler" />
+	</flow>
+</mule>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce"
+	xmlns:validation="http://www.mulesoft.org/schema/mule/validation"
+    xmlns:anypoint-mq="http://www.mulesoft.org/schema/mule/anypoint-mq"
+	xmlns:amqp="http://www.mulesoft.org/schema/mule/amqp"
+	xmlns:os="http://www.mulesoft.org/schema/mule/os" xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit"
+	xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway" 
+	xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:json-logger="http://www.mulesoft.org/schema/mule/json-logger" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:eframework="http://www.mulesoft.org/schema/mule/eframework" xmlns:tls="http://www.mulesoft.org/schema/mule/tls" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:secure-properties="http://www.mulesoft.org/schema/mule/secure-properties" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd 
+http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd 
+http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd 
+http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/current/mule-tls.xsd 
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/schema/mule/secure-properties/current/mule-secure-properties.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/json-logger http://www.mulesoft.org/schema/mule/json-logger/current/mule-json-logger.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd
+http://www.mulesoft.org/schema/mule/amqp http://www.mulesoft.org/schema/mule/amqp/current/mule-amqp.xsd
+http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/mule/anypoint-mq/current/mule-anypoint-mq.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd">
+	
+	<global-property doc:name="Global Property" name="api.https.key" value="mule" />
+	<global-property doc:name="Global Property" name="api.https.keypass" value="changeit" />
+	<global-property doc:name="Global Property" name="api.https.keystorepass" value="changeit" /> 
+	<global-property doc:name="Global Property" name="mule.env" value="dev" />
+
+	<configuration-properties doc:name="Configuration properties" doc:id="519b55e6-6a10-4221-9a98-95bff736e972" file="properties/common/common.yaml" />
+
+	<configuration-properties doc:name="Configuration properties" doc:id="4c21e9c4-b812-4a08-b4b5-9b3d9ca4b023" file="properties/${mule.env}.yaml"/>
+		
+	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="e3f8f87d-a47d-482e-a690-33ef8c828809" key="${mule.key}" file="properties/secure/${mule.env}-vault.yaml">
+		<secure-properties:encrypt algorithm="AES" mode="CBC"/>
+	</secure-properties:config>
+	
+	<http:listener-config name="HTTP_Listener_Config" doc:name="HTTP Listener config" doc:id="a364337f-c154-4d96-bdb9-0681b88fd7c6" >
+		<http:listener-connection host="0.0.0.0" port="${http.port}" protocol="HTTP"/>
+	</http:listener-config>
+
+    <tls:context name="TLS_Context" doc:name="TLS Context" doc:id="c15af694-c3fa-4855-b83a-99e7bb04cba9" >
+        <tls:trust-store insecure="true" />
+        <tls:key-store type="jks"/>
+    </tls:context>
+	
+    <apikit:config name="api-config" raml="api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" api="resource::3b8fd8b9-8002-4652-99bf-99d1c946b0ee:aduro-salesforce-fullload-prc-api:1.0.0:raml:zip:api.raml"/>
+
+    <api-gateway:autodiscovery apiId="${api.id}" doc:name="API Autodiscovery" doc:id="cac5c6b3-f282-4eb3-9d3d-d798cba2c641" flowRef="api-main" />
+
+    <json-logger:config name="JSON_Logger_Config" doc:name="JSON Logger Config" doc:id="0c03fee1-fa9f-4cd4-928a-6d23fae03224" environment="${mule.env}" contentFieldsDataMasking="client_secret,email,phone,firstName,lastName,accountNumber,ssn,phone" applicationName="${api.base}" applicationVersion="${api.semantic.version}"/>
+    
+	<json-logger:config name="Common_JSON_Logger_Config" doc:name="Common JSON Logger Config" doc:id="e9306852-3df9-4d70-b7f1-90f9de494d97" environment="${mule.env}" contentFieldsDataMasking="client_secret,email,phone,firstName,lastName,accountNumber,ssn,phone" applicationName="${api.base}" applicationVersion="${api.semantic.version}"/>
+	
+    <global-property doc:name="Global Property" doc:id="b9532215-cbfc-490a-ab36-6a7ed58380ca" name="mule.key" value="MuleSoft12345678" />
+    
+    <anypoint-mq:config name="Anypoint_MQ_Config" doc:name="Anypoint MQ Config" doc:id="bb782e28-3d19-4bf2-9f9a-c26861a47995">
+        <anypoint-mq:connection
+            clientId="#[Mule::p('anypointmq.clientId')]"
+            clientSecret="#[Mule::p('secure::anypointmq.clientSecret')]"
+            url="${anypointmq.url}" />
+    </anypoint-mq:config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-demo" doc:name="Salesforce Config-Demo" doc:id="c5e20644-c347-4124-b7bc-e5f2331cde38" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.demo.consumerkey}" consumerSecret="${secure::sfdc.demo.consumersecret}" username="${sfdc.demo.username}" password="${secure::sfdc.demo.password}" securityToken="${secure::sfdc.demo.token}" tokenEndpoint="${sfdc.demo.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-signalfire" doc:name="Salesforce Config-SignalFire" doc:id="64308fc6-3938-4952-bea0-7335e764c19a" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.signalfire.consumerkey}" consumerSecret="${secure::sfdc.signalfire.consumersecret}" username="${sfdc.signalfire.username}" password="${secure::sfdc.signalfire.password}" securityToken="${secure::sfdc.signalfire.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-caffeinatedcapital" doc:name="Salesforce Config-CaffeinatedCapital" doc:id="7ee93aa5-c88f-4ef6-a574-490c3f1b7594" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.caffeinatedcapital.consumerkey}" consumerSecret="${secure::sfdc.caffeinatedcapital.consumersecret}" username="${sfdc.caffeinatedcapital.username}" password="${secure::sfdc.caffeinatedcapital.password}" securityToken="${secure::sfdc.caffeinatedcapital.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <validation:config name="Validation_Config" doc:name="Validation Config" doc:id="ac440128-4bb0-4984-9c7a-0ea6a36be4ba" />
+
+</mule>

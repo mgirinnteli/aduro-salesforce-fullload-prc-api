@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway" xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd  http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+       
+	<flow name="api-main">
+        <http:listener config-ref="HTTP_Listener_Config" path="${api.path}">
+            <http:response statusCode="#[vars.httpStatus default 200]">
+                <http:headers><![CDATA[#[output application/java
+---
+{
+    "x-transaction-id" : vars.aduro_transaction_id
+}]]]></http:headers>
+            </http:response>
+            <http:error-response statusCode="#[vars.httpStatus default 500]">
+                <http:body><![CDATA[#[payload]]]></http:body>
+                <http:headers><![CDATA[#[output application/java
+---
+{
+    "x-transaction-id" : vars.aduro_transaction_id
+}]]]></http:headers>
+            </http:error-response>
+        </http:listener>
+        <set-variable value="${api.base}" doc:name="Set moduleName" variableName="moduleName" />
+        <set-variable value="#[now()]" doc:name="Set startTimestamp" variableName="startTimestamp" />
+        <tracking:transaction doc:name="Set Transaction Id" doc:id="a4bfdf70-1afd-4dcc-af26-c45101cbad29" id="#[attributes.headers['x-transaction-id'] default correlationId]" />
+        <flow-ref doc:name="sf-get-aduro_transaction_id" doc:id="ddc85c84-86a3-4f67-8cdc-a1e430cef2b9" name="sf-get-aduro_transaction_id"/>
+        <apikit:router config-ref="api-config" />
+        <error-handler ref="common-error-handler-apikit" />  
+    </flow>
+    
+    <flow name="get:\heartbeat:api-config">
+       <flow-ref doc:name="Call pf-get-heartbeat" doc:id="7a20eab8-0563-4152-86fa-a704a9edbdfd" name="pf-get-heartbeat"/>		
+    </flow> 
+    
+    <flow name="post:\trigger:application\json:api-config">
+       <flow-ref doc:name="Call pf-post-trigger" doc:id="7ac5c3ac-a5c1-4691-a320-1db0927455e5" name="pf-post-trigger"/>       
+    </flow> 
+ 
+</mule>

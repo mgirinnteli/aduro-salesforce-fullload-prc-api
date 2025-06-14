@@ -1,0 +1,19 @@
+api:
+  base: "aduro-salesforce-fullload-prc-api"
+  path: "/api/v1/sfdc/fullload/*"
+  semantic.version: "v1"
+  version: "v1"
+  
+https.port: "8082"
+  
+default:
+  properties:
+    TimeZoneSidKey: "America/New_York"
+    LocaleSidKey: "en_US"
+    EmailEncodingKey: "UTF-8"
+    LanguageLocaleKey: "en_us"
+ 
+json:
+  logger:
+    disabled: # Indicate which fields should not be logged
+      fields: "content" #Options: priority, tracePoint, message, content, correlationId

@@ -1,0 +1,16 @@
+sfdc:
+  demo:
+    password: "![MO1Dnbe21qGWX6psBtW4FQ==]"
+    token: "![ikjnjJCIYSqEHGq4UZUBRcpBZpwpDgKnEvGn99skzK0=]"
+    consumersecret: "![y1XAncBpuhpZXR+M1NlTXZOgK2WHxWRDrrzUwF0s6EJDgr0vw6bMsCDnC9LZqGQO3h+Zx1G4jI/G4SWuuf90HzLAdTStmQyLLhn+fAlu/38=]"
+  signalfire:
+    password: "![N3ZLPjR1NvsCmqPit/3EIpTyOlrt+JP8eFgIjCmCHfo=]"
+    token: "![Q+brhqR7h48WMTJMTEQ1TDzIkhPFJXj5Gs8AyaIBs7o=]"
+    consumersecret: "![pn0AyIZNknXJ0dHp7BkNOc8EeCuG5Dk8+zH3F1eLL+dgD2+9bozwGqWlCJO5ZoVU6kK+NMzclR+9Ii2SRS1BNp2JaaOFJYCzx7jAlMPqnLU=]"
+  caffeinatedcapital:
+    password: "![F5imz+MK8Xfb4Xx8qdms/9GoQhFwwqBGxseRZOn5hx0=]"
+    token: "![CjNZh1jYNCfgfdUigpUJ3hUqCy9eolI7qyXaQtRH5zA=]"
+    consumersecret: "![sD7JXtgkeut+2SR9zzs2ejoWA1W+sV+zlBexB2mQFZJ58kZIi8hm7QbkXKKfr6kfsTiJRFxigG/NjiWOXOnbaFXta44N/DDL4vAX2GXYNj8=]"
+
+anypointmq:
+  clientSecret: "![5qr08e0jQ/YCTfUG6xUuyIufaQ/RaEq1VXzxUWs5loGxXSMxciUdexawRzQq7Rmf]"

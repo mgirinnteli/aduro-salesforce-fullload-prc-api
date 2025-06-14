@@ -1,0 +1,46 @@
+api:
+  id: "20316454"
+http:
+  port: "8081"
+sender:
+  name: "FUNDPANEL"
+receiver:
+  name: "DATACLOUD"
+division: "FUNDPANEL-INTEGRATION-SERVICES"
+index:
+  name: "logs_datasync_mulesoft"
+business:
+  group: "IT"  
+  
+maxRecords: "2000"
+maxPages: "10000"
+
+sfdc:
+  connection:
+    timeout: "120"
+  reconnect:
+    frequency: "3000"
+    attempts: "2"
+  tokenendpoint: "https://login.salesforce.com/services/oauth2/token"
+  demo:
+    username: "bz+fundpaneldemo@nteligroup.com"
+    consumerkey: "3MVG92bg6BUCmlUby5YQPX6UTNdwdE5p86KSWdVH2bFB6sAnTDfxKhlwFGyoUP9H3QyprnRnyqKjEYaVVYrDw"
+    tokenendpoint: "https://test.salesforce.com/services/oauth2/token"
+    orgId: "00DDk000000EA8XMAW"
+  signalfire:
+    username: "bz@nteligroup.com.signalfire-pilot"
+    consumerkey: "3MVG9fMtCkV6eLhcqmpDEUwO1jIw_w1qcR.fAlb3o62ijFcj_MFMc3CW7wKe45ZBrXOhpYftCOahmrfk9i_rW"
+    orgId: "00Dj0000000HhuKEAS"
+  caffeinatedcapital:
+    username: "bz@nteligroup.com.cafcap-pilot"
+    consumerkey: "3MVG9sG9Z3Q1Rlbe5kI8K75NxVMy4uEHY.KDLD3dG0NYsqmZHbF.ODghrmlbz7su281pUKLjCgRqn1.IR8vhL"
+    orgId: "00D1a000000HHqEEAW"
+
+anypointmq:
+  url: "https://mq-us-east-1.anypoint.mulesoft.com/api/v1/organizations/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/environments/f682e196-03c9-493a-ba10-299236acb7a9"
+  salesforceExchange: "aduro-nonprod-sfdc-exchange"
+  clientId: "a3d5f7e3fdcb4c22abb0c1c8ecdaf477"  
+  
+request:
+  max.retries: "2"
+  retry.interval.millisec: "6000"

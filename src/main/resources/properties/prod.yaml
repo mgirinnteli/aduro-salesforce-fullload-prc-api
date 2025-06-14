@@ -1,0 +1,38 @@
+api:
+  id: "20316454"
+http:
+  port: "8081"
+sender:
+  name: "FUNDPANEL"
+receiver:
+  name: "DATACLOUD"
+division: "FUNDPANEL-INTEGRATION-SERVICES"
+index:
+  name: "logs_datasync_mulesoft"
+business:
+  group: "IT"  
+  
+days: "360"  
+maxPages: "1000"
+
+cron.expression.sfdc: "0 0 5 * * ?"
+
+sfdc:
+  username: "bz+fundpaneldemo@nteligroup.com"
+  consumerkey: "3MVG92bg6BUCmlUby5YQPX6UTNdwdE5p86KSWdVH2bFB6sAnTDfxKhlwFGyoUP9H3QyprnRnyqKjEYaVVYrDw"
+  tokenendpoint: "https://test.salesforce.com/services/oauth2/token"
+  orgId: "00DDk000000EA8XMAW"
+  connection:
+    timeout: "120"
+  reconnect:
+    frequency: "3000"
+    attempts: "2"
+  
+anypointmq:
+  url: "https://mq-us-east-1.anypoint.mulesoft.com/api/v1/organizations/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/environments/f682e196-03c9-493a-ba10-299236acb7a9"
+  salesforceExchange: "aduro-nonprod-sfdc-exchange"
+  clientId: "a3d5f7e3fdcb4c22abb0c1c8ecdaf477"  
+  
+request:
+  max.retries: "2"
+  retry.interval.millisec: "6000"
