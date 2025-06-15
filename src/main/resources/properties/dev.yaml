@@ -12,7 +12,7 @@ index:
 business:
   group: "IT"  
   
-maxRecords: "2000"
+maxRecords: "200"
 maxPages: "10000"
 
 sfdc:
