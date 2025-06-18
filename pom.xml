@@ -104,6 +104,7 @@
 		<dependency>
             <groupId>com.mulesoft.connectors</groupId>
             <artifactId>mule-salesforce-connector</artifactId>
+            <version>11.1.0</version>
             <classifier>mule-plugin</classifier>
         </dependency>
         <!-- Aduro RAML Dependency -->

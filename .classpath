@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="con" path="MULE_LIB/com.mulesoft.connectors/mule-salesforce-connector/11.1.0"/>
 	<classpathentry kind="con" path="org.mule.tooling.API_SPEC_LIB/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/common-raml-operations-library/1.0.0"/>
 	<classpathentry kind="con" path="org.mule.tooling.API_SPEC_LIB/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/common-error-responses-library/1.0.0"/>
 	<classpathentry kind="con" path="org.mule.tooling.API_SPEC_LIB/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/aduro-salesforce-fullload-prc-api/1.0.0"/>
@@ -8,7 +9,6 @@
 	<classpathentry kind="con" path="MULE_LIB/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/aduro-error-handling-plugin/6.3.0"/>
 	<classpathentry kind="con" path="MULE_LIB/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/aduro-json-logger/2.2.0"/>
 	<classpathentry kind="con" path="MULE_LIB/com.mulesoft.modules/mule-secure-configuration-property-module/1.2.7"/>
-	<classpathentry kind="con" path="MULE_LIB/com.mulesoft.connectors/mule-salesforce-connector/10.22.4"/>
 	<classpathentry kind="con" path="MULE_LIB/org.mule.connectors/mule-objectstore-connector/1.2.2"/>
 	<classpathentry kind="con" path="MULE_LIB/com.mulesoft.munit/munit-tools/3.3.2"/>
 	<classpathentry kind="con" path="MULE_LIB/com.mulesoft.munit/munit-runner/3.3.2"/>
