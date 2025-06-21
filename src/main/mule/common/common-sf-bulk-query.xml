@@ -37,7 +37,7 @@ vars.entity.sdEntity default '']]></ee:set-variable>
                         <ee:set-variable variableName="selectFieldNames"><![CDATA[%dw 2.0
 output application/java
 ---
-"fields(all)"]]></ee:set-variable>
+vars.entity.sfFields]]></ee:set-variable>
                     </ee:variables>
                 </ee:transform>
                 <try>
