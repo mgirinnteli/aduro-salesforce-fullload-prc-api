@@ -115,7 +115,7 @@ var qf = vars.queryFields
                     </ee:transform>
                  </foreach>
                  <error-handler >
-                    <on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="baf02f71-c656-4388-aa17-a551061f81d7" >
+                    <on-error-continue enableNotifications="false" logException="false" doc:name="On Error Continue" doc:id="baf02f71-c656-4388-aa17-a551061f81d7" >
                         <logger level="INFO" doc:name="LOG: Stop fetching results" doc:id="99411683-0b56-4e6b-bb3d-4be487d3ce15" message="*** Org Id: '#[vars.orgId]' - #[vars.entityName] - Finished getting data from SF, stopping the loop ***"/>
                     </on-error-continue>
                 </error-handler>
