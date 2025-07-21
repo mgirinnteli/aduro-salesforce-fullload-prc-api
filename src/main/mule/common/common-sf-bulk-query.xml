@@ -65,6 +65,46 @@ var qf = vars.queryFields
                             	    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
                         	    </salesforce:query-all>
                      	    </when>
+                            <when expression="#[vars.orgCode == 'lowercarboncapital']">
+                                <salesforce:query-all doc:name="Query all" doc:id="73fd7fbe-ef24-452b-b512-b1d2310f71f6" config-ref="Salesforce_Config-lowercarboncapital" target="sfResults">
+                                    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                                </salesforce:query-all>
+                            </when>
+                            <when expression="#[vars.orgCode == 'nextlegacy']">
+                                <salesforce:query-all doc:name="Query all" doc:id="0d664a18-56c0-4a02-a159-1c33a1318337" config-ref="Salesforce_Config-nextlegacy" target="sfResults">
+                                    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                                </salesforce:query-all>
+                            </when>
+                            <when expression="#[vars.orgCode == 'susaventures']">
+                                <salesforce:query-all doc:name="Query all" doc:id="31272686-9d9a-49ee-aabc-1559dddc3f79" config-ref="Salesforce_Config-susaventures" target="sfResults">
+                                    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                                </salesforce:query-all>
+                            </when>
+                            <when expression="#[vars.orgCode == 'goodwater']">
+                                <salesforce:query-all doc:name="Query all" doc:id="94148563-4a07-40e6-b514-3507057bc2ca" config-ref="Salesforce_Config-goodwater" target="sfResults">
+                                    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                                </salesforce:query-all>
+                            </when>
+                            <when expression="#[vars.orgCode == 'blingcapital']">
+                                <salesforce:query-all doc:name="Query all" doc:id="521dfda4-2de3-42ad-9257-f7ce5554f5d3" config-ref="Salesforce_Config-blingcapital" target="sfResults">
+                                    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                                </salesforce:query-all>
+                            </when>
+                            <when expression="#[vars.orgCode == 'seaxventures']">
+                                <salesforce:query-all doc:name="Query all" doc:id="38bdcf54-712e-4e74-a67c-734b06ea6641" config-ref="Salesforce_Config-seaxventures" target="sfResults">
+                                    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                                </salesforce:query-all>
+                            </when>
+                            <when expression="#[vars.orgCode == 'craftventures']">
+                                <salesforce:query-all doc:name="Query all" doc:id="d7d8c1bb-7d4d-4800-9065-443e266fe2c5" config-ref="Salesforce_Config-craftventures" target="sfResults">
+                                    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                                </salesforce:query-all>
+                            </when>
+                            <when expression="#[vars.orgCode == 'primemoverslab']">
+                                <salesforce:query-all doc:name="Query all" doc:id="d19cea28-3ad6-470c-bade-74f24560c3a6" config-ref="Salesforce_Config-primemoverslab" target="sfResults">
+                                    <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
+                                </salesforce:query-all>
+                            </when>
                          	<otherwise >
                             	<salesforce:query-all doc:name="Query all" doc:id="b2286d16-a183-42cd-845b-216e607e914b" config-ref="Salesforce_Config-demo" target="sfResults">
                     				<salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>

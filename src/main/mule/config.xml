@@ -84,6 +84,70 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
         </salesforce:oauth-user-pass-connection>
     </salesforce:sfdc-config>
     
+     <salesforce:sfdc-config name="Salesforce_Config-lowercarboncapital" doc:name="Salesforce Config-LowerCarbonCapital" doc:id="87dce630-f527-4fe1-8b5c-e52b9221ae5a" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.lowercarboncapital.consumerkey}" consumerSecret="${secure::sfdc.lowercarboncapital.consumersecret}" username="${sfdc.lowercarboncapital.username}" password="${secure::sfdc.lowercarboncapital.password}" securityToken="${secure::sfdc.lowercarboncapital.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-nextlegacy" doc:name="Salesforce Config-NextLegacy" doc:id="11c47bbc-bfca-4945-92ee-f125a84d95d4" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.nextlegacy.consumerkey}" consumerSecret="${secure::sfdc.nextlegacy.consumersecret}" username="${sfdc.nextlegacy.username}" password="${secure::sfdc.nextlegacy.password}" securityToken="${secure::sfdc.nextlegacy.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-susaventures" doc:name="Salesforce Config-SusaVentures" doc:id="ad0a7abb-9195-4326-b949-ee62ee8f83f4" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.susaventures.consumerkey}" consumerSecret="${secure::sfdc.susaventures.consumersecret}" username="${sfdc.susaventures.username}" password="${secure::sfdc.susaventures.password}" securityToken="${secure::sfdc.susaventures.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-goodwater" doc:name="Salesforce Config-GoodWater" doc:id="b89ed2e2-9add-43b3-ab68-1672afebbca2" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.goodwater.consumerkey}" consumerSecret="${secure::sfdc.goodwater.consumersecret}" username="${sfdc.goodwater.username}" password="${secure::sfdc.goodwater.password}" securityToken="${secure::sfdc.goodwater.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-blingcapital" doc:name="Salesforce Config-BlingCapital" doc:id="56b756bc-5258-4c9f-8d86-30210e53ccaf" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.blingcapital.consumerkey}" consumerSecret="${secure::sfdc.blingcapital.consumersecret}" username="${sfdc.blingcapital.username}" password="${secure::sfdc.blingcapital.password}" securityToken="${secure::sfdc.blingcapital.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-seaxventures" doc:name="Salesforce Config-SeaxVentures" doc:id="2ace4538-e0d7-4e0c-847e-427b9ffd9682" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.seaxventures.consumerkey}" consumerSecret="${secure::sfdc.seaxventures.consumersecret}" username="${sfdc.seaxventures.username}" password="${secure::sfdc.seaxventures.password}" securityToken="${secure::sfdc.seaxventures.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-craftventures" doc:name="Salesforce Config-CraftVentures" doc:id="dd3310a3-37a9-482a-a364-573921f2213c" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.craftventures.consumerkey}" consumerSecret="${secure::sfdc.craftventures.consumersecret}" username="${sfdc.craftventures.username}" password="${secure::sfdc.craftventures.password}" securityToken="${secure::sfdc.craftventures.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
+    <salesforce:sfdc-config name="Salesforce_Config-primemoverslab" doc:name="Salesforce Config-PrimeMoversLab" doc:id="3d7f8331-48ac-4a4f-bd31-16294b0310dc" >
+        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.primemoverslab.consumerkey}" consumerSecret="${secure::sfdc.primemoverslab.consumersecret}" username="${sfdc.primemoverslab.username}" password="${secure::sfdc.primemoverslab.password}" securityToken="${secure::sfdc.primemoverslab.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
+            <reconnection failsDeployment="true" >
+                <reconnect />
+            </reconnection>
+        </salesforce:oauth-user-pass-connection>
+    </salesforce:sfdc-config>
+    
     <validation:config name="Validation_Config" doc:name="Validation Config" doc:id="ac440128-4bb0-4984-9c7a-0ea6a36be4ba" />
 
 </mule>

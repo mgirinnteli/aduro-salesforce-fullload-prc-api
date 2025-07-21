@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:anypoint-mq="http://www.mulesoft.org/schema/mule/anypoint-mq"
+	xmlns:amqp="http://www.mulesoft.org/schema/mule/amqp"
+	xmlns:validation="http://www.mulesoft.org/schema/mule/validation"
+	xmlns:module-error-handler-plugin="http://www.mulesoft.org/schema/mule/module-error-handler-plugin" xmlns:os="http://www.mulesoft.org/schema/mule/os" xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce" xmlns:salesforce-composite="http://www.mulesoft.org/schema/mule/salesforce-composite" xmlns:error-handler-plugin="http://www.mulesoft.org/schema/mule/error-handler-plugin" xmlns:json-logger="http://www.mulesoft.org/schema/mule/json-logger" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/validation http://www.mulesoft.org/schema/mule/validation/current/mule-validation.xsd 
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/json-logger http://www.mulesoft.org/schema/mule/json-logger/current/mule-json-logger.xsd
+http://www.mulesoft.org/schema/mule/error-handler-plugin http://www.mulesoft.org/schema/mule/error-handler-plugin/current/mule-error-handler-plugin.xsd
+http://www.mulesoft.org/schema/mule/salesforce-composite http://www.mulesoft.org/schema/mule/salesforce-composite/current/mule-salesforce-composite.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd
+http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd
+http://www.mulesoft.org/schema/mule/module-error-handler-plugin http://www.mulesoft.org/schema/mule/module-error-handler-plugin/current/mule-module-error-handler-plugin.xsd
+http://www.mulesoft.org/schema/mule/amqp http://www.mulesoft.org/schema/mule/amqp/current/mule-amqp.xsd
+http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/mule/anypoint-mq/current/mule-anypoint-mq.xsd">
+	
+    <flow name="pf-sf-craftventures-full-load" doc:id="76e05e12-86ba-466a-9492-bfa5cee40a37">
+        <set-variable value="${sfdc.craftventures.orgId}" doc:name="Set orgId" variableName="orgId" />
+        <set-variable value="craftventures" doc:name="Set orgCode" doc:id="cc8e77ec-9ecf-48e5-927d-e1190eae9b32" variableName="orgCode" />
+        <logger level="INFO" doc:name="LOG: Start of the Job" doc:id="534edeb1-3db7-4516-91ef-34d6e2360c6d" message="***  SF Org Id:  #[vars.orgId default ''] - START SF FULL LOAD JOB ***"/>
+        <flow-ref doc:name="Call SF Bulk Query" doc:id="4678ca48-c627-45e7-9805-feab957ba94d" name="pf-common-sf-bulk-query"/>
+        <logger level="INFO" doc:name="LOG: End of the Job" doc:id="f3d4394c-35aa-4781-8361-f891480afd31" message="***  SF Org Id:  #[vars.orgId default ''] - END SF FULL LOAD JOB ***"/>
+	 </flow>
+
+</mule>

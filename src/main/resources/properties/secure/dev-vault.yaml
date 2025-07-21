@@ -11,6 +11,39 @@ sfdc:
     password: "![F5imz+MK8Xfb4Xx8qdms/9GoQhFwwqBGxseRZOn5hx0=]"
     token: "![CjNZh1jYNCfgfdUigpUJ3hUqCy9eolI7qyXaQtRH5zA=]"
     consumersecret: "![sD7JXtgkeut+2SR9zzs2ejoWA1W+sV+zlBexB2mQFZJ58kZIi8hm7QbkXKKfr6kfsTiJRFxigG/NjiWOXOnbaFXta44N/DDL4vAX2GXYNj8=]"
+  lowercarboncapital:
+    password: "![zKpn9K9xr3nTp1S/4U4dDw==]"
+    token: "![6TfM1gGBMWE9AwfqWYR5lUJy+21W1wfNDGUH25214ps=]"
+    consumersecret: "![QYw08ggG22NJIa6RNl5jLU8XYioxnppWV0KNHQXNhHMgW/nAAFkUUPsHiDCFZYHySXejlYap3onwZQ0EBAOqHJ9DvO5wY4bAqzsGpAn2vuo=]"
+  nextlegacy:
+    password: "![yzKTPt9j6GQoijuTKuqqCGsoywvjeV0Rn04KMcHphh8=]"
+    token: "![4ZsvTYZ3EoNQmysanElfkrKszL3Fd+BoYtFt9MJtP44=]"
+    consumersecret: "![64ynb7cd90/djt4RFlkZYucxHsf3ag9LNDTJmkoXzcwfXmCejWrvAWv3XGhQys7ELiAWZOEI41drkW6YrS8UWFB8TOVhAb81RpMSZsRM5d0=]"
+  susaventures:
+    password: "![rSMtXIUmxHXnOFHyI/q6Ku5sjaklpuTL50EvOIkpYY0=]"
+    token: "![mEVIgV9ATAtrQ6x+MtyiqX79nc6fG36M9iP6Amj9pE4=]"
+    consumersecret: "![JtYtVQj5FYRcLzmf/AF/qEJtOkC8nYef5nVr8rZf6cxrF9ZEESpX6JRSppbBA+R1u8Cb8Ih0JquwQtaL24tBKRf46zidDKQeVRYcN/wbEb0=]"
+  goodwater:
+    password: "![nszsZoBKQVviOxK9xXnns0oEVd7/ymJNNSf1WkqVfrU=]"
+    token: "![MdwrTnyHPqzfPFxdQOD+i7AsK5Hj/83NmS0msyYPU+g=]"
+    consumersecret: "![K/qVqA0iq1iXl6ysouzV1tMe1H4/ysgTSw+299bKi1iJPiu0q8vPu1FYlRQVmodGhIsPOLStAeygdAALkgJAn/YNW5GPzBGvd/9WcppyCk4=]"
+  blingcapital:
+    password: "![fnREXUHQe4USyxt4wM7vffvgPzqwG7rCGhfwA20qT1Q=]"
+    token: "![25k5XmEm1M7wNSwi02OyN2YZY+eiW536b0riRrKibpQ=]"
+    consumersecret: "![c8WowmLzPHTRnybjiMEpwXR5h7WnSRP3Pli7ZeSaJDG5SNLcv4gA9L3+ENXS1sUs4SQ8neYhVMgxpfFlN4OtFCbxe+ZfGGzf+B7XU/F0H4g=]"
+  seaxventures:
+    password: "![l5O20l8/eWVSVz4nEqLmPOMdoDM4yUgqlKCLu2u5Uwg=]"
+    token: "![ZtiubbUr3N8huFq02urA/czQV89bJwu6XS+C0Nnj+C0=]"
+    consumersecret: "![3tyd0cU8LBOjrw+CgOj1/JP+/VbczfExI4qdTWIKoDxDGJyctiQ0npJf6ZceJ97tO4PCmnCJjtYj0yTGF+BQ707HycWTTIvUsMel/TU/daU=]"
+  craftventures:
+    password: "![BFrz7NbHDs3oJw8XQ7pu+FyS54k4xaMRFC4QvR52Sp8=]"
+    token: "![22KeKqrJRHhHsCUsKSiXDbRikrvJ/bEJR8dKPNm4PQw=]"
+    consumersecret: "![VNzVr428At+5xSDscmN9mqVGgM++DxzKp0T85pyXgCPHUXFbO7BWyHcwkn6ddl2O86N/bj3at/FsBvmVGbC56VPONdygGE5qFfidT9AsQ40=]"
+  primemoverslab:  
+    password: "![K1iKgMyhi5VcxH6assdVI+RW0nY4JRr2DyJnjc+llyY=]"
+    token: "![MZ6WKXNAHlsyarFRYkONFGWcipYcgfc65eXTNP07kX4=]"
+    consumersecret: "![Y/BDuDfwB2LZ9Wwgdjq57VL0HEAJXZEv/ts6FHkSypyoVRWI1yZdiiK6nRVmqvayADhmTlefEqkjr4sHYV9THabjFI9lii2pC4KOk+YTYlA=]"
+    
 
 anypointmq:
   clientSecret: "![5qr08e0jQ/YCTfUG6xUuyIufaQ/RaEq1VXzxUWs5loGxXSMxciUdexawRzQq7Rmf]"
