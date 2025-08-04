@@ -60,14 +60,6 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
             url="${anypointmq.url}" />
     </anypoint-mq:config>
     
-    <salesforce:sfdc-config name="Salesforce_Config-demo" doc:name="Salesforce Config-Demo" doc:id="c5e20644-c347-4124-b7bc-e5f2331cde38" >
-        <salesforce:oauth-user-pass-connection consumerKey="${sfdc.demo.consumerkey}" consumerSecret="${secure::sfdc.demo.consumersecret}" username="${sfdc.demo.username}" password="${secure::sfdc.demo.password}" securityToken="${secure::sfdc.demo.token}" tokenEndpoint="${sfdc.demo.tokenendpoint}" >
-            <reconnection failsDeployment="true" >
-                <reconnect />
-            </reconnection>
-        </salesforce:oauth-user-pass-connection>
-    </salesforce:sfdc-config>
-    
     <salesforce:sfdc-config name="Salesforce_Config-signalfire" doc:name="Salesforce Config-SignalFire" doc:id="64308fc6-3938-4952-bea0-7335e764c19a" >
         <salesforce:oauth-user-pass-connection consumerKey="${sfdc.signalfire.consumerkey}" consumerSecret="${secure::sfdc.signalfire.consumersecret}" username="${sfdc.signalfire.username}" password="${secure::sfdc.signalfire.password}" securityToken="${secure::sfdc.signalfire.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
             <reconnection failsDeployment="true" >

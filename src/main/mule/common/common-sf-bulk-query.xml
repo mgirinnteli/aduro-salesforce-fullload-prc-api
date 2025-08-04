@@ -105,12 +105,12 @@ var qf = vars.queryFields
                                     <salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
                                 </salesforce:query-all>
                             </when>
-                         	<otherwise >
-                            	<salesforce:query-all doc:name="Query all" doc:id="b2286d16-a183-42cd-845b-216e607e914b" config-ref="Salesforce_Config-demo" target="sfResults">
-                    				<salesforce:salesforce-query><![CDATA[#[vars.sfQuery]]]></salesforce:salesforce-query>
-                    			</salesforce:query-all>
+                        <otherwise>
+                            <logger level="INFO" doc:name="Logger" doc:id="789583f3-e13e-47b2-ae3b-25a5734241bf" message="Skipping"/>
+
                            	</otherwise>
-                       	</choice>
+                       	
+</choice>
                        	<logger level="INFO" doc:name="LOG: Record Count" doc:id="958c5f70-91fb-4377-8c96-869c95a7efc2" message="*** Org Id: '#[vars.orgId]' - Page #[vars.pageNumber] - #[vars.entityName] FETCH RESULTS - SF Org Id: '#[vars.orgId]' - Record Count: '#[sizeOf(vars.sfResults default [])]' ***" />
                        	<validation:is-true doc:name="Check if page is not empty" doc:id="0eb28ee7-8350-42a8-9938-98640c24ab43" config-ref="Validation_Config" expression="#[sizeOf(vars.sfResults default [])&gt; 0]" message="Empty Results from Salesforce"/>
                        	<ee:transform doc:name="DW: Build Canonical Message" doc:id="2d41cfc5-a949-4aac-a90a-f08cafced90c">

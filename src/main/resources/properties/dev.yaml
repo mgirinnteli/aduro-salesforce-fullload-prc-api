@@ -22,11 +22,6 @@ sfdc:
     frequency: "3000"
     attempts: "2"
   tokenendpoint: "https://login.salesforce.com/services/oauth2/token"
-  demo:
-    username: "bz+fundpaneldemo@nteligroup.com"
-    consumerkey: "3MVG92bg6BUCmlUby5YQPX6UTNdwdE5p86KSWdVH2bFB6sAnTDfxKhlwFGyoUP9H3QyprnRnyqKjEYaVVYrDw"
-    tokenendpoint: "https://test.salesforce.com/services/oauth2/token"
-    orgId: "00DDk000000EA8XMAW"
   signalfire:
     username: "bz@nteligroup.com.signalfire-pilot"
     consumerkey: "3MVG9fMtCkV6eLhcqmpDEUwO1jIw_w1qcR.fAlb3o62ijFcj_MFMc3CW7wKe45ZBrXOhpYftCOahmrfk9i_rW"
