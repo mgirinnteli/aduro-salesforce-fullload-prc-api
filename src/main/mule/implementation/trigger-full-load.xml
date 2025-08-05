@@ -9,6 +9,13 @@ http://www.mulesoft.org/schema/mule/json-logger http://www.mulesoft.org/schema/m
     
     <flow name="pf-post-trigger">
         <json-logger:logger-scope doc:name="Logger scope" doc:id="622eb62e-d254-4ab4-a761-d21dea412c29" configurationRef="JSON_Logger_Config" scopeTracePoint="FLOW_LOGIC_SCOPE" correlationId="#[vars.rra_transaction_id]">
+            <set-variable value="#[payload]" doc:name="Set originalPayload" doc:id="dfceae68-a8bb-4efa-b5e9-0d3bab7be017" variableName="originalPayload"/>
+            <json-logger:logger doc:name="LOG: Original Request" doc:id="12cf8177-6880-4fd9-b89b-112db1a1deaf" config-ref="JSON_Logger_Config" message="Original Request" tracePoint="AFTER_REQUEST">
+                <json-logger:content ><![CDATA[#[import modules::JSONLoggerModule output application/json ---
+{
+    payload: JSONLoggerModule::stringifyNonJSON(vars.originalPayload) 
+}]]]></json-logger:content>
+            </json-logger:logger>
             <ee:transform doc:name="DW: Return Response" doc:id="f54fd153-5a22-4196-9537-b602fc546da8" >
                 <ee:message >
                     <ee:set-payload ><![CDATA[%dw 2.0
@@ -33,39 +40,38 @@ output application/java
             </ee:transform>
             <async doc:name="Async" doc:id="94875bbb-3bed-4b7f-90a5-0bf1a63d14a0" >
                 <choice doc:name="Check Org Id" doc:id="d19e72a0-a218-4981-bb72-1976ece53dee" >
-                    <when expression="#[payload.orgId == p('sfdc.signalfire.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.signalfire.orgId')]">
                         <flow-ref doc:name="Call SignalFire Full Load" doc:id="31b8a7d3-50c9-438a-9cd3-40415d95c2d7" name="pf-sf-signalfire-full-load" />
                     </when>
-                    <when expression="#[payload.orgId == p('sfdc.caffeinatedcapital.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.caffeinatedcapital.orgId')]">
                         <flow-ref doc:name="Call Caffeinated Capital Full Load" doc:id="626f7c92-7b5b-41cf-a9b4-833192b6736c" name="pf-sf-caffeinatedcapital-full-load"/>
                     </when>
-                    <when expression="#[payload.orgId == p('sfdc.lowercarboncapital.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.lowercarboncapital.orgId')]">
                         <flow-ref doc:name="Call Lower Carbon Capital Full Load" doc:id="108ad44e-ed8d-40f0-ad27-8e4d26e58b35" name="pf-sf-lowercarboncapital-full-load"/>
                     </when>
-                    <when expression="#[payload.orgId == p('sfdc.nextlegacy.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.nextlegacy.orgId')]">
                         <flow-ref doc:name="Call Next Legacy Full Load" doc:id="6c6d3864-f17a-46bd-b84e-038fc9672c02" name="pf-sf-nextlegacy-full-load"/>
                     </when>
-                    <when expression="#[payload.orgId == p('sfdc.susaventures.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.susaventures.orgId')]">
                         <flow-ref doc:name="Call Susa Ventures Full Load" doc:id="c8ae8c96-f7d3-4806-9b37-f29964cd6bc4" name="pf-sf-susaventures-full-load"/>
                     </when>
-                    <when expression="#[payload.orgId == p('sfdc.goodwater.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.goodwater.orgId')]">
                         <flow-ref doc:name="Call Good Water Full Load" doc:id="0a5d5f15-a9b3-40d3-afca-a5d7adc36c39" name="pf-sf-goodwater-full-load"/>
                     </when>
-                    <when expression="#[payload.orgId == p('sfdc.blingcapital.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.blingcapital.orgId')]">
                         <flow-ref doc:name="Call Bling Capital Full Load" doc:id="3ac17c7d-3413-45c2-a413-761fe8ad5a1b" name="pf-sf-blingcapital-full-load"/>
                     </when>
-                    <when expression="#[payload.orgId == p('sfdc.seaxventures.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.seaxventures.orgId')]">
                          <flow-ref doc:name="Call Seax Ventures Full Load" doc:id="f60e4d81-4baf-417e-b8e5-6e0029922318" name="pf-sf-seaxventures-full-load"/>
                     </when>
-                    <when expression="#[payload.orgId == p('sfdc.craftventures.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.craftventures.orgId')]">
                         <flow-ref doc:name="Call Craft Ventures Full Load" doc:id="88d937e7-90df-49f3-b8c5-6be36517b8fe" name="pf-sf-craftventures-full-load"/>
                     </when>
-                    <when expression="#[payload.orgId == p('sfdc.primemoverslab.orgId')]">
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.primemoverslab.orgId')]">
                     	<flow-ref doc:name="Call Prime Movers Lab Full Load" doc:id="15e8dc29-fb96-44fb-9e65-b51b7d377505" name="pf-sf-primemoverslab-full-load"/>
                     </when>
                     <otherwise>
-                        <logger level="INFO" doc:name="LOG: Could not find SF Org By Id" doc:id="b29a0036-b24d-4635-88e8-ee6121e2cde6" message="Could not find SF Org By Id: #[payload.orgId default '']"/>
-
+                        <logger level="INFO" doc:name="LOG: Could not find SF Org By Id" doc:id="b29a0036-b24d-4635-88e8-ee6121e2cde6" message="Could not find SF Org By Id: #[vars.originalPayload.orgId default '']"/>
                     </otherwise>
                 </choice>
             </async>
