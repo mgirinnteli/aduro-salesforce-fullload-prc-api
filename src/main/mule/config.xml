@@ -76,7 +76,7 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
         </salesforce:oauth-user-pass-connection>
     </salesforce:sfdc-config>
     
-     <salesforce:sfdc-config name="Salesforce_Config-lowercarboncapital" doc:name="Salesforce Config-LowerCarbonCapital" doc:id="87dce630-f527-4fe1-8b5c-e52b9221ae5a" >
+    <salesforce:sfdc-config name="Salesforce_Config-lowercarboncapital" doc:name="Salesforce Config-LowerCarbonCapital" doc:id="87dce630-f527-4fe1-8b5c-e52b9221ae5a" >
         <salesforce:oauth-user-pass-connection consumerKey="${sfdc.lowercarboncapital.consumerkey}" consumerSecret="${secure::sfdc.lowercarboncapital.consumersecret}" username="${sfdc.lowercarboncapital.username}" password="${secure::sfdc.lowercarboncapital.password}" securityToken="${secure::sfdc.lowercarboncapital.token}" tokenEndpoint="${sfdc.tokenendpoint}" >
             <reconnection failsDeployment="true" >
                 <reconnect />

@@ -262,5 +262,11 @@
   	"sfEntity": "aduro__Company_Summary__c",
   	"sdEntity": "CompanySummary",
     "sfFields":"aduro__amount_invested__c,aduro__amount_sold__c,aduro__category__c,aduro__current_cost__c,aduro__current_ownership__c,aduro__current_shares__c,aduro__description__c,aduro__external_id__c,aduro__fair_value__c,aduro__financial_entry_link__c,aduro__financial_entry_url__c,aduro__fund_family__c,aduro__gross_irr__c,aduro__irr_calculation_inprogress__c,aduro__irr_snapshots_updated_date__c,aduro__key__c,aduro__metro_area__c,aduro__numberofrounds__c,aduro__ownership__c,aduro__previously_known_as__c,aduro__proceeds__c,aduro__realized_gain_loss__c,aduro__reserves__c,aduro__round_tracker_link__c,aduro__round_tracker_url__c,aduro__sector__c,aduro__shares_purchased__c,aduro__shares_sold__c,aduro__shipping_city__c,aduro__shipping_country__c,aduro__shipping_postal_code__c,aduro__shipping_state__c,aduro__shipping_street__c,aduro__stage__c,aduro__subject_to_ca_sb54_reporting__c,aduro__ticker_symbol__c,aduro__total_committed_amount__c,aduro__total_fully_diluted_shares__c,aduro__total_gain_loss__c,aduro__total_value__c,aduro__unrealized_gain_loss__c,aduro__website__c,aduro__xero_gl_code__c,aduro__xeroglcode__c,createdbyid,createddate,id,isdeleted,lastactivitydate,lastmodifiedbyid,lastmodifieddate,lastreferenceddate,lastvieweddate,name,ownerid,systemmodstamp"
+  },
+  {
+    "entityName": "ATTACHMENT",
+  	"sfEntity": "Attachment",
+  	"sdEntity": "Attachment",
+    "sfFields":"Id,Name,ContentType,BodyLength,Description,CreatedDate,LastModifiedDate,ParentId"
   }
 ]
