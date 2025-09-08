@@ -71,7 +71,17 @@ output application/java
                     	<flow-ref doc:name="Call Prime Movers Lab Full Load" doc:id="15e8dc29-fb96-44fb-9e65-b51b7d377505" name="pf-sf-primemoverslab-full-load"/>
                     </when>
                     <otherwise>
-                        <logger level="INFO" doc:name="LOG: Could not find SF Org By Id" doc:id="b29a0036-b24d-4635-88e8-ee6121e2cde6" message="Could not find SF Org By Id: #[vars.originalPayload.orgId default '']"/>
+                        <logger level="INFO" doc:name="LOG: Triggering Full Loads for All SF Orgs" doc:id="b29a0036-b24d-4635-88e8-ee6121e2cde6" message="Triggering Full Load for All SF Orgs..."/>
+                        <flow-ref doc:name="Call SignalFire Full Load" doc:id="9a49b0f1-69d7-41b6-8ed4-f18c3aac456d" name="pf-sf-signalfire-full-load" />
+                        <flow-ref doc:name="Call Caffeinated Capital Full Load" doc:id="ecf94877-1798-46a5-8e7a-92bec929010b" name="pf-sf-caffeinatedcapital-full-load"/>
+                        <flow-ref doc:name="Call Lower Carbon Capital Full Load" doc:id="f318f747-804c-4a3e-bad7-5358ca124fd2" name="pf-sf-lowercarboncapital-full-load"/>
+                        <flow-ref doc:name="Call Next Legacy Full Load" doc:id="c7d85d36-5e26-4c79-8567-5bd79666ecaa" name="pf-sf-nextlegacy-full-load"/>
+                        <flow-ref doc:name="Call Susa Ventures Full Load" doc:id="b8091041-ef1b-42b6-af9f-5b9fcf2adac0" name="pf-sf-susaventures-full-load"/>
+                        <flow-ref doc:name="Call Good Water Full Load" doc:id="9e03f82e-aa3a-4b82-a17b-71f4098cc751" name="pf-sf-goodwater-full-load"/>
+                        <flow-ref doc:name="Call Bling Capital Full Load" doc:id="24bcab51-bded-4774-87ab-69afe6f77217" name="pf-sf-blingcapital-full-load"/>
+                        <flow-ref doc:name="Call Seax Ventures Full Load" doc:id="5d08780a-d401-4553-aa19-4ffa2fc249e3" name="pf-sf-seaxventures-full-load"/>
+                        <flow-ref doc:name="Call Craft Ventures Full Load" doc:id="59f7acaa-1e88-4e93-87a7-6fca684aaa21" name="pf-sf-craftventures-full-load"/>
+                        <flow-ref doc:name="Call Prime Movers Lab Full Load" doc:id="de842336-d34e-44b2-98ca-54dc2c6b6dcc" name="pf-sf-primemoverslab-full-load"/>
                     </otherwise>
                 </choice>
             </async>
