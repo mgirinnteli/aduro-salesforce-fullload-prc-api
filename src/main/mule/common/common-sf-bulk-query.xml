@@ -126,7 +126,7 @@ vars.sfResults[-1].Id
 
                     	</ee:variables>
                  	</ee:transform>
-                    <json-logger:logger doc:name="LOG: Canonical Payload" doc:id="475417d1-522e-493d-a247-08730911268f" config-ref="JSON_Logger_Config" message="#['SF Org Id: ' ++ vars.orgId default '' ++ ' - Canonical Payload']" tracePoint="AFTER_TRANSFORM" priority="DEBUG" />
+                    <json-logger:logger doc:name="LOG: Canonical Payload" doc:id="475417d1-522e-493d-a247-08730911268f" config-ref="JSON_Logger_Config" message="#['SF Org Id: ' ++ vars.orgId default '' ++ ' - Canonical Payload']" tracePoint="AFTER_TRANSFORM" priority="DEBUG"/>
                     <try doc:name="Try" doc:id="053dc9fd-4086-4c7e-a825-f9fe36dac69c">
                   	    <anypoint-mq:publish doc:name="Publish to Anypoint MQ" doc:id="88db79c8-0b43-48c1-a575-be90c612752f" config-ref="Anypoint_MQ_Config" destination="${anypointmq.salesforceExchange}" outputMimeType="application/json">
                         	<anypoint-mq:properties><![CDATA[#[output application/java 
