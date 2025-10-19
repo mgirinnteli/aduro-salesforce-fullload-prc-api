@@ -280,5 +280,11 @@
   	"sfEntity": "ContentDocument",
   	"sdEntity": "ContentDocument",
     "sfFields": "Id,CreatedById,CreatedDate,LastModifiedById,LastModifiedDate,IsArchived,ArchivedById,ArchivedDate,IsDeleted,OwnerId,SystemModstamp,Title,PublishStatus,LatestPublishedVersionId,LastViewedDate,LastReferencedDate,Description,ContentSize,FileType,FileExtension,SharingOption,SharingPrivacy,ContentModifiedDate"
+  },
+  {
+    "entityName": "RECORDTYPE",
+  	"sfEntity": "RecordType",
+  	"sdEntity": "RecordType",
+    "sfFields": "BusinessProcessId,CreatedById,CreatedDate,Description,DeveloperName,Id,IsActive,LastModifiedById,LastModifiedDate,Name,NamespacePrefix,SobjectType,SystemModstamp"
   }
 ]
