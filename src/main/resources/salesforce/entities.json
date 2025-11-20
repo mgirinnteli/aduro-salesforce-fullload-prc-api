@@ -1,5 +1,5 @@
 [
-    {
+  {
     "entityName": "ADVISOR_EXPENSE",
   	"sfEntity": "aduro__Advisor_Expense__c",
   	"sdEntity": "AdvisorExpense",
@@ -286,5 +286,17 @@
   	"sfEntity": "RecordType",
   	"sdEntity": "RecordType",
     "sfFields": "BusinessProcessId,CreatedById,CreatedDate,Description,DeveloperName,Id,IsActive,LastModifiedById,LastModifiedDate,Name,NamespacePrefix,SobjectType,SystemModstamp"
+  },
+  {
+    "entityName": "ADURO_DOCUMENT",
+  	"sfEntity": "aduro__Document__c",
+  	"sdEntity": "AduroDocument",
+    "sfFields": "aduro__Account__c, aduro__Capital_Commitment__c, aduro__Client_Wide_Document__c, aduro__CompanySummary__c, aduro__Document_Date__c, aduro__Document_Date_String__c, aduro__Document_Subtype__c, aduro__Financial__c, aduro__Full_Name__c, aduro__Fund__c, aduro__Fund_Communication__c, aduro__Fundraising_Type__c, aduro__Hide_From_Portal__c, aduro__Investment_Vehicle_Name__c, aduro__Is_Multi_Part_Document__c, aduro__MassDownload__c, aduro__Number_of_Attachments__c, aduro__Portal_Document__c, aduro__Type__c, aduro__Update_Request__c, aduro__Uploaded_From_Portal_By_Contact__c, aduro__Uploaded_From_Portal_Date__c, aduro__URL__c, CreatedById, CreatedDate, Id, IsDeleted, LastModifiedById, LastModifiedDate, LastReferencedDate, LastViewedDate, Name, OwnerId, RecordTypeId, SystemModstamp"
+  },
+  {
+    "entityName": "ADURO_DOCUMENT_EXCLUSION_RULE",
+  	"sfEntity": "aduro__Document_Exclusion_Rule__c",
+  	"sdEntity": "AduroDocumentExclusionRule",
+    "sfFields": "aduro__Exclude_Access_For__c, aduro__Exclude_Access_for_Investment_Vehicle__c, aduro__Exclude_Access_To__c, CreatedById, CreatedDate, Id, IsDeleted, LastActivityDate, LastModifiedById, LastModifiedDate, LastReferencedDate, LastViewedDate, Name, OwnerId, SystemModstamp"
   }
 ]
