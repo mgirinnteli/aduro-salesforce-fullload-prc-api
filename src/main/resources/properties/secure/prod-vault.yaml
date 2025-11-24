@@ -1,7 +1,6 @@
 sfdc:
-  password: "![MO1Dnbe21qGWX6psBtW4FQ==]"
-  token: "![ikjnjJCIYSqEHGq4UZUBRcpBZpwpDgKnEvGn99skzK0=]"
-  consumersecret: "![y1XAncBpuhpZXR+M1NlTXZOgK2WHxWRDrrzUwF0s6EJDgr0vw6bMsCDnC9LZqGQO3h+Zx1G4jI/G4SWuuf90HzLAdTStmQyLLhn+fAlu/38=]"
-
+  consumerkey: "![SwC7DrX1QHTxy/96yY1WC7/3YpqxJB4bm3QrXGVzEbFXxFnJMIM2cSCbmUwZbGKutf2ZEnSX0eG5GcifKB6oiKUEJz7qBYg2/lMvh5IproY/XJYufMQ/CqkVuP/J2pTm]"
+  password: "![ZSvv9uiVg7WjmlngZtiXDP22JNpCMphZejjulv4g1lg=]"
+  
 anypointmq:
   clientSecret: "![5qr08e0jQ/YCTfUG6xUuyIufaQ/RaEq1VXzxUWs5loGxXSMxciUdexawRzQq7Rmf]"

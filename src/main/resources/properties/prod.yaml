@@ -18,15 +18,34 @@ maxPages: "1000"
 cron.expression.sfdc: "0 0 5 * * ?"
 
 sfdc:
-  username: "bz+fundpaneldemo@nteligroup.com"
-  consumerkey: "3MVG92bg6BUCmlUby5YQPX6UTNdwdE5p86KSWdVH2bFB6sAnTDfxKhlwFGyoUP9H3QyprnRnyqKjEYaVVYrDw"
-  tokenendpoint: "https://test.salesforce.com/services/oauth2/token"
-  orgId: "00DDk000000EA8XMAW"
   connection:
     timeout: "120"
   reconnect:
     frequency: "3000"
     attempts: "2"
+  tokenendpoint: "https://login.salesforce.com/services/oauth2/token"
+  audienceUrl: "https://login.salesforce.com"
+  keystore: "jks/dev/jwtkeystore.p12"
+  signalfire:
+    principal: "ir@signalfire.com"
+  caffeinatedcapital:
+    principal: "caffeinatedcapital@aduroadvisors.com"
+  lowercarboncapital:
+    principal: "lowercarbon@aduroadvisors.com"
+  nextlegacy:
+    principal: "nextlegacy@aduroadvisors.com"
+  susaventures:
+    principal: "aduro-fundpanel-uat1@fundpanel.io"
+  goodwater:
+    principal: "goodwater@aduroadvisors.com"
+  blingcapital:
+    principal: "blingcapital@aduroadvisors.com"
+  seaxventures:
+    principal: "susaventures@aduroadvisors.com"
+  craftventures:
+    principal: "craft@aduroadvisors.com"
+  primemoverslab:  
+    principal: "primemovers@aduroadvisors.com" 
   
 anypointmq:
   url: "https://mq-us-east-1.anypoint.mulesoft.com/api/v1/organizations/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/environments/f682e196-03c9-493a-ba10-299236acb7a9"

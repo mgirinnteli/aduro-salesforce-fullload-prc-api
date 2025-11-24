@@ -22,46 +22,28 @@ sfdc:
     frequency: "3000"
     attempts: "2"
   tokenendpoint: "https://login.salesforce.com/services/oauth2/token"
+  audienceUrl: "https://login.salesforce.com"
+  keystore: "jks/dev/jwtkeystore.p12"
   signalfire:
-    username: "bz@nteligroup.com.signalfire-pilot"
-    consumerkey: "3MVG9fMtCkV6eLhcqmpDEUwO1jIw_w1qcR.fAlb3o62ijFcj_MFMc3CW7wKe45ZBrXOhpYftCOahmrfk9i_rW"
-    orgId: "00Dj0000000HhuKEAS"
+    principal: "ir@signalfire.com"
   caffeinatedcapital:
-    username: "bz@nteligroup.com.cafcap-pilot"
-    consumerkey: "3MVG9sG9Z3Q1Rlbe5kI8K75NxVMy4uEHY.KDLD3dG0NYsqmZHbF.ODghrmlbz7su281pUKLjCgRqn1.IR8vhL"
-    orgId: "00D1a000000HHqEEAW"
+    principal: "caffeinatedcapital@aduroadvisors.com"
   lowercarboncapital:
-    username: "bz@nteligroup.com.lowercarbon-pilot"
-    consumerkey: "3MVG9Nk1FpUrSQHfXclJ9fuqXHmrYiGiVbxZRXw4A.i8ydPqh_pUwBG6ZwNPoS2T84QFHmov60xxqkMJ8xD2A"
-    orgId: "00D5Y000002W93zUAC"  
+    principal: "lowercarbon@aduroadvisors.com"
   nextlegacy:
-    username: "bz@nteligroup.com.nextlegacy-pilot"
-    consumerkey: "3MVG9zlTNB8o8BA3waukRqcgFxatBJEAihcdOTwfSOlrr2EBiUvTd.WXxW2538HvhJWNCBkMZCPDNPc.wNCfd"
-    orgId: "00Df40000000v6aEAA" 
+    principal: "nextlegacy@aduroadvisors.com"
   susaventures:
-    username: "bz@nteligroup.com.susa-pilot"
-    consumerkey: "3MVG9fMtCkV6eLhdnDBGvTR1TJPZzoo1NtVxdSYONQTXK8f3QAxlT3sP.lXbLMf_Wx.GiwmXyvkrM4p8pojXt"
-    orgId: "00Dj0000001msAMEAY"
+    principal: "aduro-fundpanel-uat1@fundpanel.io"
   goodwater:
-    username: "bz@nteligroup.com.goodwater-pilot"
-    consumerkey: "3MVG9QDx8IX8nP5Rg.yiMPaeRdTtF78mjtISxQvg1bZHKSvchhIjMoLa0PbBjJ7W4lrxbknEF4WqQ_TKSuOEJ"
-    orgId: "00DU0000000MH3TMAW"
+    principal: "goodwater@aduroadvisors.com"
   blingcapital:
-    username: "bz@nteligroup.com.bling-pilot"
-    consumerkey: "3MVG9vrJTfRxlfl6SZMrgFX_RMACqbAgu4Hw0xBPvgglFfCXKsfp62HE9U4gtS2AzPpyOvuc5q4pNiOMAM.hh"
-    orgId: "00D5A000000BnLcUAK"
+    principal: "blingcapital@aduroadvisors.com"
   seaxventures:
-    username: "bz@nteligroup.com.seax-pilot"
-    consumerkey: "3MVG9_XwsqeYoueII31yLLiNqzotmYEXPBY9VvK5xhju0LhmrIJbNkBC5818p6zrI1ubM7.r6vW_I4zAfXzgJ"
-    orgId: "00D3k000000vGOKEA2"
+    principal: "susaventures@aduroadvisors.com"
   craftventures:
-    username: "bz@nteligroup.com.craft-pilot"
-    consumerkey: "3MVG9zlTNB8o8BA1A99mfpO53WPNH78A6WapVBvmqDuP8EV0oRC.nq08rjfMYPWOJ5q95LUSoVm4o27yvLRUD"
-    orgId: "00Df4000003kiGBEAY"
-  primemoverslab:
-    username: "bz@nteligroup.com.primemovers-pilot"
-    consumerkey: "3MVG9dZJodJWITStShQVUtojA3qI5WegYJnWeTKebfnhioMnX3YA36EQprz9zeuWtKmCbqCuPDhXLcXk7cU7j"
-    orgId: "00D0b000000E30hEAC"
+    principal: "craft@aduroadvisors.com"
+  primemoverslab:  
+    principal: "primemovers@aduroadvisors.com" 
 
 anypointmq:
   url: "https://mq-us-east-1.anypoint.mulesoft.com/api/v1/organizations/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/environments/f682e196-03c9-493a-ba10-299236acb7a9"
