@@ -28,24 +28,34 @@ sfdc:
   keystore: "jks/dev/jwtkeystore.p12"
   signalfire:
     principal: "ir@signalfire.com"
+    orgId: "00Dj0000000HhuKEAS"
   caffeinatedcapital:
     principal: "caffeinatedcapital@aduroadvisors.com"
+    orgId: "00D1a000000HHqEEAW"
   lowercarboncapital:
     principal: "lowercarbon@aduroadvisors.com"
+    orgId: "00D5Y000002W93zUAC"
   nextlegacy:
     principal: "nextlegacy@aduroadvisors.com"
+    orgId: "00Df40000000v6aEAA"
   susaventures:
     principal: "aduro-fundpanel-uat1@fundpanel.io"
+    orgId: "00Dj0000001msAMEAY"
   goodwater:
     principal: "goodwater@aduroadvisors.com"
+    orgId: "00DU0000000MH3TMAW"
   blingcapital:
     principal: "blingcapital@aduroadvisors.com"
+    orgId: "00D5A000000BnLcUAK"
   seaxventures:
     principal: "susaventures@aduroadvisors.com"
+    orgId: "00Df4000003kiGBEAY"
   craftventures:
     principal: "craft@aduroadvisors.com"
+    orgId: "00Df4000003kiGBEAY"
   primemoverslab:  
-    principal: "primemovers@aduroadvisors.com" 
+    principal: "primemovers@aduroadvisors.com"
+    orgId: "00D0b000000E30hEAC" 
   
 anypointmq:
   url: "https://mq-us-east-1.anypoint.mulesoft.com/api/v1/organizations/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/environments/f682e196-03c9-493a-ba10-299236acb7a9"
