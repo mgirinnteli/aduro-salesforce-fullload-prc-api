@@ -24,36 +24,2052 @@ sfdc:
   tokenendpoint: "https://login.salesforce.com/services/oauth2/token"
   audienceUrl: "https://login.salesforce.com"
   keystore: "jks/dev/jwtkeystore.p12"
-  signalfire:
-    principal: "ir@signalfire.com"
-    orgId: "00Dj0000000HhuKEAS"
-  caffeinatedcapital:
-    principal: "caffeinatedcapital@aduroadvisors.com"
-    orgId: "00D1a000000HHqEEAW"
-  lowercarboncapital:
-    principal: "lowercarbon@aduroadvisors.com"
-    orgId: "00D5Y000002W93zUAC"
-  nextlegacy:
-    principal: "nextlegacy@aduroadvisors.com"
-    orgId: "00Df40000000v6aEAA"
-  susaventures:
-    principal: "aduro-fundpanel-uat1@fundpanel.io"
-    orgId: "00Dj0000001msAMEAY"
-  goodwater:
-    principal: "goodwater@aduroadvisors.com"
-    orgId: "00DU0000000MH3TMAW"
+  org776:
+   principal: "776@aduroadvisors.com"
+   orgId: "00D4W000002SzmxUAC"
+  org10hcapital:
+    principal: "10hcapital@aduroadvisors.com"
+    orgId: "00DHn000001PghLMAS"
+  org11.2capital:
+    principal: "112capital@aduroadvisors.com"
+    orgId: "00DDm000000L3iAMAS"
+  org111westcapital:
+    principal: "111westcapital@aduroadvisors.com"
+    orgId: "00D5e0000013yT9EAI"
+  org186ventures:
+    principal: "186ventures@aduroadvisors.com"
+    orgId: "00DDm000000JHbOMAW"
+  org1984ventures:
+    principal: "1984@aduroadvisors.com"
+    orgId: "00D1I000003GtxCUAS"
+  org1stcoursecapital:
+    principal: "1stcoursecapital@aduroadvisors.com"
+    orgId: "00D1U000000xHUTUA2"
+  org201ventures:
+    principal: "201vc@aduroadvisors.com"
+    orgId: "00DHn000001PgBJMA0"
+  org2045ventures:
+    principal: "2045ventures@aduroadvisors.com"
+    orgId: "00D4W000007PoErUAK"
+  org2048ventures:
+    principal: "2048ventures@aduroadvisors.com"
+    orgId: "00DDm000000JM3CMAW"
+  org3.0fund:
+    principal: "3.0fund@aduroadvisors.com"
+    orgId: "00D1U000000tAOSUA2"
+  org359capitalllc:
+    principal: "359capital@aduroadvisors.com"
+    orgId: "00Da500001O0UKxEAN"
+  org3spoke:
+    principal: "3spoke@aduroadvisors.com"
+    orgId: "00Df4000001d36cEAA"
+  org4612group:
+    principal: "4612@aduroadvisors.com"
+    orgId: "00Dfo000005FmMfEAK"
+  org645ventures:
+    principal: "645ventures@aduroadvisors.com"
+    orgId: "00DDm000000JHyJMAW"
+  org8-bitcapital:
+    principal: "8bitcapital@aduroadvisors.com"
+    orgId: "00DHn000001REnyMAG"
+  82vs:
+    principal: "82vs@aduroadvisors.com"
+    orgId: "00DDp000000fUhsMAE"
+  astarpartners:
+    principal: "astar@aduroadvisors.com"
+    orgId: "00D5e000004hRrAEAU"
+  acapitalventures:
+    principal: "acapital@aduroadvisors.com"
+    orgId: "00Dj00000028SNOEA2"
+  abstractventures:
+    principal: "abstract@aduroadvisors.com"
+    orgId: "00Df2000001IZEoEAO"
+  acceleprise:
+    principal: "acceleprise@aduroadvisors.com"
+    orgId: "00D8Y000001a4GPUAY"
+  acrosscapital:
+    principal: "acrosscapital@aduroadvisors.com"
+    orgId: "00D8a000003CRl7EAG"
+  activatecapital:
+    principal: "activatecapital@aduroadvisors.com"
+    orgId: "00DHu000001fuRqMAI"
+  activecapital:
+    principal: "activecapital@aduroadvisors.com"
+    orgId: "00D8Y000000fxM3UAI"
+  advancitcapital:
+    principal: "advancit@aduroadvisors.com"
+    orgId: "00D36000000jKRBEA2"
+  adverbventures:
+    principal: "adverb@aduroadvisors.com"
+    orgId: "00Dfo000003jgcTEAQ"
+  aforecapital:
+    principal: "afore@aduroadvisors.com"
+    orgId: "00D410000007koCEAQ"
+  age1:
+    principal: "age1@aduroadvisors.com"
+    orgId: "00D4S000001btofUAA"
+  ahoycapital:
+    principal: "ahoycapital@aduroadvisors.com"
+    orgId: "00Df4000004kf9KEAQ"
+  airtreevc:
+    principal: "airtree@aduroadvisors.com"
+    orgId: "00D41000002kr9GEAQ"
+  alamere:
+    principal: "alamere@aduroadvisors.com"
+    orgId: "00D6A000001kZpwUAE"
+  alaris:
+    principal: "alaris@aduroadvisors.com"
+    orgId: "00DfL00000AcPgGUAV"
+  alexiaventures:
+    principal: "alexiaventures@aduroadvisors.com"
+    orgId: "00D3h000001yWnBEAU"
+  alignventures:
+    principal: "alignventures@aduroadvisors.com"
+    orgId: "00D8Y000001QTSjUAO"
+  alignmentgrowthmanagement:
+    principal: "alignmentgrowth@aduroadvisors.com"
+    orgId: "00DfL000001yuT6UAI"
+  alleycorp:
+    principal: "alleycorp@aduroadvisors.com"
+    orgId: "00DDn00000AvGk7MAF"
+  allomerinnovationholdings:
+    principal: "allomer@aduroadvisors.com"
+    orgId: "00D6g000000uw6GEAQ"
+  allumiaventures:
+    principal: "allumia@aduroadvisors.com"
+    orgId: "00DfL000004JZQCUA4"
+  alphabridgefund:
+    principal: "abvfund@aduroadvisors.com"
+    orgId: "00D5Y000001MA1SUAW"
+  altaiventures:
+    principal: "altaiventures@aduroadvisors.com"
+    orgId: "00D8Y000000fxjpUAA"
+  alternativecapital:
+    principal: "altcapinvestments@aduroadvisors.com"
+    orgId: "00D3x000001zPHBEA2"
+  amaranthine:
+    principal: "amaranthine@aduroadvisors.com"
+    orgId: "00Df4000003kWwCEAU"
+  amberstone:
+    principal: "amberstone@aduroadvisors.com"
+    orgId: "00DDo000000sOFTMA2"
+  amboystreetventures:
+    principal: "amboystreet@aduroadvisors.com"
+    orgId: "00D8Y000000fxMNUAY"
+  amkan:
+    principal: "amkan@aduroadvisors.com"
+    orgId: "00DHr000001s5RuMAI"
+  amplifycapital:
+    principal: "amplify@aduroadvisors.com"
+    orgId: "00D5Y000001MBa5UAG"
+  amplo:
+    principal: "amplo@aduroadvisors.com"
+    orgId: "00Df4000001RczoEAC"
+  anacapapartners:
+    principal: "anacapasfdc@aduroconnect.com"
+    orgId: "00D1I000000lEEvUAM"
+  andvest:
+    principal: "fast.sponsor@aduroadvisors.com"
+    orgId: "00DHs000002kRbDMAU"
+  angularventures:
+    principal: "angular@aduroadvisors.com"
+    orgId: "00D8Y000001QM8fUAG"
+  animoventuresi:
+    principal: "magnetico.ventures@aduroadvisors.com"
+    orgId: "00Df20000019zYwEAI"
+  ansa:
+    principal: "ansa@aduroadvisors.com"
+    orgId: "00D5f000005uu4qEAA"
+  antler(australia):
+    principal: "antler@fundpanel.io
+    orgId: "00D5w000003XK7YEAW"
+  aperturecapitalpartners:
+    principal: "aperture@aduroadvisors.com"
+    orgId: "00DHs000001QdPnMAK"
+  aperturevc:
+    principal: "aperturevc@aduroadvisors.com"
+    orgId: "00DDo000000sfNUMAY"
+  aphelioncapital:
+    principal: "aphelion@aduroadvisors.com"
+    orgId: "00D61000000Hz16EAC"
+  arc180:
+    principal: "arc180@aduroadvisors.com"
+    orgId: "00DfJ00000DORbZUAX"
+  arcadiannewventure:
+    principal: "arcadian@aduroadvisors.com"
+    orgId: "00D4x000006tqzpEAA"
+  archetype:
+    principal: "archetype@aduroadvisors.com"
+    orgId: "00DDp000000ey2sMAA"
+  argonventures:
+    principal: "argon1@fundpanel.io
+    orgId: "00Dao00000GznPJEAZ"
+  armorysquareventures:
+    principal: "armorysquareventures@aduroadvisors.com"
+    orgId: "00D8Y000000fwh7UAA"
+  arrowheadinnovationfund:
+    principal: "arrowhead@aduroadvisors.com"
+    orgId: "00D5Y000001M3vIUAS"
+  ascendventurecapital:
+    principal: "ascend@aduroadvisors.com"
+    orgId: "00D4P000000x5SmUAI"
+  ashfordventures:
+    principal: "ashford@aduroadvisors.com"
+    orgId: "00DfK0000074FbAUAU"
+  astia:
+    principal: "astia@aduroadvisors.com"
+    orgId: "00D4W000003eldoUAA"
+  astoriahealthinvestors:
+    principal: "astoria@aduroadvisors.com"
+    orgId: "00DfK00000OAoqXUAT"
+  atacamaventures:
+    principal: "atacamavp@aduroadvisors.com"
+    orgId: "00D8Y000001QTgCUAW"
+  atlasgrowth:
+    principal: "atlasgrowth@aduroadvisors.com"
+    orgId: "00DfJ000004PAMXUA4"
+  audaciousventures:
+    principal: "audaciousventures@aduroadvisors.com"
+    orgId: "00D3t000002RTeCEAW"
+  audazcapital:
+    principal: "audazcapital@aduroadvisors.com"
+    orgId: "00DHs000003TboOMAS"
+  auderecapital:
+    principal: "audere@aduroadvisors.com"
+    orgId: "00DDp000000eamvMAA"
+  aureliafoundry:
+    principal: "aurelia@aduroadvisors.com"
+    orgId: "00Dam00000cxEzZEAU"
+  aureliusventures:
+    principal: "aurelius@aduroadvisors.com"
+    orgId: "00Dbn00000EFTpjEAH"
+  aurumfundilp:
+    principal: "aurum@aduroadvisors.com"
+    orgId: "00DDp0000019QuXMAU"
+  autopilotvc:
+    principal: "autopilot@aduroadvisors.com"
+    orgId: "00Dal00000J9ny4EAB"
+  av1capital:
+    principal: "av1capital@aduroadvisors.com"
+    orgId: "00DfL0000070TLFUA2"
+  avenuegrowthpartners:
+    principal: "avenuegrowthpartners@aduroadvisors.com"
+    orgId: "00D4W00000517ojUAA"
+  avestriaventures:
+    principal: "avestria@aduroadvisors.com"
+    orgId: "00D8Y000000fxk4UAA"
+  avidventures:
+    principal: "avidventures@aduroadvisors.com"
+    orgId: "00D8Y000001ZNa8UAG"
+  axiom:
+    principal: "axiom@aduroadvisors.com"
+    orgId: "00DHs00000CkeNTMAZ"
+  azafranpartners:
+    principal: "azafrancapitalpartners@aduroadvisors.com"
+    orgId: "00D8a000000UsprEAC"
+  azolla:
+    principal: "azollaventures@aduroadvisors.com"
+    orgId: "00D5f000005vHA2EAM"
+  backgroundcapital:
+    principal: "backgroundcapital@aduroadvisors.com"
+    orgId: "00D4W0000048PzOUAU"
+  bagventures:
+    principal: "bagvc@aduroadvisors.com"
+    orgId: "00Dam00000WnZk6EAF"
+  bamelevate:
+    principal: "onboarding"+bamelevate@fundpanel.io
+    orgId: "00Dal00001DnuFJEAZ"
+  bamventures:
+    principal: "bam@aduroadvisors.com"
+    orgId: "00D8Y000001ZsnhUAC"
+  banktechventures:
+    principal: "banktechventures@aduroadvisors.com"
+    orgId: "00DHp000003W8gaMAC"
+  bantercapital:
+    principal: "bantercapital@aduroadvisors.com"
+    orgId: "00DDn00000Aw69lMAB"
+  bareventures:
+    principal: "bareventures@aduroadvisors.com"
+    orgId: "00D5e000001Or0JEAS"
+  baselayerventures:
+    principal: "baselayer@aduroadvisors.com"
+    orgId: "00DDm000000IyT9MAK"
+  bayhills:
+    principal: "bayhills@aduroadvisors.com"
+    orgId: "00DHs000001xB8qMAE"
+  bbgventures:
+    principal: "bbgventures@aduroadvisors.com"
+    orgId: "00D8Y000001Z1wLUAS"
+  bensoncapitalpartners:
+    principal: "bensoncapital@aduroadvisors.com"
+    orgId: "00D8Y000001ZPkJUAW"
+  beringcapital:
+    principal: "beringcapital@aduroadvisors.com"
+    orgId: "00D5w0000067eGSEAY"
+  betaworks:
+    principal: "betaworks@aduroadvisors.com"
+    orgId: "00D3x000001AoZbEAK"
+  bettorcapital:
+    principal: "bettorcapital@aduroadvisors.com"
+    orgId: "00D5f000002akQsEAI"
+  bevc:
+    principal: "bevc@aduroadvisors.com"
+    orgId: "00DHs000000PhdeMAC"
+  bewater:
+    principal: "bewater@aduroadvisors.com"
+    orgId: "00DDn000002G0o0MAC"
+  bioluminescence:
+    principal: "bioluminescence@aduroadvisors.com"
+    orgId: "00DHo000001cLkFMAU"
+  biorockventures:
+    principal: "biorock@aduroadvisors.com"
+    orgId: "00Dfn0000012c0gEAA"
+  biospringpartners:
+    principal: "biospringpartners@aduroadvisors.com"
+    orgId: "00D3h000003wVbtEAE"
+  biostarcapital:
+    principal: "biostar@aduroadvisors.com"
+    orgId: "00D5Y000001MC4yUAG"
+  bitkraft:
+    principal: "bitkraft@aduroadvisors.com"
+    orgId: "00D1U000000GN6aUAG"
+  blackjaysventures:
+    principal: "blackjays@aduroadvisors.com"
+    orgId: "00DHr0000010MFpMAM"
+  blackbirdventures:
+    principal: "blackbirdsfdc@aduroconnect.com"
+    orgId: "00D46000000pexZEAQ"
   blingcapital:
     principal: "blingcapital@aduroadvisors.com"
     orgId: "00D5A000000BnLcUAK"
-  seaxventures:
-    principal: "susaventures@aduroadvisors.com"
-    orgId: "00Df4000003kiGBEAY"
+  bloombergbeta:
+    principal: "bloomberg@aduroadvisors.com"
+    orgId: "00D1U000000qaNWUAY"
+  bluebearcapital:
+    principal: "bluebear@aduroadvisors.com"
+    orgId: "00DDo000000seiBMAQ"
+  bluecloudventures:
+    principal: "bluecloudventures@aduroadvisors.com"
+    orgId: "00DDm000000JJBRMA4"
+  bluedot:
+    principal: "bluedotinvestors@aduroadvisors.com"
+    orgId: "00Dfo000004H6k5EAC"
+  bluehighway:
+    principal: "bluehighway@aduroadvisors.com"
+    orgId: "00D8Y000001QTRMUA4"
+  bluehourventures:
+    principal: "bluehour@aduroadvisors.com"
+    orgId: "00Da500001PJpNbEAL"
+  blueberryventures:
+    principal: "blueberry@aduroadvisors.com"
+    orgId: "00D4x000007JO2ZEAW"
+  bluepointeventures:
+    principal: "bluepointe@aduroadvisors.com"
+    orgId: "00D0P000000DhhqUAC"
+  bluerunventures:
+    principal: "brv@aduroadvisors.com"
+    orgId: "00D6g0000053v67EAA"
+  bonfireventures:
+    principal: "bonfirevc@aduroadvisors.com"
+    orgId: "00D5e000001B80pEAC"
+  boomcapital:
+    principal: "boomcapital@aduroadvisors.com"
+    orgId: "00D0b000000CiZ9EAK"
+  boostvc:
+    principal: "boostvc@aduroadvisors.com"
+    orgId: "00DHo000001m57rMAA"
+  boozallenhamilton:
+    principal: "boozallen@aduroadvisors.com"
+    orgId: "00Dam00000Kah5kEAB"
+  boulderfoodgroup:
+    principal: "bfg@aduroadvisors.com"
+    orgId: "00Dj0000000JuB4EAK"
+  bowerycapital:
+    principal: "bowery@aduroadvisors.com"
+    orgId: "00D3x000001zPY4EAM"
+  boxgroup:
+    principal: "boxgroup@aduroadvisors.com"
+    orgId: "00D8Y000001RHIlUAO"
+  branchventuregroup:
+    principal: "branch@aduroadvisors.com"
+    orgId: "00Dbn00000qFutZEAS"
+  brandedhospitalityventures:
+    principal: "branded@aduroadvisors.com"
+    orgId: "00Dal00000LfMlFEAV"
+  bravenventures:
+    principal: "braven@aduroadvisors.com"
+    orgId: "00D8V000002ALP7UAO"
+  breakercove:
+    principal: "breakercove@aduroadvisors.com"
+    orgId: "00D5e000000KkKQEA0"
+  breakoutventures:
+    principal: "breakout@aduroadvisors.com"
+    orgId: "00Dbn0000004vMKEAY"
+  brewerlaneventures:
+    principal: "brewerlane@aduroadvisors.com"
+    orgId: "00D4x000008YHqGEAW"
+  brightmindventures:
+    principal: "brightmind@aduroadvisors.com"
+    orgId: "00DHp00000Dyb2VMAR"
+  broadwayventurepartners:
+    principal: "broadwayvp@aduroadvisors.com"
+    orgId: "00DfJ00000Qq1gGUAR"
+  bronzeinvestments:
+    principal: "bronze@aduroadvisors.com"
+    orgId: "00D36000001GqAtEAK"
+  bullpencapital:
+    principal: "bullpencapital@aduroadvisors.com"
+    orgId: "00D61000000JKQPEA4"
+  bullvc:
+    principal: "bullvc@aduroadvisors.com"
+    orgId: "00D4x000006rgcZEAQ"
+  bungalowcapital:
+    principal: "bungalow@aduroadvisors.com"
+    orgId: "00DHp00000DxpPaMAJ"
+  burntislandventures:
+    principal: "burntislandventures@aduroadvisors.com"
+    orgId: "00D4x000003yEywEAE"
+  c10labs:
+    principal: "c10labs@aduroadvisors.com"
+    orgId: "00DHo0000016aeFMAQ"
+  caffeinatedcapital:
+    principal: "caffeinatedcapital@aduroadvisors.com"
+    orgId: "00D1a000000HHqEEAW"
+  cakeventures:
+    principal: "cakeventures@aduroadvisors.com"
+    orgId: "00D4W0000090YDAUA2"
+  calmcompanyfund:
+    principal: "earnestcapital@aduroadvisors.com"
+    orgId: "00D3h000000CnlJEAS"
+  cambiumcapital:
+    principal: "cambiumcapital@aduroadvisors.com"
+    orgId: "00DDp000000eygeMAA"
+  cannagecapital:
+    principal: "cannagecap@aduroadvisors.com"
+    orgId: "00Dao00000HmtVBEAZ"
+  canonicalcrypto:
+    principal: "canonical@aduroadvisors.com"
+    orgId: "00Da500001LJrHzEAL"
+  capitalfpartners:
+    principal: "capitalf@aduroadvisors.com"
+    orgId: "00Dbn00000GnQppEAF"
+  capitalg:
+    principal: "capitalg@fundpanel.io
+    orgId: "00D4W000001YEijUAG"
+  capitalk:
+    principal: "capitalk@aduroadvisors.com"
+    orgId: "00D4x000007Jv2XEAS"
+  capstarventures:
+    principal: "capstarventures@aduroadvisors.com"
+    orgId: "00D4P000000imieUAA"
+  carabrazholdings:
+    principal: "carabraz@aduroadvisors.com"
+    orgId: "00Dam000005VuO3EAK"
+  casaverde:
+    principal: "casaverde@aduroadvisors.com"
+    orgId: "00DDm000000JvymMAC"
+  cassiusfamily:
+    principal: "cassius@aduroadvisors.com"
+    orgId: "00D5Y000001MPFQUA4"
+  castleisland:
+    principal: "castleisland@aduroadvisors.com"
+    orgId: "00D8Y000001ZS1xUAG"
+  catapultventures:
+    principal: "catapult@aduroadvisors.com"
+    orgId: "00D6A000001kZoeUAE"
+  categoryventures:
+    principal: "category@aduroadvisors.com"
+    orgId: "00DHs00000CkYgxMAF"
+  chapterone:
+    principal: "chapterone@aduroadvisors.com"
+    orgId: "00D5e0000013ySpEAI"
+  chargeventures:
+    principal: "charge@aduroadvisors.com"
+    orgId: "00D8Y000000fxOYUAY"
+  chemistryventures:
+    principal: "chemistry@aduroadvisors.com"
+    orgId: "00DKd000001BTjuMAG"
+  cherryrockcapital:
+    principal: "cherryrock@aduroadvisors.com"
+    orgId: "00DHu000001AMvkMAG"
+  cheyenneventures:
+    principal: "cheyenne@aduroadvisors.com"
+    orgId: "00Dfo000004DgOwEAK"
+  chingonaventures:
+    principal: "chingonaventures@aduroadvisors.com"
+    orgId: "00D5e000000HG86EAG"
+  chloecapital:
+    principal: "chloe@aduroadvisors.com"
+    orgId: "00DHp00000ChsSbMAJ"
+  circleup:
+    principal: "circleupsfdc@aduroconnect.com"
+    orgId: "00D1I000001giVBUAY"
+  cleanindustryventures:
+    principal: "cleanindustryventures@aduroadvisors.com"
+    orgId: "00DHp000003W9rqMAC"
+  clearventures:
+    principal: "clearventures@aduroadvisors.com"
+    orgId: "00D8Y000001QMEOUA4"
+  climacticvc:
+    principal: "climactic@aduroadvisors.com"
+    orgId: "00D8a000002A8PjEAK"
+  climateai:
+    principal: "climateai@aduroadvisors.com"
+    orgId: "00DHu00000CIlbEMAT"
+  cloudallstarfund:
+    principal: "cloudallstar@aduroadvisors.com"
+    orgId: "00D5f000005tO4mEAE"
+  cloudapps:
+    principal: "cloudapps@aduroadvisors.com"
+    orgId: "00D8Y000000fxihUAA"
+  cloud9capital:
+    principal: "cloud9@aduroadvisors.com"
+    orgId: "00Dao00001O0M73EAF"
+  coefficientcapital:
+    principal: "coefficient@aduroadvisors.com"
+    orgId: "00DDn00000Aw2ZcMAJ"
+  cohencirclefintechventures:
+    principal: "cohencirclefintech@aduroadvisors.com"
+    orgId: "00DDn0000011IuJMAU"
+  coinvest:
+    principal: "coinvest@aduroadvisors.com"
+    orgId: "00Dao00000eNUeqEAG"
+  collectiveglobal:
+    principal: "collectiveglobal@aduroadvisors.com"
+    orgId: "00DHp000002MlrFMAS"
+  collidecapital:
+    principal: "collide@aduroadvisors.com"
+    orgId: "00Dal00000YYLvHEAX"
+  commerceventures:
+    principal: "commerceventures@aduroadvisors.com"
+    orgId: "00D61000000Hz0PEAS"
+  commonkind:
+    principal: "commonkind@aduroadvisors.com"
+    orgId: "00Dfk000003k4rhEAA"
+  commonwealth:
+    principal: "cwequity@aduroadvisors.com"
+    orgId: "00DDp000000eyCGMAY"
+  compacapital:
+    principal: "compacapital@aduroadvisors.com"
+    orgId: "00Dam000001uSZ6EAM"
+  companyventures:
+    principal: "company@aduroadvisors.com"
+    orgId: "00DfL0000070E0jUAE"
+  conductorcapital:
+    principal: "conductorcapital@aduroadvisors.com"
+    orgId: "00Dao000004opTNEAY"
+  congruentventures:
+    principal: "congruent@aduroadvisors.com"
+    orgId: "00D41000002kDHCEA2"
+  connectventures:
+    principal: "connect.ventures@aduroadvisors.com"
+    orgId: "00DHs000001wUNsMAM"
+  constructcapital:
+    principal: "constructcapital@aduroadvisors.com"
+    orgId: "00D5w000002vX4mEAE"
+  contour:
+    principal: "contour@aduroadvisors.com"
+    orgId: "00Dal0000185OiEEAU"
+  conversioncapital:
+    principal: "conversioncapital@aduroadvisors.com"
+    orgId: "00D8Y000001ZBaWUAW"
+  convictionpartners:
+    principal: "conviction@aduroadvisors.com"
+    orgId: "00DDn000000HWsxMAG"
+  cornucopiancapital:
+    principal: "cornucopian@aduroadvisors.com"
+    orgId: "00DDp000000ey3IMAQ"
+  counterculture:
+    principal: "counterculture@aduroadvisors.com"
+    orgId: "00DDn00000CXy6WMAT"
+  counterpartventures:
+    principal: "counterpartventures@aduroadvisors.com"
+    orgId: "00D3i000000olQPEAY"
+  cowboyventures:
+    principal: "cowboycapital@aduroadvisors.com"
+    orgId: "00Do0000000JM8EEAW"
   craftventures:
     principal: "craft@aduroadvisors.com"
     orgId: "00Df4000003kiGBEAY"
-  primemoverslab:  
+  crossculture:
+    principal: "crossculture@aduroadvisors.com"
+    orgId: "00Df2000001JA78EAG"
+  crosscutventures:
+    principal: "crosscut@aduroadvisors.com"
+    orgId: "00D5Y000001MWqrUAG"
+  crumptonventuresllc:
+    principal: "crumptonventures@aduroadvisors.com"
+    orgId: "00Dal00001Fume2EAB"
+  cygnilabs:
+    principal: "cygnicapital@aduroadvisors.com"
+    orgId: "00DDp000000g07NMAQ"
+  d3fund:
+    principal: "d3@aduroadvisors.com"
+    orgId: "00DHu000001fpqVMAQ"
+  daftcapital:
+    principal: "daft@aduroadvisors.com"
+    orgId: "00Dfm000000CHrWEAW"
+  darwinventures:
+    principal: "darwinventures@aduroadvisors.com"
+    orgId: "00D3x0000020bcbEAA"
+  daybreakventures:
+    principal: "daybreakventures@aduroadvisors.com"
+    orgId: "00DHs000001yePSMAY"
+  dcodecapital:
+    principal: "dcode@aduroadvisors.com"
+    orgId: "00Dam00000g3qftEAA"
+  deepwater:
+    principal: "deepwater@aduroadvisors.com"
+    orgId: "00Df4000001QX1WEAW"
+  definevc:
+    principal: "definevc@aduroadvisors.com"
+    orgId: "00D46000001UyOFEA0"
+  dentcapital:
+    principal: "dent@aduroadvisors.com"
+    orgId: "00DHs00000CmxCQMAZ"
+  designerfund:
+    principal: "designerfund@aduroadvisors.com"
+    orgId: "00D37000000HwdkEAC"
+  detroitventurepartners:
+    principal: "detroitventurepartners@aduroadvisors.com"
+    orgId: "00DKj000001BEKsMAO"
+  discerningcapital:
+    principal: "discerningcapital@aduroadvisors.com"
+    orgId: "00DHu000002faTCMAY"
+  dissentventures:
+    principal: "dissent@aduroadvisors.com"
+    orgId: "00D8Y000001QLx9UAG"
+  distributedventures:
+    principal: "distributedventures@aduroadvisors.com"
+    orgId: "00D5f000003y4ZLEAY"
+  domainassociates:
+    principal: "domain@aduroadvisors.com"
+    orgId: "00D4W000007QWBSUA4"
+  dormroomfund:
+    principal: "dormroomfund@aduroadvisors.com"
+    orgId: "00DDp000000egj2MAA"
+  drapergorenholmventures:
+    principal: "dgh@aduroadvisors.com"
+    orgId: "00D5Y000001MQXrUAO"
+  driaventures:
+    principal: "driaventures@aduroadvisors.com"
+    orgId: "00DHr000002iWw1MAE"
+  drivebydraftkings:
+    principal: "drivebydraftkings@aduroadvisors.com"
+    orgId: "00D5Y000001N0XMUA0"
+  dtxventures:
+    principal: "dtxvc@aduroadvisors.com"
+    orgId: "00DfJ00000C0XsyUAF"
+  dualworlds:
+    principal: "dualworlds@aduroadvisors.com"
+    orgId: "00Dfk000001I1hpEAC"
+  duxcapital:
+    principal: "dux@aduroadvisors.com"
+    orgId: "00DDm000000HtISMA0"
+  dynamismcapital:
+    principal: "dynamismcapital@aduroadvisors.com"
+    orgId: "00D8c0000041VDvEAM"
+  e12ventures:
+    principal: "e12venturecapital@aduroadvisors.com"
+    orgId: "00DHr00000123uUMAQ"
+  earthshotventures:
+    principal: "earthshotventures@aduroadvisors.com"
+    orgId: "00D5Y000002VLlMUAW"
+  echelon:
+    principal: "echelon@aduroadvisors.com"
+    orgId: "00D8Y000001Z3mFUAS"
+  eclipticcapital:
+    principal: "eclipticcapital@aduroadvisors.com"
+    orgId: "00D5Y000001MW2NUAW"
+  editionventures:
+    principal: "edition@aduroadvisors.com"
+    orgId: "00Dfo000003jG9REAU"
+  eff:
+    principal: "eff@aduroadvisors.com"
+    orgId: "00D3x000001zOQ7EAM"
+  egiscapital:
+    principal: "egiscapital@aduroadvisors.com"
+    orgId: "00Da500001PgXwZEAV"
+  eif:
+    principal: "ecosystemintegrity@aduroadvisors.com"
+    orgId: "00D36000000a88rEAA"
+  encodedventures:
+    principal: "encoded@aduroadvisors.com"
+    orgId: "00Dbn000001HnQMEA0"
+  eniacventures:
+    principal: "eniac@aduroadvisors.com"
+    orgId: "00D6A0000001wBAUAY"
+  ensemblevc:
+    principal: "ensemblevc@aduroadvisors.com"
+    orgId: "00D8Y000000fwwrUAA"
+  epsilonhealthinvestors:
+    principal: "epsilon@aduroadvisors.com"
+    orgId: "00D3x000001zPZvEAM"
+  equalventures:
+    principal: "equalventures@aduroadvisors.com"
+    orgId: "00D2E0000014HoNUAU"
+  eqvcapitallp:
+    principal: "eqv@aduroadvisors.com"
+    orgId: "00Dfm000005ctZAEAY"
+  erliventures:
+    principal: "batshit@aduroadvisors.com"
+    orgId: "00D3x000001zOk5EAE"
+  essentialholdings:
+    principal: "essentialholdings@aduroadvisors.com"
+    orgId: "00DfK0000080iSlUAI"
+  ex/ante:
+    principal: "exante@aduroadvisors.com"
+    orgId: "00DDn00000AuKZAMA3"
+  exorseeds:
+    principal: "exorseeds@aduroadvisors.com"
+    orgId: "00DHs000001RaYIMA0"
+  fabventures:
+    principal: "fabventures@aduroadvisors.com"
+    orgId: "00D8Y000000fxiwUAA"
+  factorventurecapital:
+    principal: "factorcapital@aduroadvisors.com"
+    orgId: "00Dfo0000023KU5EAM"
+  factorial:
+    principal: "factorialcapital@aduroadvisors.com"
+    orgId: "00DHn000001PPfSMAW"
+  factoryhq:
+    principal: "factoryhq@aduroadvisors.com"
+    orgId: "00D5e0000014ZuuEAE"
+  fairbridgepark:
+    principal: "fairbridgepark@aduroadvisors.com"
+    orgId: "00D4x000006rgepEAA"
+  fairhaven:
+    principal: "fairhaven@aduroadvisors.com"
+    orgId: "00DDo000001BRREMA4"
+  familyfund:
+    principal: "family@aduroadvisors.com"
+    orgId: "00DfK00000AOWjyUAH"
+  fathomcapital:
+    principal: "fathom@aduroadvisors.com"
+    orgId: "00D46000000bh7UEAQ"
+  fearlessventures:
+    principal: "fearlessventures@aduroadvisors.com"
+    orgId: "00D1U000000xEVyUAM"
+  fieldventures:
+    principal: "field@aduroadvisors.com"
+    orgId: "00Dao00001ANOPKEA5"
+  fifthdowncap:
+    principal: "fifthdown@aduroadvisors.com"
+    orgId: "00DHp000001sbfBMAQ"
+  fiftyyears:
+    principal: "fiftyyears@aduroadvisors.com"
+    orgId: "00D6A000003843rUAA"
+  fightclub:
+    principal: "fightclub@aduroadvisors.com"
+    orgId: "00DDn00000AC2mdMAD"
+  fikaventures:
+    principal: "fika@aduroadvisors.com"
+    orgId: "00D5Y000001MktrUAC"
+  firstclosepartners:
+    principal: "firstclose@aduroadvisors.com"
+    orgId: "00D8W000004MT3CUAW"
+  firstin:
+    principal: "firstin@aduroadvisors.com"
+    orgId: "00DHn0000018q3CMAQ"
+  firstlook:
+    principal: "firstlook@aduroadvisors.com"
+    orgId: "00DHp000002MlswMAC"
+  firstroundcapital:
+    principal: "firstround@aduroadvisors.com"
+    orgId: "00Dfo000001X8ZJEA0"
+  firstsparkventures:
+    principal: "firstsparkventures@aduroadvisors.com"
+    orgId: "00D8c000007BWVuEAO"
+  fivefourventures:
+    principal: "fivefour@aduroadvisors.com"
+    orgId: "00D8Y000001Zmt1UAC"
+  floatingpoint:
+    principal: "floatingpoint@aduroadvisors.com"
+    orgId: "00D4x000004ydP4EAI"
+  folklore:
+    principal: "tempuspartners@fundpanel.io
+    orgId: "00Df2000001HgdvEAC"
+  foothillventures:
+    principal: "foothillventures@aduroadvisors.com"
+    orgId: "00D5A000000CK6cUAG"
+  footwork:
+    principal: "footwork@aduroadvisors.com"
+    orgId: "00D5Y000001cxhWUAQ"
+  formuscapital:
+    principal: "formus@aduroadvisors.com"
+    orgId: "00D3x0000020fRsEAI"
+  fortsonvc:
+    principal: "fortson@aduroadvisors.com"
+    orgId: "00DfI0000022CGlUAM"
+  fortunatuscapital:
+    principal: "fortunatuscapital@aduroadvisors.com"
+    orgId: "00D3x000001zLNQEA2"
+  foundersbeautygroup:
+    principal: "fbg@aduroadvisors.com"
+    orgId: "00DfK00000DvRUwUAN"
+  founderyinnovations:
+    principal: "foundery@aduroadvisors.com"
+    orgId: "00DDp00000170EYMAY"
+  fourcities:
+    principal: "fourcities@aduroadvisors.com"
+    orgId: "00DfJ00000AWFJ9UAP"
+  fpventures:
+    principal: "fpventures@aduroadvisors.com"
+    orgId: "00Dal000000bCwfEAE"
+  freeflow:
+    principal: "freeflow@aduroadvisors.com"
+    orgId: "00D6g000001V4qyEAC"
+  freerunventures:
+    principal: "freerun@aduroadvisors.com"
+    orgId: "00DHr000008MZfOMAW"
+  fujiyamabridgelab(fbl):
+    principal: "fbl@aduroadvisors.com"
+    orgId: "00D8a000002v9nXEAQ"
+  fusionxventures:
+    principal: "fusionx@aduroadvisors.com"
+    orgId: "00D1I000002JHtvUAG"
+  futureperfectventures:
+    principal: "futureperfectventures@aduroadvisors.com"
+    orgId: "00D8Y000001ZsjfUAC"
+  futureventures:
+    principal: "futureventures@aduroadvisors.com"
+    orgId: "00D8a000001jBJLEA2"
+  g20ventures:
+    principal: "g20@aduroadvisors.com"
+    orgId: "00D3x000001zPWmEAM"
+  gardencity:
+    principal: "gardencity@aduroadvisors.com"
+    orgId: "00D4x000003yC4gEAE"
+  gatewaycapital:
+    principal: "dana@gwaycapital.com"
+    orgId: "00DfI00000PhN4sUAF"
+  gatherventures:
+    principal: "gatherventures@aduroadvisors.com"
+    orgId: "00DDp000000eyEJMAY"
+  geekdom:
+    principal: "geekdom@aduroadvisors.com"
+    orgId: "00DDp000000egjWMAQ"
+  geniusventures:
+    principal: "geniusventures@aduroadvisors.com"
+    orgId: "00DHo000002FSsPMAW"
+  geodesiccapital:
+    principal: "geodesic@aduroadvisors.com"
+    orgId: "00D1a000000YJVzEAO"
+  gilgamesh:
+    principal: "gilgamesh@aduroadvisors.com"
+    orgId: "00DDm000000L2lIMAS"
+  gilmartincapital:
+    principal: "gilmartincap@aduroadvisors.com"
+    orgId: "00D5f000003yBUvEAM"
+  glasswingventures:
+    principal: "glasswing@aduroadvisors.com"
+    orgId: "00D0P000000DZuQUAW"
+  goannacapital:
+    principal: "goanna@aduroadvisors.com"
+    orgId: "00Dao00001MhRB3EAN"
+  goatrodeo:
+    principal: "goatrodeo@aduroadvisors.com"
+    orgId: "00DDo000000s067MAA"
+  goatventurecapital:
+    principal: "goatvc@aduroadvisors.com"
+    orgId: "00D8V000002ZDqKUAW"
+  goldcrestcapital:
+    principal: "goldcrest@aduroadvisors.com"
+    orgId: "00D36000001G7zbEAC"
+  goodfriends:
+    principal: "walnutstreetcapital@aduroadvisors.com"
+    orgId: "00DHs000001vQNGMA2"
+  goodgrowthcapital:
+    principal: "goodgrowthcapital@aduroadvisors.com"
+    orgId: "00D6g0000054cJFEAY"
+  goodwatercapital:
+    principal: "goodwater@aduroadvisors.com"
+    orgId: "00DU0000000MH3TMAW"
+  govtech:
+    principal: "govtech@aduroadvisors.com"
+    orgId: "00D8Y000001ZSJyUAO"
+  gradientventures:
+    principal: "gradient@aduroadvisors.com"
+    orgId: "00Dao00001Qf7EGEAZ"
+  graylinepartners:
+    principal: "grayline@aduroadvisors.com"
+    orgId: "00Dbn00000KwJ6qEAF"
+  greenrockenergypartners:
+    principal: "greenrock@aduroadvisors.com"
+    orgId: "00DDm000000Ku5HMAS"
+  greengen:
+    principal: "greengen@aduroadvisors.com"
+    orgId: "00DDo000000s9EAMAY"
+  gridcapitalmanagement:
+    principal: "gridcapital@aduroadvisors.com"
+    orgId: "00Dal00000YnLpREAV"
+  gritcapitalpartners:
+    principal: "grit@aduroadvisors.com"
+    orgId: "00Dam0000031zJ3EAI"
+  group11:
+    principal: "group11@aduroadvisors.com"
+    orgId: "00D4W0000054hhOUAQ"
+  growthbeveragegroup:
+    principal: "investbev@aduroadvisors.com"
+    orgId: "00Dao00000PvQQwEAN"
+  growthstreetpartners:
+    principal: "growthstreetpartners@fundpanel.io
+    orgId: "00D5f000006r2BYEAY"
+  gumicryptos:
+    principal: "gumicryptos@aduroadvisors.com"
+    orgId: "00DHp000002M8dLMAS"
+  habitatpartners:
+    principal: "habitatpartners@aduroadvisors.com"
+    orgId: "00DDm000000IyI0MAK"
+  halcyonfutures:
+    principal: "halcyonfutures@aduroadvisors.com"
+    orgId: "00Dfh000000AI3hEAG"
+  halcyoninvestmentmanagement:
+    principal: "halcyon@aduroadvisors.com"
+    orgId: "00Dam000005cX5fEAE"
+  hamptonriver:
+    principal: "hamptonriver@aduroadvisors.com"
+    orgId: "00D1U000000Fjq5UAC"
+  hanabicapital:
+    principal: "hanabi@aduroadvisors.com"
+    orgId: "00DfJ000009GCxaUAG"
+  happinessventures:
+    principal: "happiness@aduroadvisors.com"
+    orgId: "00D5Y000001Mn4jUAC"
+  harbingerventures:
+    principal: "harbingerventures@aduroadvisors.com"
+    orgId: "00D3i000000qQe8EAE"
+  harbour25:
+    principal: "harbour25@aduroadvisors.com"
+    orgId: "00DDn00000DtNlsMAF"
+  harpoonventures:
+    principal: "harpoonventures@aduroadvisors.com"
+    orgId: "00D4W000000FZm3UAG"
+  havenventures:
+    principal: "havenventures@aduroadvisors.com"
+    orgId: "00DDm000000JJNmMAO"
+  haymakerventures:
+    principal: "haymakerventures@aduroadvisors.com"
+    orgId: "00D4x000006shPiEAI"
+  haystackvc:
+    principal: "haystackventures@aduroadvisors.com"
+    orgId: "00D6g0000054aoLEAQ"
+  hc9ventures:
+    principal: "hc9ventures@aduroadvisors.com"
+    orgId: "00DDm000000JJLqMAO"
+  healthbridgeinnovationfund:
+    principal: "healthbridgeinnovationfund@aduroadvisors.com"
+    orgId: "00Da500001SUqWnEAL"
+  heavybit:
+    principal: "heavybit@aduroadvisors.com"
+    orgId: "00DDp000000eyhXMAQ"
+  hemiventures:
+    principal: "hemi@aduroadvisors.com"
+    orgId: "00D41000002vst2EAA"
+  heuristic:
+    principal: "heuristic@aduroadvisors.com"
+    orgId: "00DDm000000Jvz1MAC"
+  hf0advisorsllc:
+    principal: "hf0@aduroadvisors.com"
+    orgId: "00Da500000OSRvXEAX"
+  hicomanagement:
+    principal: "hicomanagement@aduroadvisors.com"
+    orgId: "00DHp000003VpNpMAK"
+  hollyventures:
+    principal: "holly@aduroadvisors.com"
+    orgId: "00Da500000NJ393EAD"
+  homebrew:
+    principal: "homebrew@aduroadvisors.com"
+    orgId: "00Do0000000b6hbEAA"
+  hometeam:
+    principal: "hometeamventures@aduroadvisors.com"
+    orgId: "00D4W000007PnGCUA0"
+  honeystoneventures:
+    principal: "honeystoneventures@aduroadvisors.com"
+    orgId: "00D4W000007NarxUAC"
+  howwomeninvest:
+    principal: "howwomeninvest@aduroadvisors.com"
+    orgId: "00DHs000001Qn0lMAC"
+  humbition:
+    principal: "humbition@aduroadvisors.com"
+    orgId: "00D41000002ipiVEAQ"
+  huttcapital:
+    principal: "huttcapital@aduroadvisors.com"
+    orgId: "00D6g000008suQ4EAI"
+  hydrazine:
+    principal: "hydrazine@aduroadvisors.com"
+    orgId: "00DDp000000eycCMAQ"
+  hyperioninvestmentmanagement:
+    principal: "hyperion@aduroadvisors.com"
+    orgId: "00Dam00001UeffNEAR"
+  hyphencapital:
+    principal: "hyphen@aduroadvisors.com"
+    orgId: "00Dan000000YuKkEAK"
+  icifund:
+    principal: "ici.fund@aduroadvisors.com"
+    orgId: "00D3x000001zsKpEAI"
+  ignitexlventures:
+    principal: "ignitexl@aduroadvisors.com"
+    orgId: "00D5Y000002G8f3UAC"
+  impressionismcapital:
+    principal: "impressionismcapital@aduroadvisors.com"
+    orgId: "00DDn000000I8rmMAC"
+  includeventures:
+    principal: "includeventures@aduroadvisors.com"
+    orgId: "00D8c00000408aLEAQ"
+  infinityventures:
+    principal: "infinityventures@aduroadvisors.com"
+    orgId: "00D5e000001BnhzEAC"
+  ingressivecapital:
+    principal: "ingressivecapital@aduroadvisors.com"
+    orgId: "00D8Y000000fx1NUAQ"
+  initiate:
+    principal: "initiate@aduroadvisors.com"
+    orgId: "00DHs000001RWo6MAG"
+  innerloopcapital:
+    principal: "innerloop@aduroadvisors.com"
+    orgId: "00D8Y000001RKNCUA4"
+  innospherefund:
+    principal: "innospherefund@aduroadvisors.com"
+    orgId: "00D4W00000926cEUAQ"
+  innovationglobal:
+    principal: "innovationglobal@aduroadvisors.com"
+    orgId: "00D36000000HnsxEAC"
+  inspiredcapital:
+    principal: "inspiredcapital@aduroadvisors.com"
+    orgId: "00D8Y000000fwtEUAQ"
+  integralventures:
+    principal: "integral@aduroadvisors.com"
+    orgId: "00Dal00000b7QoTEAU"
+  intudoventures:
+    principal: "intudovc@aduroadvisors.com"
+    orgId: "00D6A0000003mexUAA"
+  intuitivetruth:
+    principal: "intuitivetruth@aduroadvisors.com"
+    orgId: "00D6S000001NRfKUAW"
+  iterinvestments:
+    principal: "iterinvestments@aduroadvisors.com"
+    orgId: "00D8Y000001RHUAUA4"
+  j2ventures:
+    principal: "j2ventures@aduroadvisors.com"
+    orgId: "00DHu000001AFMtMAO"
+  jacksonsquareventures:
+    principal: "jsv@aduroadvisors.com"
+    orgId: "00D3x000001zt0BEAQ"
+  jffventures:
+    principal: "jffventures@aduroadvisors.com"
+    orgId: "00Dao000004FbQFEA0"
+  jobsohio:
+    principal: "jobsohio@aduroadvisors.com"
+    orgId: "00Dam00000JJ1ShEAL"
+  jouleventures:
+    principal: "janvest@aduroadvisors.com"
+    orgId: "00D4P000000x30yUAA"
+  jstarfundmanagers:
+    principal: "jstar@aduroadvisors.com"
+    orgId: "00Dfi0000042cN4EAI"
+  juxtaventurepartners:
+    principal: "juxta@aduroadvisors.com"
+    orgId: "00Dbn00000hRP9hEAG"
+  juxtapose:
+    principal: "juxtapose@aduroadvisors.com"
+    orgId: "00D8Y000000fv7gUAA"
+  k5global:
+    principal: "k5@aduroadvisors.com"
+    orgId: "00DHr000009zvlSMAQ"
+  k50ventures:
+    principal: "k50ventures@aduroadvisors.com"
+    orgId: "00D8b00000292jqEAA"
+  kairosmanagers:
+    principal: "kyle"+1234@fundpanel.io
+    orgId: "00D8c000004tSdpEAE"
+  karpreillycapitalpartners:
+    principal: "karpreilly@aduroadvisors.com"
+    orgId: "00D3n000000NrUNEA0"
+  kcbgamma:
+    principal: "kcbgamma@aduroadvisors.com"
+    orgId: "00D5w000004RUrfEAG"
+  kdxmanagement:
+    principal: "kdx@aduroadvisors.com"
+    orgId: "00DDn00000DujZOMAZ"
+  kellyinvestment:
+    principal: "kellyinvestment@aduroadvisors.com"
+    orgId: "00DHo000001azrZMAQ"
+  kindredventures:
+    principal: "kindredventures@aduroadvisors.com"
+    orgId: "00D1U000000sCBBUA2"
+  kinshipventures:
+    principal: "kinshipventures@aduroadvisors.com"
+    orgId: "00DHu000002hikuMAA"
+  konvoyventures:
+    principal: "konvoy@aduroadvisors.com"
+    orgId: "00Dao00000e7BU6EAM"
+  l2ventures:
+    principal: "l2ventures@aduroadvisors.com"
+    orgId: "00Da5000001pXNzEAM"
+  laci:
+    principal: "laci@aduroadvisors.com"
+    orgId: "00D3i000000oj3bEAA"
+  lagunita:
+    principal: "lagunita@aduroadvisors.com"
+    orgId: "00D5Y000001bneLUAQ"
+  laphaircapital:
+    principal: "laphair@aduroadvisors.com"
+    orgId: "00DHn000001A9S7MAK"
+  latitudecp:
+    principal: "latitude@aduroadvisors.com"
+    orgId: "00Dam000004SKktEAG"
+  laudeventures:
+    principal: "laude@aduroadvisors.com"
+    orgId: "00Dal00000M3AMzEAN"
+  launch:
+    principal: "launch@aduroadvisors.com"
+    orgId: "00DDn00000CWjrRMAT"
+  lavrockventures:
+    principal: "lavrock@aduroadvisors.com"
+    orgId: "00D8Y000001ZS3jUAG"
+  ldvcapital:
+    principal: "ldv@aduroadvisors.com"
+    orgId: "00D3x000001AQJkEAO"
+  leitmotif:
+    principal: "leitmotif@aduroadvisors.com"
+    orgId: "00DHs000001yf6FMAQ"
+  lererhippeauventures:
+    principal: "lererventures@aduroadvisors.com"
+    orgId: "00DHs000001RaXyMAK"
+  levelventures:
+    principal: "level@aduroadvisors.com"
+    orgId: "00DfK000002eGoJUAU"
+  lgvp:
+    principal: "lgvp@aduroadvisors.com"
+    orgId: "00D5e000001Mfd0EAC"
+  lifeline:
+    principal: "llfhf@aduroadvisors.com"
+    orgId: "00D3i000000qRwsEAE"
+  lifeforcecapital:
+    principal: "lifeforce@aduroadvisors.com"
+    orgId: "00D36000000H0MQEA0"
+  lifelikecapital:
+    principal: "lifelikecap@aduroadvisors.com"
+    orgId: "00DDn000000H1cEMAS"
+  lightspeedfaction:
+    principal: "lightspeedfaction@aduroadvisors.com"
+    orgId: "00DHn00000182AQMAY"
+  lincolninternational:
+    principal: "lincoln@aduroadvisors.com"
+    orgId: "00DDp000000g01xMAA"
+  lnventures:
+    principal: "lnventures@aduroadvisors.com"
+    orgId: "00D8Y000000fx5UUAQ"
+  lolacapital:
+    principal: "lola@aduroadvisors.com"
+    orgId: "00DHu00000AO2EkMAL"
+  lookoutventures:
+    principal: "lookoutventures@aduroadvisors.com"
+    orgId: "00Dal0000019eJDEAY"
+  lowercarboncapital:
+    principal: "lowercarbon@aduroadvisors.com"
+    orgId: "00D5Y000002W93zUAC"
+  lowercarboncapital-gpcarry:
+    principal: "lowercarbon"+gpcarry@aduroadvisors.com"
+    orgId: "00Da500000ajIl8EAE"
+  lowercasecapital:
+    principal: "lowercase@aduroadvisors.com"
+    orgId: "00D36000000bxAkEAI"
+  luminaricapital:
+    principal: "luminaricapital@aduroadvisors.com"
+    orgId: "00D1I000003GTrBUAW"
+  lunchpartners:
+    principal: "lunchpartners@aduroadvisors.com"
+    orgId: "00D1I000003HfapUAC"
+  lynettcapital:
+    principal: "lynettcapital@aduroadvisors.com"
+    orgId: "00D0h000000TrYjEAK"
+  macventurecapital:
+    principal: "macventurecapital@aduroadvisors.com"
+    orgId: "00D2E0000014XCoUAM"
+  magichour:
+    principal: "magichourvc@aduroadvisors.com"
+    orgId: "00DHn0000019FQnMAM"
+  manaup:
+    principal: "manaup@aduroadvisors.com"
+    orgId: "00Da500001NflzhEAB"
+  mandarin:
+    principal: "mandarin@aduroadvisors.com"
+    orgId: "00DHp0000048AsBMAU"
+  mandiventures:
+    principal: "mandiventures@aduroadvisors.com"
+    orgId: "00D4W000007R56DUAS"
+  mangustacapital:
+    principal: "mangusta@aduroadvisors.com"
+    orgId: "00Dal00000LfhsvEAB"
+  manivmobility:
+    principal: "maniv@aduroadvisors.com"
+    orgId: "00D5f0000088dFDEAY"
+  marathonmanagementpartners:
+    principal: "marathonmanagementpartners@aduroadvisors.com"
+    orgId: "00Dao00000R1fdSEAR"
+  markvc:
+    principal: "markvc@aduroadvisors.com"
+    orgId: "00DDo000001BFefMAG"
+  marqueventures:
+    principal: "marque@aduroadvisors.com"
+    orgId: "00Da500000QHwPPEA1"
+  marsbiofund:
+    principal: "marsbio@aduroadvisors.com"
+    orgId: "00D5Y000002G8fSUAS"
+  massgeneralbrighamventures:
+    principal: "massgeneralbrighamventures@aduroadvisors.com"
+    orgId: "00D3x0000020dbuEAA"
+  massivevc:
+    principal: "massive@aduroadvisors.com"
+    orgId: "00DfL000005qCuRUAU"
+  materialfund:
+    principal: "material@aduroadvisors.com"
+    orgId: "00DHs000001vPr8MAE"
+  mathventurepartners:
+    principal: "math@aduroadvisors.com"
+    orgId: "00D4W0000053AGMUA2"
+  mavprayinvestments:
+    principal: "mavprayinvestments@aduroadvisors.com"
+    orgId: "00D5e000000HwpwEAC"
+  mavenventures:
+    principal: "maven@aduroadvisors.com"
+    orgId: "00D15000000Fmj1EAC"
+  mayacapital:
+    principal: "mayacapital@aduroadvisors.com"
+    orgId: "00Df4000004lBBaEAM"
+  mbxcapital:
+    principal: "mbxcapital@aduroadvisors.com"
+    orgId: "00DHs000001ymrhMAA"
+  mckinleymanagement:
+    principal: "mckinley@aduroadvisors.com"
+    orgId: "00DHp000002Ma8jMAC"
+  megalith:
+    principal: "megalith@aduroadvisors.com"
+    orgId: "00D5f000003y4SEEAY"
+  melitas:
+    principal: "melitas@aduroadvisors.com"
+    orgId: "00DDo000001DV8OMAW"
+  merlinventures:
+    principal: "merlin@aduroadvisors.com"
+    orgId: "00DKj000008PDpHMAW"
+  meruscapital:
+    principal: "merus@aduroadvisors.com"
+    orgId: "00DDp000000eyiaMAA"
+  mesa:
+    principal: "mesa@aduroadvisors.com"
+    orgId: "00Dao000000rZ2rEAE"
+  mesh:
+    principal: "mesh@aduroadvisors.com"
+    orgId: "00Dfl000001uUdzEAE"
+  metaprop:
+    principal: "metaprop@aduroadvisors.com"
+    orgId: "00D1I000002LWueUAG"
+  metavcpartners:
+    principal: "metavc@aduroadvisors.com"
+    orgId: "00DHr0000016nsqMAA"
+  metrodora:
+    principal: "metrodora@aduroadvisors.com"
+    orgId: "00DHs000001vQ6nMAE"
+  mgv:
+    principal: "mgv@aduroadvisors.com"
+    orgId: "00DDo000001AJtrMAG"
+  milacapital:
+    principal: "mila@aduroadvisors.com"
+    orgId: "00D410000013LisEAE"
+  mitscapital:
+    principal: "mits@aduroadvisors.com"
+    orgId: "00Dao00000gocGPEAY"
+  mmam:
+    principal: "mmam@aduroadvisors.com"
+    orgId: "00D1U0000014GIsUAM"
+  moderneventures:
+    principal: "moderneventures@aduroadvisors.com"
+    orgId: "00D6g000002gt25EAA"
+  modiventurecapital:
+    principal: "modi@aduroadvisors.com"
+    orgId: "00DDn00000DGJ75MAH"
+  moncap:
+    principal: "moncap@aduroadvisors.com"
+    orgId: "00DHu000002i2l1MAA"
+  monstroventures:
+    principal: "monstro@aduroadvisors.com"
+    orgId: "00D36000000oY6uEAE"
+  montageventures:
+    principal: "montageventures@fundpanel.io
+    orgId: "00D5e000003UEq4EAG"
+  moradoventures:
+    principal: "moradoventures@aduroadvisors.com"
+    orgId: "00D8Y000001RLt3UAG"
+  mosaiccapital:
+    principal: "mosacap@aduroadvisors.com"
+    orgId: "00Dao00001Nzw9NEAR"
+  mosescapitalpartners:
+    principal: "mosescapital@aduroadvisors.com"
+    orgId: "00DHs000001Sxa2MAC"
+  mozillaventures:
+    principal: "mozilla@aduroadvisors.com"
+    orgId: "00DfJ00000DX3ODUA1"
+  muckeraccelerator:
+    principal: "mucker@aduroadvisors.com"
+    orgId: "00D5Y000001bmbWUAQ"
+  muditaventurepartners:
+    principal: "mudita@aduroadvisors.com"
+    orgId: "00DfJ00000DVIiQUAX"
+  mxvcapital:
+    principal: "mxvcapital@aduroadvisors.com"
+    orgId: "00DHu000001A6L5MAK"
+  nationalsecuritycapital:
+    principal: "nationalsecuritycap@aduroadvisors.com"
+    orgId: "00Dfk000003dszhEAA"
+  nautilusventurepartners:
+    principal: "nautilus@aduroadvisors.com"
+    orgId: "00Dj0000001uS7GEAU"
+  navitascapital:
+    principal: "navitas@aduroadvisors.com"
+    orgId: "00D5Y000001bmG0UAI"
+  necessaryventures:
+    principal: "necessaryventures@aduroadvisors.com"
+    orgId: "00D8Y000000fxDUUAY"
+  neotribe:
+    principal: "neotribe@aduroadvisors.com"
+    orgId: "00D46000000bn2TEAQ"
+  neverliftvc:
+    principal: "neverliftvc@aduroadvisors.com"
+    orgId: "00DHp0000033n6XMAQ"
+  newindustryvc:
+    principal: "newindustry@aduroadvisors.com"
+    orgId: "00DfJ00000DXwCZUA1"
+  newsystemventures:
+    principal: "newsystemventures@aduroadvisors.com"
+    orgId: "00DHs000001RwlGMAS"
+  newbuildventurecapital:
+    principal: "newbuildvc@aduroadvisors.com"
+    orgId: "00DDp0000019Qd0MAE"
+  newfundnorthamerica:
+    principal: "newfund@aduroadvisors.com"
+    orgId: "00D4x000006tqv4EAA"
+  nextlegacy:
+    principal: "nextplay@aduroadvisors.com"
+    orgId: "00Df40000000v6aEAA"
+  nfpventures:
+    principal: "nfpventures@aduroadvisors.com"
+    orgId: "00D5f000000IKqnEAG"
+  njpventures:
+    principal: "njpventures@aduroadvisors.com"
+    orgId: "00D5Y000001cVIuUAM"
+  nomoventures:
+    principal: "nomo@aduroadvisors.com"
+    orgId: "00D46000000bmx0EAA"
+  noveraventures:
+    principal: "novera@aduroadvisors.com"
+    orgId: "00Dfi000004Rjl7EAC"
+  nsvwolfcapital:
+    principal: "nsvwolfcapital@aduroadvisors.com"
+    orgId: "00D460000001XXcEAM"
+  nttventurecapital:
+    principal: "nttvc@aduroadvisors.com"
+    orgId: "00D2E000000pg9tUAA"
+  nvpcapital:
+    principal: "nvpcap@aduroadvisors.com"
+    orgId: "00D8Y000001ZpX2UAK"
+  nxtpfund:
+    principal: "nxtpventures@aduroadvisors.com"
+    orgId: "00D1U000001B9y6UAC"
+  oatcapital:
+    principal: "oatcapital@aduroadvisors.com"
+    orgId: "00DDn000002HABCMA4"
+  obviousventures:
+    principal: "obvious@aduroadvisors.com"
+    orgId: "00Dj0000000KPfbEAG"
+  octave:
+    principal: "octavefund@aduroadvisors.com"
+    orgId: "00Dao00001MIVD4EAP"
+  offlineventures:
+    principal: "offlineventures@aduroadvisors.com"
+    orgId: "00D5w000002tLbXEAU"
+  openopportunity:
+    principal: "open.opportunity@aduroadvisors.com"
+    orgId: "00DHo000001ZbHIMA0"
+  openai:
+    principal: "openai@aduroadvisors.com"
+    orgId: "00D8Y000000fwubUAA"
+  operatorpartners:
+    principal: "operatorpartners@aduroadvisors.com"
+    orgId: "00D8Y000001RGlpUAG"
+  optimistventures:
+    principal: "optimist@aduroadvisors.com"
+    orgId: "00DfI00000FXZchUAH"
+  otherlab:
+    principal: "otherlab@aduroadvisors.com"
+    orgId: "00D61000000JhGIEA0"
+  outlandervc:
+    principal: "outlander@aduroadvisors.com"
+    orgId: "00Dao00001Po4cbEAB"
+  outsidetheboxventures:
+    principal: "outsidethebox@aduroadvisors.com"
+    orgId: "00Da500000G8Gw3EAF"
+  outsidersfund:
+    principal: "outsidersfund@aduroadvisors.com"
+    orgId: "00D8c000007BYrGEAW"
+  overwaterventures:
+    principal: "overwaterventures@aduroadvisors.com"
+    orgId: "00D5f000002akivEAA"
+  ovofund:
+    principal: "ovofund@aduroadvisors.com"
+    orgId: "00D1U000000sF7tUAE"
+  paintedporchadvisors:
+    principal: "paintedporchadvisors@aduroadvisors.com"
+    orgId: "00DHs000001RaWmMAK"
+  paradeventures:
+    principal: "parade@aduroadvisors.com"
+    orgId: "00D4x000006tqzVEAQ"
+  parameterventures:
+    principal: "parameterventures@aduroadvisors.com"
+    orgId: "00D5e000002FflVEAS"
+  pathlightventures:
+    principal: "exponentfounders@aduroadvisors.com"
+    orgId: "00DHn000001884QMAQ"
+  patron:
+    principal: "patron@aduroadvisors.com"
+    orgId: "00D5e000001MQBSEA4"
+  paxmanagement:
+    principal: "pax@aduroadvisors.com"
+    orgId: "00Dfk000000rbSWEAY"
+  pebblebed:
+    principal: "pebblebed@aduroadvisors.com"
+    orgId: "00Dal000000FFYNEA4"
+  penningtonpartners:
+    principal: "ppafunds@aduroadvisors.com"
+    orgId: "00D3x00000216suEAA"
+  pennyjarcapital:
+    principal: "pennyjarcapital@aduroadvisors.com"
+    orgId: "00DHn000002T5aLMAS"
+  permanentcapital:
+    principal: "permanentcapital@aduroadvisors.com"
+    orgId: "00DHr000001txAjMAI"
+  phoenixventurepartners:
+    principal: "phoenixvp@fundpanel.io
+    orgId: "00DDn000000HXLWMA4"
+  pivotnorth:
+    principal: "pivotnorth@aduroadvisors.com"
+    orgId: "00DDp000000eyjJMAQ"
+  placeholder:
+    principal: "placeholder@aduroadvisors.com"
+    orgId: "00DHo000001ZwDiMAK"
+  planeteercapital:
+    principal: "planeteer@aduroadvisors.com"
+    orgId: "00Dfo000003k8GTEAY"
+  platformfundmanagement:
+    principal: "platformfund@aduroadvisors.com"
+    orgId: "00DfL00000A5B8rUAF"
+  pluscapital:
+    principal: "pluscapital@aduroadvisors.com"
+    orgId: "00D5f000000HxntEAC"
+  portalventures:
+    principal: "portalventures@aduroadvisors.com"
+    orgId: "00DHn0000018pnNMAQ"
+  positionventures:
+    principal: "position@aduroadvisors.com"
+    orgId: "00Dfl000003evkDEAQ"
+  preludeventures:
+    principal: "preludeventures@aduroadvisors.com"
+    orgId: "00DHp0000033n4bMAA"
+  pressonventures:
+    principal: "pressonventures@aduroadvisors.com"
+    orgId: "00Da500001SCtL3EAL"
+  primemoverslab:
     principal: "primemovers@aduroadvisors.com"
-    orgId: "00D0b000000E30hEAC" 
+    orgId: "00D0b000000E30hEAC"
+  principalvp:
+    principal: "principal@aduroadvisors.com"
+    orgId: "00Dbn00000D7P5REAV"
+  priorityresponsiblefunding:
+    principal: "prf@aduroadvisors.com"
+    orgId: "00DDo000001Ab4YMAS"
+  progressventures:
+    principal: "progressventures@fundpanel.io
+    orgId: "00Df4000004k6KoEAI"
+  project11ventures:
+    principal: "project11@aduroadvisors.com"
+    orgId: "00D410000011NE1EAM"
+  promusventures:
+    principal: "promusventures@aduroadvisors.com"
+    orgId: "00D1U000000D4QlUAK"
+  protocolvc:
+    principal: "protocol@aduroadvisors.com"
+    orgId: "00Dfo0000018FJ3EAM"
+  provenventures:
+    principal: "provenventures@aduroadvisors.com"
+    orgId: "00D4W000004BINxUAO"
+  pruvencapital:
+    principal: "pruvencapital@aduroadvisors.com"
+    orgId: "00D3x000001AoHqEAK"
+  pureventures:
+    principal: "pureventures@aduroadvisors.com"
+    orgId: "00D5e0000012W5SEAU"
+  purposegroup:
+    principal: "purposegroup@aduroadvisors.com"
+    orgId: "00D6S000001Pfb1UAC"
+  r136managementlimited:
+    principal: "r136@aduroadvisors.com"
+    orgId: "00DDp0000016CxWMAU"
+  rackhouseventures:
+    principal: "rackhousevc@aduroadvisors.com"
+    orgId: "00D4x000005RCLzEAO"
+  radiatecapital:
+    principal: "radiatecapital@aduroadvisors.com"
+    orgId: "00Dam00000KD2LXEA1"
+  radiclegrowth:
+    principal: "radicle@aduroadvisors.com"
+    orgId: "00Dfi000003ZTOnEAO"
+  rainfallventures:
+    principal: "rainfallventures@aduroadvisors.com"
+    orgId: "00D4x000000IkkPEAS"
+  reachcapital:
+    principal: "reach@aduroadvisors.com"
+    orgId: "00D50000000NEtSEAW"
+  realizationcapitalpartners:
+    principal: "realizationcapitalpartners@aduroadvisors.com"
+    orgId: "00D2E000000oHVrUAM"
+  recallcapital:
+    principal: "recallcapital@aduroadvisors.com"
+    orgId: "00D6e000000rklnEAA"
+  redseaventures:
+    principal: "rsv@aduroadvisors.com"
+    orgId: "00Df4000002cG73EAE"
+  refactorcapital:
+    principal: "refactor@aduroadvisors.com"
+    orgId: "00D1I000002MLbeUAG"
+  rendercapital:
+    principal: "render@aduroadvisors.com"
+    orgId: "00DKd0000053PC8MAM"
+  reservoirventures:
+    principal: "reservoirventures@aduroadvisors.com"
+    orgId: "00Dam000002RMT7EAO"
+  restive:
+    principal: "restive@aduroadvisors.com"
+    orgId: "00D3i000000DxOiEAK"
+  rethinkcapitalpartners:
+    principal: "rethinkcapital@aduroadvisors.com"
+    orgId: "00DDn000007qgLKMAY"
+  reveriemanagementcompany:
+    principal: "reverie@aduroadvisors.com"
+    orgId: "00DHs000001vFUhMAM"
+  rinconventure:
+    principal: "rincon@aduroadvisors.com"
+    orgId: "00D5Y000001dAONUA2"
+  rippleventures:
+    principal: "rippleventures@aduroadvisors.com"
+    orgId: "00D6g000005hCVTEA2"
+  rittenhouseventures:
+    principal: "rittenhouse@aduroadvisors.com"
+    orgId: "00Da500001OxY3FEAV"
+  roaringbrookholdingsllc:
+    principal: "roaringbrook@aduroadvisors.com"
+    orgId: "00Da500000aHCsTEAW"
+  robleventures:
+    principal: "robleventures@aduroadvisors.com"
+    orgId: "00D5e000001BOZ8EAO"
+  robotventures:
+    principal: "robotventures@aduroadvisors.com"
+    orgId: "00Dao000002zFygEAE"
+  rocana:
+    principal: "rocana@aduroadvisors.com"
+    orgId: "00D8Y000001ZRy8UAG"
+  rockhealth:
+    principal: "rockhealth@aduroadvisors.com"
+    orgId: "00D1U000000sFFPUA2"
+  rootventures:
+    principal: "rootventures@aduroadvisors.com"
+    orgId: "00D8Y000001QyGOUA0"
+  roseparkadvisors:
+    principal: "rosepark@fundpanel.io
+    orgId: "00DDp0000018fCgMAI"
+  rostra:
+    principal: "rostra@aduroadvisors.com"
+    orgId: "00Dao00001QkcyFEAR"
+  roundhillinvestments:
+    principal: "roundhillinvestments@aduroadvisors.com"
+    orgId: "00D4S000000EEU7UAO"
+  royalstreet:
+    principal: "royalstreet@aduroadvisors.com"
+    orgId: "00DHo0000016AA0MAM"
+  rpsventures:
+    principal: "rpsventures@aduroadvisors.com"
+    orgId: "00D0b000000RNbjEAG"
+  rules1ventures:
+    principal: "rule1ventures@aduroadvisors.com"
+    orgId: "00D5Y000002G5cUUAS"
+  runwayhealthcare:
+    principal: "runway@aduroadvisors.com"
+    orgId: "00D5Y000001dAuCUAU"
+  rwe:
+    principal: "rwe@aduroadvisors.com"
+    orgId: "00D5e000001242jEAA"
+  saasventures:
+    principal: "saasventures@aduroadvisors.com"
+    orgId: "00DDo000000sfMZMAY"
+  safarpartners:
+    principal: "safarpartners@aduroadvisors.com"
+    orgId: "00D2E00000142jtUAA"
+  sandwichcapital:
+    principal: "sandwich@aduroadvisors.com"
+    orgId: "00Dam00000XuV88EAF"
+  santuriventures:
+    principal: "santuricapital@aduroadvisors.com"
+    orgId: "00Dfn000005AP8jEAG"
+  saturnfive:
+    principal: "saturnfive@aduroadvisors.com"
+    orgId: "00DHr0000095zWQMAY"
+  scmasterfund:
+    principal: "scmaster@aduroadvisors.com"
+    orgId: "00D5Y000001cWCYUA2"
+  science:
+    principal: "science@aduroadvisors.com"
+    orgId: "00D460000018y73EAA"
+  scopventures:
+    principal: "scopventures@aduroadvisors.com"
+    orgId: "00Dao00000Jp8zBEAR"
+  scoutventures:
+    principal: "scoutventures@aduroadvisors.com"
+    orgId: "00D8Y000001QM3pUAG"
+  screendoor:
+    principal: "sdic@aduroadvisors.com"
+    orgId: "00D5e000000IBnBEAW"
+  screendoormanagement:
+    principal: "screendoormanagement@aduroadvisors.com"
+    orgId: "00DfL000002VtqyUAC"
+  scrumventures:
+    principal: "scrumventures@aduroadvisors.com"
+    orgId: "00D36000001F77bEAC"
+  seaeventures:
+    principal: "seaeventures@aduroadvisors.com"
+    orgId: "00D8Y000000fxDoUAI"
+  seaxventures:
+    principal: "seaxventures@aduroadvisors.com"
+    orgId: "00D3k000000vGOKEA2"
+  secondsight:
+    principal: "secondsight@aduroadvisors.com"
+    orgId: "00D3x0000020SakEAE"
+  seguinventures:
+    principal: "seguin@aduroadvisors.com"
+    orgId: "00Dbn00000Bs2HsEAJ"
+  shcapital:
+    principal: "shcapital@aduroadvisors.com"
+    orgId: "00D2E0000014HyOUAU"
+  shfund:
+    principal: "shfund@aduroadvisors.com"
+    orgId: "00DHs000001RX2bMAG"
+  shareventures:
+    principal: "sharefoundry@aduroadvisors.com"
+    orgId: "00D2E00000140GaUAI"
+  shinecapital:
+    principal: "shinecapital@aduroadvisors.com"
+    orgId: "00D8Y000001a45BUAQ"
+  sidelinegroup:
+    principal: "sideline@aduroadvisors.com"
+    orgId: "00DfK00000603sPUAQ"
+  sierrawasatchcapital:
+    principal: "sierra@aduroadvisors.com"
+    orgId: "00D4x000007JOYTEA4"
+  signalfire:
+    principal: "ir@signalfire.com"
+    orgId: "00Dj0000000HhuKEAS"
+  signiaventurepartnersiv:
+    principal: "kyberknight@aduroadvisors.com"
+    orgId: "00D8c000002hR2ZEAU"
+  siliconvalleydatacapital:
+    principal: "svdc@aduroadvisors.com"
+    orgId: "00D460000001MQ3EAM"
+  simplefood:
+    principal: "simplefood@aduroadvisors.com"
+    orgId: "00DHu000001O7HLMA0"
+  sinefine:
+    principal: "sinefine@aduroadvisors.com"
+    orgId: "00DfI00000Aj9SvUAJ"
+  sinewaveventures:
+    principal: "sinewave@aduroadvisors.com"
+    orgId: "00DDn000002EjqFMAS"
+  slauson:
+    principal: "slausonandco@aduroadvisors.com"
+    orgId: "00D4x0000016EOzEAM"
+  snakventurepartners:
+    principal: "snak@aduroadvisors.com"
+    orgId: "00Dal00000iirSNEAY"
+  sogalventures:
+    principal: "sogal@aduroadvisors.com"
+    orgId: "00DDp000000f6bHMAQ"
+  sozoventures:
+    principal: "sozoventures@aduroadvisors.com"
+    orgId: "00D4x000004zWEKEA2"
+  sparventures:
+    principal: "spar@aduroadvisors.com"
+    orgId: "00Dam00001TCQaEEAX"
+  spidercapital:
+    principal: "spidercapital@aduroadvisors.com"
+    orgId: "00D1a000000XlIUEA0"
+  splitrockpartners:
+    principal: "splitrock@aduroadvisors.com"
+    orgId: "00D0b000000E2uEEAS"
+  springdaleventures:
+    principal: "springdale@aduroadvisors.com"
+    orgId: "00Dam00000LSTGHEA5"
+  squadraventures:
+    principal: "squadra@aduroadvisors.com"
+    orgId: "00DHu000008VK74MAG"
+  starshotcapital:
+    principal: "starshotcapital@aduroadvisors.com"
+    orgId: "00D8c000004fOd9EAE"
+  startmate:
+    principal: "onboarding"+startmate@fundpanel.io
+    orgId: "00DDn00000CXTdGMAX"
+  stealthpoint:
+    principal: "stealthpoint@aduroadvisors.com"
+    orgId: "00Dam000003SELAEA4"
+  stormventures:
+    principal: "stormventures@aduroadvisors.com"
+    orgId: "00DDn000009SqyMMAS"
+  straightawayventures:
+    principal: "straightaway@aduroadvisors.com"
+    orgId: "00D8Z000002fdq7UAA"
+  strangeventures:
+    principal: "strangeventures@aduroadvisors.com"
+    orgId: "00Dal00000M1ZfSEAV"
+  streamlinedventures:
+    principal: "streamlinedventures@aduroadvisors.com"
+    orgId: "00D410000006escEAA"
+  summitpeak:
+    principal: "summitpeak@aduroadvisors.com"
+    orgId: "00DDm000000IwRKMA0"
+  superlayerlabs:
+    principal: "superlayer@aduroadvisors.com"
+    orgId: "00DDo000001DFQ7MAO"
+  sureventures:
+    principal: "sureventures@aduroadvisors.com"
+    orgId: "00D6g000002hfDMEAY"
+  susaventures:
+    principal: "susaventures@aduroadvisors.com"
+    orgId: "00Dj0000001msAMEAY"
+  suzukiglobalventures:
+    principal: "sgv@aduroadvisors.com"
+    orgId: "00DDn000000KsIQMA0"
+  svangel:
+    principal: "svangel@aduroadvisors.com"
+    orgId: "00DfL000002ckXEUAY"
+  svgventures:
+    principal: "svgventures@aduroadvisors.com"
+    orgId: "00DHs000001QsypMAC"
+  swan&legend:
+    principal: "swanandlegend@aduroadvisors.com"
+    orgId: "00DDo000000sfQvMAI"
+  symbolfund:
+    principal: "symbolfund@aduroadvisors.com"
+    orgId: "00DHp000002MnFuMAK"
+  synventures:
+    principal: "synventures@aduroadvisors.com"
+    orgId: "00D5Y000002THSzUAO"
+  tamarisc:
+    principal: "tamarisc@aduroadvisors.com"
+    orgId: "00Df4000001SsxWEAS"
+  tapestry:
+    principal: "tapestry@aduroadvisors.com"
+    orgId: "00D8c000005xFghEAE"
+  taurusprivatemarkets:
+    principal: "tauruspm@aduroadvisors.com"
+    orgId: "00D8Y000000fxLUUAY"
+  tcp:
+    principal: "tcp@aduroadvisors.com"
+    orgId: "00D8Y000001Yk7eUAC"
+  tdfventures:
+    principal: "tdfventures@aduroadvisors.com"
+    orgId: "00D8Y000000fv9cUAA"
+  tectonicventures:
+    principal: "tectonic@aduroadvisors.com"
+    orgId: "00D3x000001AoYiEAK"
+  telescopepartners:
+    principal: "telescopepartners@aduroadvisors.com"
+    orgId: "00DHs000001RaAWMA0"
+  telesoftpartners:
+    principal: "telesoft@aduroadvisors.com"
+    orgId: "00D41000000TsmeEAC"
+  tenelevenventures:
+    principal: "teneleven@aduroadvisors.com"
+    orgId: "00D61000000I2WREA0"
+  tenonetenventures:
+    principal: "tenoneten@aduroadvisors.com"
+    orgId: "00D15000000GaJDEA0"
+  tenzingcapital:
+    principal: "tenzingcapital@aduroadvisors.com"
+    orgId: "00D5e000002G5v4EAC"
+  tfxcapital:
+    principal: "tfxcapital@aduroadvisors.com"
+    orgId: "00D3h0000016frQEAQ"
+  thales:
+    principal: "thales@aduroadvisors.com"
+    orgId: "00D5Y000002U29HUAS"
+  the22fund:
+    principal: "22fund@aduroadvisors.com"
+    orgId: "00D5Y000001dAulUAE"
+  the4100group:
+    principal: "the4100group@aduroadvisors.com"
+    orgId: "00DHp000002z0hWMAQ"
+  the98:
+    principal: "the98@aduroadvisors.com"
+    orgId: "00DHu000001OKTuMAO"
+  theaccessfund:
+    principal: "theaccessfund@aduroadvisors.com"
+    orgId: "00D5Y000002UpPEUA0"
+  theackerberggroup:
+    principal: "ackerberg@aduroadvisors.com"
+    orgId: "00D3h00000665paEAA"
+  thealignedfund:
+    principal: "thealignedfund@aduroadvisors.com"
+    orgId: "00Dam00000ew05REAQ"
+  theengineventures:
+    principal: "engine@aduroadvisors.com"
+    orgId: "00D6A0000004M8xUAE"
+  thehistoricfund:
+    principal: "historicfund@aduroadvisors.com"
+    orgId: "00DDp000000g07yMAA"
+  thehousefund:
+    principal: "thehousefund@aduroadvisors.com"
+    orgId: "00D15000000FmihEAC"
+  thelongevityfund:
+    principal: "thelongevityfund@aduroadvisors.com"
+    orgId: "00D3t000002m0OTEAY"
+  themotleyfool:
+    principal: "themotleyfool@aduroadvisors.com"
+    orgId: "00Df20000016sQ5EAI"
+  theproductionboard:
+    principal: "tpb@aduroadvisors.com"
+    orgId: "00D4T000000E2URUA0"
+  therefiners:
+    principal: "therefiners@aduroadvisors.com"
+    orgId: "00D8Y000000fr4UUAQ"
+  theventurecity:
+    principal: "theventurecity@aduroadvisors.com"
+    orgId: "00D1I000002xMrmUAE"
+  theoryforgeventures:
+    principal: "theoryforge@fundpanel.io
+    orgId: "00Dal00000Ji39aEAB"
+  theoryventures:
+    principal: "theoryventures@aduroadvisors.com"
+    orgId: "00DHs000001RwphMAC"
+  tiaventures:
+    principal: "tiaventures@aduroadvisors.com"
+    orgId: "00D8Y000000fxjaUAA"
+  tiferesventures:
+    principal: "tiferes@aduroadvisors.com"
+    orgId: "00Dam00000fyScREAU"
+  timbergrove:
+    principal: "timbergrove@aduroadvisors.com"
+    orgId: "00DHo00000166FbMAI"
+  tiptventures:
+    principal: "tipt@aduroadvisors.com"
+    orgId: "00Dal00000b5k4eEAA"
+  tirtaventures:
+    principal: "tirta@aduroadvisors.com"
+    orgId: "00Dam00000VjRy9EAF"
+  tmv:
+    principal: "tmvaduro@aduroadvisors.com"
+    orgId: "00D4W000005h0jVUAQ"
+  togetherfunds:
+    principal: "together@aduroadvisors.com"
+    orgId: "00Dam00000N4S5eEAF"
+  tokiomarineinsurancefund:
+    principal: "tmfi@aduroadvisors.com"
+    orgId: "00D5f000003xjLfEAI"
+  topcorner:
+    principal: "topcornercapital@aduroadvisors.com"
+    orgId: "00D3h0000057rApEAI"
+  torchcapital:
+    principal: "torch@aduroadvisors.com"
+    orgId: "00Dao000003TnqDEAS"
+  toyotaaiventures:
+    principal: "toyotaaiventures@aduroadvisors.com"
+    orgId: "00D6A000002FuxEUAS"
+  transformcapital:
+    principal: "transformcapital@aduroadvisors.com"
+    orgId: "00D4W000005iXSyUAM"
+  trenchescapital:
+    principal: "trenches@aduroadvisors.com"
+    orgId: "00Da5000001lo7FEAQ"
+  tripleimpactcapital:
+    principal: "tripleimpactcapital@aduroadvisors.com"
+    orgId: "00D4x000004we0PEAQ"
+  truebeautyventures:
+    principal: "truebeautyventures@aduroadvisors.com"
+    orgId: "00D4W000003eU0zUAE"
+  trueventures:
+    principal: "trueventures@aduroadvisors.com"
+    orgId: "00D3t000001Ma0IEAS"
+  ttcglobal:
+    principal: "ttcglobal@aduroadvisors.com"
+    orgId: "00D8W000004N31UUAS"
+  ttvcapital:
+    principal: "ttvcapital@aduroadvisors.com"
+    orgId: "00DDn00000Aw67pMAB"
+  tucker'sfarm:
+    principal: "tuckersfarm@aduroadvisors.com"
+    orgId: "00DKd000001ocw5MAA"
+  turim:
+    principal: "turim@aduroadvisors.com"
+    orgId: "00Df4000003kjs2EAA"
+  twelvebelow:
+    principal: "twelvebelow@aduroadvisors.com"
+    orgId: "00D8Y000001QLkKUAW"
+  twineventures:
+    principal: "twineventures@aduroadvisors.com"
+    orgId: "00D5e000002FfoMEAS"
+  ua1management:
+    principal: "ua1@aduroadvisors.com"
+    orgId: "00DfL00000EzLRLUA3"
+  ubiquityventures:
+    principal: "ubiquity@aduroadvisors.com"
+    orgId: "00D1I000001Up2gUAC"
+  unanimouscapital:
+    principal: "unanimous@aduroadvisors.com"
+    orgId: "00Dam0000052QehEAE"
+  uncork:
+    principal: "uncork@aduroadvisors.com"
+    orgId: "00DDp000001yWurMAE"
+  underscorevc:
+    principal: "underscorevc@aduroadvisors.com"
+    orgId: "00DHp000002z0gbMAA"
+  undeterredcapital:
+    principal: "undeterred@aduroadvisors.com"
+    orgId: "00D5Y000001cW3gUAE"
+  unionlabs:
+    principal: "unionlabs@aduroadvisors.com"
+    orgId: "00D4P0000010PssUAE"
+  unionsquareventures:
+    principal: "unionsquareventures@aduroadvisors.com"
+    orgId: "00Dal00001IGfkiEAD"
+  unitedtalentagency:
+    principal: "uta@aduroadvisors.com"
+    orgId: "00D5f000005vSggEAE"
+  unitynow:
+    principal: "unitynow@aduroadvisors.com"
+    orgId: "00D4W000004BivGUAS"
+  unovisventures:
+    principal: "unovis@aduroadvisors.com"
+    orgId: "00DHr00000MCtjWMAT"
+  unseencapital:
+    principal: "unseencapital@aduroadvisors.com"
+    orgId: "00D4x000006tERvEAM"
+  uppartners:
+    principal: "uppartners@aduroadvisors.com"
+    orgId: "00D4R000001XOpJUAW"
+  upsidepartnership:
+    principal: "upside@aduroadvisors.com"
+    orgId: "00Dj0000000HRHLEA4"
+  upspringcapital:
+    principal: "upspringcapital@aduroadvisors.com"
+    orgId: "00D5f000001y87aEAA"
+  urbaninnovationfund:
+    principal: "urban@aduroadvisors.com"
+    orgId: "00D5Y000001dVNLUA2"
+  valoventures:
+    principal: "valoventures@aduroadvisors.com"
+    orgId: "00D4W0000050v7qUAA"
+  venture51:
+    principal: "venture51@aduroadvisors.com"
+    orgId: "00D6100000080O0EAI"
+  verifiedcapital:
+    principal: "verified@aduroadvisors.com"
+    orgId: "00Dal000011OumtEAC"
+  vermilioncliffsventures:
+    principal: "vermilion@aduroadvisors.com"
+    orgId: "00Dam00001IXhFaEAL"
+  vertexventures:
+    principal: "vertex@aduroadvisors.com"
+    orgId: "00Dj0000001ox5ZEAQ"
+  veseyventures:
+    principal: "veseyventures@aduroadvisors.com"
+    orgId: "00D5f00000885A7EAI"
+  viewpointventures:
+    principal: "viewpoint@aduroadvisors.com"
+    orgId: "00DDo000001DSL8MAO"
+  virtueventures:
+    principal: "virtueventures@aduroadvisors.com"
+    orgId: "00D5e000001Amv9EAC"
+  visiblehands:
+    principal: "visiblehands@aduroadvisors.com"
+    orgId: "00D4x0000069HmKEAU"
+  vivecollective:
+    principal: "vivecollective@aduroadvisors.com"
+    orgId: "00D5e0000013vicEAA"
+  wavewacoventures:
+    principal: "wacoventures@aduroadvisors.com"
+    orgId: "00DDn00000AxNeuMAF"
+  waverleycapital:
+    principal: "waverley@aduroadvisors.com"
+    orgId: "00D6A000001jiQAUAY"
+  wayburycapital:
+    principal: "waybury@aduroadvisors.com"
+    orgId: "00Dam000005iWJQEA2"
+  westacrecapital:
+    principal: "westacre@aduroadvisors.com"
+    orgId: "00Dal000004b8CVEAY"
+  wilstrategicpartners:
+    principal: "wilsp@aduroadvisors.com"
+    orgId: "00D8c000003T70pEAC"
+  wildwoodventuresllc:
+    principal: "wildwood@aduroadvisors.com"
+    orgId: "00DDp0000016PgtMAE"
+  willowgrowth:
+    principal: "willowgrowth@aduroadvisors.com"
+    orgId: "00D3x000001AhRrEAK"
+  willowtreeventures:
+    principal: "willowtree@aduroadvisors.com"
+    orgId: "00DfI00000CJjfoUAD"
+  wilmotventures:
+    principal: "wilmotventures@aduroadvisors.com"
+    orgId: "00DHu000001O7MHMA0"
+  winventures:
+    principal: "win@aduroadvisors.com"
+    orgId: "00D4W000003eU1xUAE"
+  wintercapital:
+    principal: "wintercapital@aduroadvisors.com"
+    orgId: "00Df4000004kLAHEA2"
+  wireframeventures:
+    principal: "wireframe@aduroadvisors.com"
+    orgId: "00D41000000eTjnEAE"
+  wonderventures:
+    principal: "wonder@aduroadvisors.com"
+    orgId: "00D6A000000uBkvUAE"
+  worklifeventures:
+    principal: "worklife@aduroadvisors.com"
+    orgId: "00Dal0000054JBTEA2"
+  worldinnovationlab:
+    principal: "wil@aduroadvisors.com"
+    orgId: "00D41000000clycEAA"
+  worldinnovationlabsgpcarry:
+    principal: "wil"+gpcarry@aduroadvisors.com"
+    orgId: "00DHu000001A2cmMAC"
+  wovencapital:
+    principal: "wovencapital@aduroadvisors.com"
+    orgId: "00D4W0000091LueUAE"
+  wxrfund:
+    principal: "wxrfund@aduroadvisors.com"
+    orgId: "00D6g000001UXPkEAO"
+  xfund:
+    principal: "xfund@aduroadvisors.com"
+    orgId: "00DU0000000MJFdMAO"
+  xtalventures:
+    principal: "xtalventures@aduroadvisors.com"
+    orgId: "00Da500001PkX5sEAF"
+  yamahamusicgroup:
+    principal: "yamaha@aduroadvisors.com"
+    orgId: "00Dbn00000oiU7XEAU"
+  zeldaventures:
+    principal: "zeldaventures@aduroadvisors.com"
+    orgId: "00DDn000001531HMAQ"
+  ziggcapital
+    principal: "ziggcapital@aduroadvisors.com"
+    orgId: "00D1U000000pKMrUAM"
 
 anypointmq:
   url: "https://mq-us-east-1.anypoint.mulesoft.com/api/v1/organizations/3b8fd8b9-8002-4652-99bf-99d1c946b0ee/environments/f682e196-03c9-493a-ba10-299236acb7a9"
