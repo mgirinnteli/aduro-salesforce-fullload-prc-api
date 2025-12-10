@@ -432,9 +432,9 @@ http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/m
       <logger level="INFO" doc:name="LOG: End of the Job" message="***  SF Org Id:  #[vars.orgId default ''] - END SF FULL LOAD JOB ***"/>
   </flow>
 
-  <flow name="pf-sf-antler(australia)-full-load">
-      <set-variable value="${sfdc.antler(australia).orgId}" doc:name="Set orgId" variableName="orgId" />
-      <set-variable value="antler(australia)" doc:name="Set orgCode" variableName="orgCode" />
+  <flow name="pf-sf-antler-full-load">
+      <set-variable value="${sfdc.antler.orgId}" doc:name="Set orgId" variableName="orgId" />
+      <set-variable value="antler" doc:name="Set orgCode" variableName="orgCode" />
       <logger level="INFO" doc:name="LOG: Start of the Job" message="***  SF Org Id:  #[vars.orgId default ''] - START SF FULL LOAD JOB ***"/>
       <flow-ref doc:name="Call SF Bulk Query" name="pf-common-sf-bulk-query"/>
       <logger level="INFO" doc:name="LOG: End of the Job" message="***  SF Org Id:  #[vars.orgId default ''] - END SF FULL LOAD JOB ***"/>
@@ -2144,9 +2144,9 @@ http://www.mulesoft.org/schema/mule/anypoint-mq http://www.mulesoft.org/schema/m
       <logger level="INFO" doc:name="LOG: End of the Job" message="***  SF Org Id:  #[vars.orgId default ''] - END SF FULL LOAD JOB ***"/>
   </flow>
 
-  <flow name="pf-sf-fujiyamabridgelab(fbl)-full-load">
-      <set-variable value="${sfdc.fujiyamabridgelab(fbl).orgId}" doc:name="Set orgId" variableName="orgId" />
-      <set-variable value="fujiyamabridgelab(fbl)" doc:name="Set orgCode" variableName="orgCode" />
+  <flow name="pf-sf-fujiyamabridgelab-full-load">
+      <set-variable value="${sfdc.fujiyamabridgelab.orgId}" doc:name="Set orgId" variableName="orgId" />
+      <set-variable value="fujiyamabridgelab" doc:name="Set orgCode" variableName="orgCode" />
       <logger level="INFO" doc:name="LOG: Start of the Job" message="***  SF Org Id:  #[vars.orgId default ''] - START SF FULL LOAD JOB ***"/>
       <flow-ref doc:name="Call SF Bulk Query" name="pf-common-sf-bulk-query"/>
       <logger level="INFO" doc:name="LOG: End of the Job" message="***  SF Org Id:  #[vars.orgId default ''] - END SF FULL LOAD JOB ***"/>

@@ -196,8 +196,8 @@ output application/java
                     <when expression="#[vars.originalPayload.orgId == p('sfdc.ansa.orgId')]">
                         <flow-ref doc:name="Call ansa Full Load" name="pf-sf-ansa-full-load" />
                     </when>
-                    <when expression="#[vars.originalPayload.orgId == p('sfdc.antler(australia).orgId')]">
-                        <flow-ref doc:name="Call antler(australia) Full Load" name="pf-sf-antler(australia)-full-load" />
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.antler.orgId')]">
+                        <flow-ref doc:name="Call antler Full Load" name="pf-sf-antler-full-load" />
                     </when>
                     <when expression="#[vars.originalPayload.orgId == p('sfdc.aperturecapitalpartners.orgId')]">
                         <flow-ref doc:name="Call aperturecapitalpartners Full Load" name="pf-sf-aperturecapitalpartners-full-load" />
@@ -838,8 +838,8 @@ output application/java
                     <when expression="#[vars.originalPayload.orgId == p('sfdc.freerunventures.orgId')]">
                         <flow-ref doc:name="Call freerunventures Full Load" name="pf-sf-freerunventures-full-load" />
                     </when>
-                    <when expression="#[vars.originalPayload.orgId == p('sfdc.fujiyamabridgelab(fbl).orgId')]">
-                        <flow-ref doc:name="Call fujiyamabridgelab(fbl) Full Load" name="pf-sf-fujiyamabridgelab(fbl)-full-load" />
+                    <when expression="#[vars.originalPayload.orgId == p('sfdc.fujiyamabridgelab.orgId')]">
+                        <flow-ref doc:name="Call fujiyamabridgelab Full Load" name="pf-sf-fujiyamabridgelab-full-load" />
                     </when>
                     <when expression="#[vars.originalPayload.orgId == p('sfdc.fusionxventures.orgId')]">
                         <flow-ref doc:name="Call fusionxventures Full Load" name="pf-sf-fusionxventures-full-load" />
@@ -2140,7 +2140,7 @@ output application/java
                         <flow-ref doc:name="Call angularventures Lab Full Load" name="pf-sf-angularventures-full-load"/>
                         <flow-ref doc:name="Call animoventuresi Lab Full Load" name="pf-sf-animoventuresi-full-load"/>
                         <flow-ref doc:name="Call ansa Lab Full Load" name="pf-sf-ansa-full-load"/>
-                        <flow-ref doc:name="Call antler(australia) Lab Full Load" name="pf-sf-antler(australia)-full-load"/>
+                        <flow-ref doc:name="Call antler Lab Full Load" name="pf-sf-antler-full-load"/>
                         <flow-ref doc:name="Call aperturecapitalpartners Lab Full Load" name="pf-sf-aperturecapitalpartners-full-load"/>
                         <flow-ref doc:name="Call aperturevc Lab Full Load" name="pf-sf-aperturevc-full-load"/>
                         <flow-ref doc:name="Call aphelioncapital Lab Full Load" name="pf-sf-aphelioncapital-full-load"/>
@@ -2354,7 +2354,7 @@ output application/java
                         <flow-ref doc:name="Call fpventures Lab Full Load" name="pf-sf-fpventures-full-load"/>
                         <flow-ref doc:name="Call freeflow Lab Full Load" name="pf-sf-freeflow-full-load"/>
                         <flow-ref doc:name="Call freerunventures Lab Full Load" name="pf-sf-freerunventures-full-load"/>
-                        <flow-ref doc:name="Call fujiyamabridgelab(fbl) Lab Full Load" name="pf-sf-fujiyamabridgelab(fbl)-full-load"/>
+                        <flow-ref doc:name="Call fujiyamabridgelab Lab Full Load" name="pf-sf-fujiyamabridgelab-full-load"/>
                         <flow-ref doc:name="Call fusionxventures Lab Full Load" name="pf-sf-fusionxventures-full-load"/>
                         <flow-ref doc:name="Call futureperfectventures Lab Full Load" name="pf-sf-futureperfectventures-full-load"/>
                         <flow-ref doc:name="Call futureventures Lab Full Load" name="pf-sf-futureventures-full-load"/>
