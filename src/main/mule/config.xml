@@ -261,8 +261,8 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
       <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.ansa.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
-  <salesforce:sfdc-config name="Salesforce_Config-antler(australia)" doc:name="Salesforce Config-antler(australia)" >
-      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.antler(australia).principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
+  <salesforce:sfdc-config name="Salesforce_Config-antler" doc:name="Salesforce Config-antler" >
+      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.antler.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
   <salesforce:sfdc-config name="Salesforce_Config-aperturecapitalpartners" doc:name="Salesforce Config-aperturecapitalpartners" >
@@ -977,8 +977,8 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
       <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.essentialholdings.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
-  <salesforce:sfdc-config name="Salesforce_Config-ex/ante" doc:name="Salesforce Config-ex/ante" >
-      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.ex/ante.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
+  <salesforce:sfdc-config name="Salesforce_Config-exante" doc:name="Salesforce Config-exante" >
+      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.exante.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
   <salesforce:sfdc-config name="Salesforce_Config-exorseeds" doc:name="Salesforce Config-exorseeds" >
@@ -1117,8 +1117,8 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
       <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.freerunventures.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
-  <salesforce:sfdc-config name="Salesforce_Config-fujiyamabridgelab(fbl)" doc:name="Salesforce Config-fujiyamabridgelab(fbl)" >
-      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.fujiyamabridgelab(fbl).principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
+  <salesforce:sfdc-config name="Salesforce_Config-fujiyamabridgelab" doc:name="Salesforce Config-fujiyamabridgelab" >
+      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.fujiyamabridgelab.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
   <salesforce:sfdc-config name="Salesforce_Config-fusionxventures" doc:name="Salesforce Config-fusionxventures" >
@@ -1581,8 +1581,8 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
       <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.lowercarboncapital.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
-  <salesforce:sfdc-config name="Salesforce_Config-lowercarboncapital-gpcarry" doc:name="Salesforce Config-lowercarboncapital-gpcarry" >
-      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.lowercarboncapital-gpcarry.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
+  <salesforce:sfdc-config name="Salesforce_Config-lowercarboncapitalgpcarry" doc:name="Salesforce Config-lowercarboncapitalgpcarry" >
+      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.lowercarboncapitalgpcarry.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
   <salesforce:sfdc-config name="Salesforce_Config-lowercasecapital" doc:name="Salesforce Config-lowercasecapital" >
@@ -2369,8 +2369,8 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
       <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.svgventures.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
-  <salesforce:sfdc-config name="Salesforce_Config-swan&legend" doc:name="Salesforce Config-swan&legend" >
-      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.swan&legend.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
+  <salesforce:sfdc-config name="Salesforce_Config-swanlegend" doc:name="Salesforce Config-swanlegend" >
+      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.swanlegend.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
   <salesforce:sfdc-config name="Salesforce_Config-symbolfund" doc:name="Salesforce Config-symbolfund" >
@@ -2569,8 +2569,8 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
       <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.ttvcapital.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
-  <salesforce:sfdc-config name="Salesforce_Config-tucker'sfarm" doc:name="Salesforce Config-tucker'sfarm" >
-      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.tucker'sfarm.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
+  <salesforce:sfdc-config name="Salesforce_Config-tuckersfarm" doc:name="Salesforce Config-tuckersfarm" >
+      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.tuckersfarm.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
   <salesforce:sfdc-config name="Salesforce_Config-turim" doc:name="Salesforce Config-turim" >

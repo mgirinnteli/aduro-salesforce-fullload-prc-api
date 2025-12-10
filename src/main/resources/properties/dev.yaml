@@ -180,8 +180,8 @@ sfdc:
   ansa:
     principal: "ansa@aduroadvisors.com"
     orgId: "00D5f000005uu4qEAA"
-  antler(australia):
-    principal: "antler@fundpanel.io
+  antler:
+    principal: "antler@fundpanel.io"
     orgId: "00D5w000003XK7YEAW"
   aperturecapitalpartners:
     principal: "aperture@aduroadvisors.com"
@@ -202,7 +202,7 @@ sfdc:
     principal: "archetype@aduroadvisors.com"
     orgId: "00DDp000000ey2sMAA"
   argonventures:
-    principal: "argon1@fundpanel.io
+    principal: "argon1@fundpanel.io"
     orgId: "00Dao00000GznPJEAZ"
   armorysquareventures:
     principal: "armorysquareventures@aduroadvisors.com"
@@ -277,7 +277,7 @@ sfdc:
     principal: "bagvc@aduroadvisors.com"
     orgId: "00Dam00000WnZk6EAF"
   bamelevate:
-    principal: "onboarding"+bamelevate@fundpanel.io
+    principal: "onboarding+bamelevate@fundpanel.io"
     orgId: "00Dal00001DnuFJEAZ"
   bamventures:
     principal: "bam@aduroadvisors.com"
@@ -454,7 +454,7 @@ sfdc:
     principal: "capitalf@aduroadvisors.com"
     orgId: "00Dbn00000GnQppEAF"
   capitalg:
-    principal: "capitalg@fundpanel.io
+    principal: "capitalg@fundpanel.io"
     orgId: "00D4W000001YEijUAG"
   capitalk:
     principal: "capitalk@aduroadvisors.com"
@@ -717,7 +717,7 @@ sfdc:
   essentialholdings:
     principal: "essentialholdings@aduroadvisors.com"
     orgId: "00DfK0000080iSlUAI"
-  ex/ante:
+  exante:
     principal: "exante@aduroadvisors.com"
     orgId: "00DDn00000AuKZAMA3"
   exorseeds:
@@ -787,7 +787,7 @@ sfdc:
     principal: "floatingpoint@aduroadvisors.com"
     orgId: "00D4x000004ydP4EAI"
   folklore:
-    principal: "tempuspartners@fundpanel.io
+    principal: "tempuspartners@fundpanel.io"
     orgId: "00Df2000001HgdvEAC"
   foothillventures:
     principal: "foothillventures@aduroadvisors.com"
@@ -822,7 +822,7 @@ sfdc:
   freerunventures:
     principal: "freerun@aduroadvisors.com"
     orgId: "00DHr000008MZfOMAW"
-  fujiyamabridgelab(fbl):
+  fujiyamabridgelab:
     principal: "fbl@aduroadvisors.com"
     orgId: "00D8a000002v9nXEAQ"
   fusionxventures:
@@ -913,7 +913,7 @@ sfdc:
     principal: "investbev@aduroadvisors.com"
     orgId: "00Dao00000PvQQwEAN"
   growthstreetpartners:
-    principal: "growthstreetpartners@fundpanel.io
+    principal: "growthstreetpartners@fundpanel.io"
     orgId: "00D5f000006r2BYEAY"
   gumicryptos:
     principal: "gumicryptos@aduroadvisors.com"
@@ -1081,7 +1081,7 @@ sfdc:
     principal: "k50ventures@aduroadvisors.com"
     orgId: "00D8b00000292jqEAA"
   kairosmanagers:
-    principal: "kyle"+1234@fundpanel.io
+    principal: "kyle+1234@fundpanel.io"
     orgId: "00D8c000004tSdpEAE"
   karpreillycapitalpartners:
     principal: "karpreilly@aduroadvisors.com"
@@ -1170,8 +1170,8 @@ sfdc:
   lowercarboncapital:
     principal: "lowercarbon@aduroadvisors.com"
     orgId: "00D5Y000002W93zUAC"
-  lowercarboncapital-gpcarry:
-    principal: "lowercarbon"+gpcarry@aduroadvisors.com"
+  lowercarboncapitalgpcarry:
+    principal: "lowercarbon+gpcarry@aduroadvisors.com"
     orgId: "00Da500000ajIl8EAE"
   lowercasecapital:
     principal: "lowercase@aduroadvisors.com"
@@ -1297,7 +1297,7 @@ sfdc:
     principal: "monstro@aduroadvisors.com"
     orgId: "00D36000000oY6uEAE"
   montageventures:
-    principal: "montageventures@fundpanel.io
+    principal: "montageventures@fundpanel.io"
     orgId: "00D5e000003UEq4EAG"
   moradoventures:
     principal: "moradoventures@aduroadvisors.com"
@@ -1450,7 +1450,7 @@ sfdc:
     principal: "permanentcapital@aduroadvisors.com"
     orgId: "00DHr000001txAjMAI"
   phoenixventurepartners:
-    principal: "phoenixvp@fundpanel.io
+    principal: "phoenixvp@fundpanel.io"
     orgId: "00DDn000000HXLWMA4"
   pivotnorth:
     principal: "pivotnorth@aduroadvisors.com"
@@ -1489,7 +1489,7 @@ sfdc:
     principal: "prf@aduroadvisors.com"
     orgId: "00DDo000001Ab4YMAS"
   progressventures:
-    principal: "progressventures@fundpanel.io
+    principal: "progressventures@fundpanel.io"
     orgId: "00Df4000004k6KoEAI"
   project11ventures:
     principal: "project11@aduroadvisors.com"
@@ -1585,7 +1585,7 @@ sfdc:
     principal: "rootventures@aduroadvisors.com"
     orgId: "00D8Y000001QyGOUA0"
   roseparkadvisors:
-    principal: "rosepark@fundpanel.io
+    principal: "rosepark@fundpanel.io"
     orgId: "00DDp0000018fCgMAI"
   rostra:
     principal: "rostra@aduroadvisors.com"
@@ -1723,7 +1723,7 @@ sfdc:
     principal: "starshotcapital@aduroadvisors.com"
     orgId: "00D8c000004fOd9EAE"
   startmate:
-    principal: "onboarding"+startmate@fundpanel.io
+    principal: "onboarding+startmate@fundpanel.io"
     orgId: "00DDn00000CXTdGMAX"
   stealthpoint:
     principal: "stealthpoint@aduroadvisors.com"
@@ -1761,7 +1761,7 @@ sfdc:
   svgventures:
     principal: "svgventures@aduroadvisors.com"
     orgId: "00DHs000001QsypMAC"
-  swan&legend:
+  swanlegend:
     principal: "swanandlegend@aduroadvisors.com"
     orgId: "00DDo000000sfQvMAI"
   symbolfund:
@@ -1852,7 +1852,7 @@ sfdc:
     principal: "theventurecity@aduroadvisors.com"
     orgId: "00D1I000002xMrmUAE"
   theoryforgeventures:
-    principal: "theoryforge@fundpanel.io
+    principal: "theoryforge@fundpanel.io"
     orgId: "00Dal00000Ji39aEAB"
   theoryventures:
     principal: "theoryventures@aduroadvisors.com"
@@ -1911,7 +1911,7 @@ sfdc:
   ttvcapital:
     principal: "ttvcapital@aduroadvisors.com"
     orgId: "00DDn00000Aw67pMAB"
-  tucker'sfarm:
+  tuckersfarm:
     principal: "tuckersfarm@aduroadvisors.com"
     orgId: "00DKd000001ocw5MAA"
   turim:
@@ -2047,7 +2047,7 @@ sfdc:
     principal: "wil@aduroadvisors.com"
     orgId: "00D41000000clycEAA"
   worldinnovationlabsgpcarry:
-    principal: "wil"+gpcarry@aduroadvisors.com"
+    principal: "wil+gpcarry@aduroadvisors.com"
     orgId: "00DHu000001A2cmMAC"
   wovencapital:
     principal: "wovencapital@aduroadvisors.com"
@@ -2067,7 +2067,7 @@ sfdc:
   zeldaventures:
     principal: "zeldaventures@aduroadvisors.com"
     orgId: "00DDn000001531HMAQ"
-  ziggcapital
+  ziggcapital:
     principal: "ziggcapital@aduroadvisors.com"
     orgId: "00D1U000000pKMrUAM"
 
