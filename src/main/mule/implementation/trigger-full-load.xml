@@ -1765,9 +1765,6 @@ output application/java
                     <when expression="#[vars.originalPayload.orgId == p('sfdc.sureventures.orgId')]">
                         <flow-ref doc:name="Call sureventures Full Load" name="pf-sf-sureventures-full-load" />
                     </when>
-                    <when expression="#[vars.originalPayload.orgId == p('sfdc.susaventures.orgId')]">
-                        <flow-ref doc:name="Call susaventures Full Load" name="pf-sf-susaventures-full-load" />
-                    </when>
                     <when expression="#[vars.originalPayload.orgId == p('sfdc.suzukiglobalventures.orgId')]">
                         <flow-ref doc:name="Call suzukiglobalventures Full Load" name="pf-sf-suzukiglobalventures-full-load" />
                     </when>

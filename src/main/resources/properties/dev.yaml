@@ -1749,9 +1749,6 @@ sfdc:
   sureventures:
     principal: "sureventures@aduroadvisors.com"
     orgId: "00D6g000002hfDMEAY"
-  susaventures:
-    principal: "susaventures@aduroadvisors.com"
-    orgId: "00Dj0000001msAMEAY"
   suzukiglobalventures:
     principal: "sgv@aduroadvisors.com"
     orgId: "00DDn000000KsIQMA0"

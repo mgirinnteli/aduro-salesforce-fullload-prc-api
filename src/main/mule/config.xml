@@ -2353,10 +2353,6 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
       <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.sureventures.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
 
-  <salesforce:sfdc-config name="Salesforce_Config-susaventures" doc:name="Salesforce Config-susaventures" >
-      <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.susaventures.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
-  </salesforce:sfdc-config>
-
   <salesforce:sfdc-config name="Salesforce_Config-suzukiglobalventures" doc:name="Salesforce Config-suzukiglobalventures" >
       <salesforce:jwt-connection consumerKey="${secure::sfdc.consumerkey}" keyStore="${sfdc.keystore}" storePassword="${secure::sfdc.password}" principal="${sfdc.suzukiglobalventures.principal}" audienceUrl="${sfdc.audienceUrl}" tokenEndpoint="${sfdc.tokenendpoint}" />
   </salesforce:sfdc-config>
